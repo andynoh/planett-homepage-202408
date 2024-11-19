@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANETT</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/company.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./src/img/favicon.ico" type="image/x-icon">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="./src/js/header.js"></script>
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" /> 
+
+    
+
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <h1><a href="../ko/index.html"><img src="https://jupiter.planett.co.kr/ko/src/img/PLANETT_logo.webp" alt="planett-logo"></a></h1>
+            <nav class="pc-nav">
+                <ul class="menu">
+                    <li><a href="./company.html">회사소개</a>
+                        <ul class="tab-menu">
+                            <li><a href="./company.html">소개</a></li>
+                            <li><a href="./company.html?event=history">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./brand.html">브랜드 · 상품소개</a>
+                        <ul class="tab-menu">
+                            <li><a href="./brand.html">eSIM</a></li>
+                            <li><a href="./brand.html?event=simcard">SIM Card</a></li>
+                            <li><a href="./brand.html?event=router">Mobile router</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./B2B.html">B2B 문의</a>
+                        <ul class="tab-menu">
+                            <li><a href="./B2B.html">eSIM B2B 솔루션</a></li>
+                            <li><a href="./B2B.html?event=business">비즈니스 제휴</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./support.html">채용</a>
+                    </li>
+                    <li><a href="./contact.html">고객지원</a>
+                        <ul class="tab-menu">
+                            <li><a href="./contact.html">오시는 길</a></li>
+                            <li><a href="./contact.html?event=mall">브랜드 몰</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="lang">
+                <a href="./company.html">KOR</a>
+                <a href="../en/company.html">ENG</a>
+                <div class="lang-img">
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/lang_img.webp" alt="lang">
+                </div>
+            </div>
+            <nav class="mb-nav">
+                <ul class="menu change" id="menu">
+                    <li><a href="#">회사소개</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.webp" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./company.html">소개</a></li>
+                            <li><a href="./company.html?event=history">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">브랜드 · 상품소개</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.webp" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./brand.html">eSIM</a></li>
+                            <li><a href="./brand.html?event=simcard">SIM Card</a></li>
+                            <li><a href="./brand.html?event=router">Mobile router</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">B2B 문의</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.webp" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./B2B.html">eSIM B2B 솔루션</a></li>
+                            <li><a href="./B2B.html?event=business">비즈니스 제휴</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./support.html">채용</a></li>
+                    <li><a href="#">고객지원</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.webp" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./contact.html">오시는 길</a></li>
+                            <li><a href="./contact.html?event=mall">브랜드 몰</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </nav>
+            <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">
+                <div class="mn-icon" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+        </header>
+
+        <section class="top-banner">
+            <div class="top-content">
+                <div class="banner-tit">
+                    <h2>회사소개</h2>
+                </div>
+                <div class="tab-container">
+                    <div class="tabs on" onclick="openTab('company')">소개</div>
+                    <div id="tabhistory" class="tabs" onclick="openTab('history')">연혁</div>
+                </div>
+            </div>
+        </section>
+        <section class="tab_wrap">
+            <div id="company" class="tab on">
+                <div class="com-wrap">
+                    <div class="com-top">
+                      <div class="com-img"  data-aos="fade-in"></div>
+                      <div class="com-txt" data-aos="fade-up" >
+                          <h3 data-aos="fade-up">Your gateway to seamless <br class="tb-dn">Global Connectivity</h3>
+                          <span>2004년, 국내 최초로 포털 로밍 서비스를 시작하며
+                            <br class="tb-dn mb-dn"> 해외여행객들의 통신 고민을 해결해 온 플래닛티는 유심, eSIM,
+                            <br class="tb-dn mb-dn"> 포켓와이파이 등 다양한 서비스를 통해 전 세계 어디서든
+                            <br class="tb-dn mb-dn"> 편리하고 안정적인 통신 환경을 제공합니다.
+                          </span>
+                          <br>
+                          <br>
+                          <br class="tb-dn mb-dn">
+                          <span>
+                              끊임없는 기술 개발과 글로벌 네트워크 확장을 통해
+                              <br class="tb-dn mb-dn">고객에게 최적의 솔루션을 제공하며 성장해 왔습니다.
+                          </span>
+                          <br>
+                          <br>
+                          <br class="tb-dn mb-dn">
+                          <span>
+                              또한, 우수한 신용등급(A이상)으로 입증된 건실한 재무구조와
+                              <br class="tb-dn mb-dn">투명한 기업 지배 구조를 기반으로, 고객 중심의 가치 창출과
+                              <br class="tb-dn mb-dn">지속가능한 성장을 실현하고 있습니다.
+                              <br class="tb-dn mb-dn">이를 통해 시장에서 경쟁우위를 확보하며, 이해관계자들에게
+                              <br class="tb-dn mb-dn">신뢰받는 기업으로 자리매김하고 있습니다.
+                          </span>
+                      </div>
+                    </div>
+                </div>
+                <div class="com-mid">
+                  <h3 data-aos="fade-up">플래닛티는 다양한 고객의<br class="pc-dn tb-dn"> 니즈를 충족시킵니다.</h3>
+                  <div class="com-mid-content">
+                      <ul class="customer" data-aos="flip-down">
+                          <li>
+                              <img src="https://jupiter.planett.co.kr/ko/src/img/customer.webp" alt="cs">
+                              <h4>개인 사용자</h4>
+                              <span>
+                                  해외 여행객 및 출장자들에게
+                                  <br class="tb-dn">SIM카드, eSIM, Potable Wi-Fi를
+                                  <br class="tb-dn mb-dn">제공하여<br class="pc-dn tb-dn"> 데이터 통신 서비스와
+                                  <br class="tb-dn mb-dn">편리한 연결성을 지원합니다.
+                              </span>
+                          </li>
+                          <li>
+                              <img src="https://jupiter.planett.co.kr/ko/src/img/customer2.webp" alt="cs">
+                              <h4>기업 고객</h4>
+                              <span>
+                                  B2B eSIM 구매 플랫폼을 통해
+                                  <br class="tb-dn">대량의 서비스 이용이 필요한
+                                  <br class="tb-dn mb-dn">기업들에게 <br class="pc-dn tb-dn">효율적인
+                                  <br class="tb-dn mb-dn">비즈니스 솔루션을 제공합니다.
+                              </span>
+                          </li>
+                          <li>
+                              <img src="https://jupiter.planett.co.kr/ko/src/img/customer3.webp" alt="cs">
+                              <h4>통신사 및 파트너사</h4>
+                              <span>
+                                  다양한 통신사 및 제휴사와의
+                                  <br class="tb-dn">협력을 통해 서비스를 제공하고,
+                                  <br class="tb-dn">파트너십을 통해
+                                  <br class="tb-dn mb-dn">더 발전시켜 나갑니다.
+                              </span>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="com-bottom">
+                    <div class="com-bt-bgimg" data-aos="fade-in"></div>
+                    <div class="com-bt-txt" data-aos="fade-up">
+                        <h3>글로벌 네트워크</h3>
+                        <span>플래닛티는 홍콩, 미국 등 자회사를 통해 <br class="pc-dn tb-dn">글로벌하게 운영되는 회사입니다.
+                            <br>각 자회사는 현지 시장의 특성과 고객의 니즈를 <br class="pc-dn tb-dn">정확히 파악하여 맞춤형 서비스를 제공함으로써,
+                            <br class="tb-dn">글로벌 시장에서 차별화된 경쟁력을 확보하고 있습니다.
+                        </span>
+                    </div>
+                    <img src="https://jupiter.planett.co.kr/ko/src/img/com-mapimg.webp" alt="com-map" class="com-map" data-aos="fade-in">
+                </div>
+            </div>
+            <div id="history" class="tab">
+                <div class="his-wrap">
+                    <div class="timeline">
+                        <div class="container left" >
+                          <div class="content" >
+                            <h2>2004</h2>
+                            <p><span>04</span>&nbsp;&nbsp;플래닛티 법인 설립</p>
+                            <p><span>06</span>&nbsp;&nbsp;로밍스타 브랜드 런칭</p>
+                          </div>
+                        </div>
+                        <div class="container right">
+                          <div class="content">
+                            <h2>2011</h2>
+                            <p><span>08</span>&nbsp;&nbsp;유심스토어 브랜드 런칭</p>
+                          </div>
+                        </div>
+                        <div class="container left">
+                          <div class="content">
+                            <h2>2015</h2>
+                            <p><span>01</span>&nbsp;&nbsp;와이파이에그 브랜드 런칭</p>
+                          </div>
+                        </div>
+                        <div class="container right">
+                          <div class="content">
+                            <h2>2023</h2>
+                            <p><span>03</span>&nbsp;&nbsp;이심플레이 브랜드 런칭</p>
+                          </div>
+                        </div>
+                        <div class="container left">
+                          <div class="content">
+                            <h2>2024</h2>
+                            <p><span>09</span>&nbsp;&nbsp;eSIMSTA B2B 플랫폼 런칭</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer" id="footer"> 
+            <div class="f-logo">
+                <a href="../ko/index.html">
+                    <img src="https://jupiter.planett.co.kr/ko/src/img/PLANETT_footerlogo.webp" alt="logo">
+                </a>
+                <div class="family-site pc-dn">
+                    <select name="none"  id="familySiteSelect" onchange="openLink();">
+                        <option value="none">Family Site</option>
+                        <option value="https://www.usimstore.com/shop/">유심스토어</option>
+                        <option value="https://esimplay.com/">이심플레이</option>
+                        <option value="https://smartstore.naver.com/wifiegg">와이파이에그</option>
+                   </select>
+                </div>
+            </div>
+            <div class="f-addr mb-dn">
+                <div class="f-addr-txt">
+                    <p>상호명 : (주)플래닛티&nbsp;&nbsp;|&nbsp;&nbsp;
+                        주소 : 서울특별시 강서구 양천로 424, 데시앙플렉스 1001호 (등촌동)
+                    </p>
+                    <p>대표자 : 서갑수&nbsp;&nbsp;|&nbsp;&nbsp;사업자등록번호 : 104-81-86880
+                        &nbsp;&nbsp;|&nbsp;&nbsp;통신판매업신고번호 : 2020-서울강서-2750
+                    </p>
+                    <p>전화 : 02-737-8282&nbsp;&nbsp;|&nbsp;&nbsp;팩스 : 02-775-0808&nbsp;&nbsp;|&nbsp;&nbsp;이메일 : help@usimstore.com
+                    </p>
+                    <p>
+                        개인정보보호책임자 : 서준혁
+                    </p>
+                </div>
+            </div>
+            <div class="f-addr pc-dn tb-dn">
+                <div class="f-addr-txt">
+                    상호명 : (주)플래닛티<br>
+                    주소 : 서울특별시 강서구 양천로 424, 데시앙플렉스 1001호 (등촌동)<br>
+                    대표자 : 서갑수&emsp;사업자등록번호 : 104-81-86880<br>
+                    통신판매업신고번호 : 2020-서울강서-2750<br>
+                    전화 : 02-737-8282&emsp;팩스 : 02-775-0808<br>
+                    이메일 : help@usimstore.com<br>
+                    개인정보보호책임자 : 서준혁
+                </div>
+                <div class="f-copy">
+                    Copyright ⓒ 2024 PlanetT.All rights reserved.
+                </div>
+            </div>
+            <div class="family-site mb-dn tb-dn">
+                <select name="none" onchange="window.open(value,'_blank');">
+                    <option value="none">Family Site</option>
+                    <option value="https://www.usimstore.com/shop/">유심스토어</option>
+                    <option value="https://esimplay.com/">이심플레이</option>
+                    <option value="https://smartstore.naver.com/wifiegg">와이파이에그</option>
+               </select>
+            </div>
+        </footer>
+        <div id="divGotoTop" style="display: none; position:fixed; right: 5%; bottom: 50px; z-index: 999;" class="mb-dn">
+            <a href="javascript:void(0);" id="btnGotoTop"><img src="https://jupiter.planett.co.kr/ko/src/img/fmsite.webp" alt="" style="rotate: 180deg;"></a>
+            </div>
+    </div>   
+
+
+
+    <!-- 모바일 푸터 드롭다운 -->
+    <script>
+        function openLink() {
+            var select = document.getElementById("familySiteSelect");
+            var url = select.value;
+            if (url !== "none") {
+                window.location.href = url; // 현재 창에서 이동
+            }
+        }
+        </script>
+
+    <!-- 헤더 js -->
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+          var x = document.getElementById("menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+
+<script>
+    $(function() {
+var prevScrollTop = 0;
+
+document.addEventListener("scroll", function() {
+    var nowScrollTop = $(window).scrollTop(); // 현재 스크롤 위치를 nowScrollTop에 저장
+
+    if (nowScrollTop <= 0) {
+        return;
+    }
+
+    if (nowScrollTop > prevScrollTop) {
+        $('header').addClass('active'); // 스크롤 방향(Down) 내릴 때 -> 헤더에 active 클래스 추가
+    } else {
+        $('header').removeClass('active'); // 스크롤 방향(Up) 올릴 때 -> 헤더에 active 클래스 제거
+    }
+    prevScrollTop = nowScrollTop; // prevScrollTop에 현재 스크롤 값을 저장
+});
+});
+</script>
+            <script>
+                $(document).ready(function() {
+                    $('#menu > li').click(function(e) {
+                        e.stopPropagation(); // 클릭 이벤트가 상위 요소로 전파되지 않도록 합니다.
+                        var $this = $(this);
+                        $this.toggleClass('open'); // 현재 클릭한 항목에 'open' 클래스 토글
+                        
+                        // 현재 클릭한 항목 외의 모든 항목에서 'open' 클래스 제거
+                        $('#menu > li').not($this).removeClass('open');
+                    });
+                    
+                    // 클릭 외부 영역 클릭 시 서브 메뉴 닫기
+                    $(document).click(function(e) {
+                        if (!$(e.target).closest('#menu > li').length) {
+                            $('#menu > li').removeClass('open');
+                        }
+                    });
+                });
+                    </script>
+
+
+    <!-- 부제목 탭 js -->
+     <script>
+        function openTab(tabName) {
+        document.querySelectorAll('.tab, .tabs').forEach(function(el) {
+            el.classList.remove('on');
+        });
+        document.getElementById(tabName).classList.add('on');
+        document.querySelector('.tabs[onclick="openTab(\'' + tabName + '\')"]').classList.add('on');
+    };
+
+    </script>
+
+      <!-- gototop -->
+      <script>
+        $(function () {
+            // 맨위로 이동하기
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) { // 높이 300을 기준으로 
+                    $('#divGotoTop').fadeIn();
+                    //this.console.log("show");
+                } else {
+                    $('#divGotoTop').fadeOut();
+                    //this.console.log("hide");
+                }
+            });
+            // 맨위로 버튼클릭
+            $("#btnGotoTop").click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });      
+    </script>
+    <!-- 스크롤 애니메이션 -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 700,  // 애니메이션 지속 시간 (밀리초)
+        easing: 'ease-in-out',  // 애니메이션의 이징 함수
+        delay: 100,  // 애니메이션 지연 시간 (밀리초)
+        offset: 120,  // 스크롤 감지의 시작 위치 (픽셀)
+        });
+    </script>
+
+
+</body>
+</html>

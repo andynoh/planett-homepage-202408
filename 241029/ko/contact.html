@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>플래닛티</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/contact.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./src/img/favicon.ico" type="image/x-icon">
+    <script type="text/javascript" src="./src/js/header.js"></script>
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" /> 
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfwMFMqAAAAAJ-UFpXShUBjji-vFesINLOCbX8d"></script>
+
+
+    
+
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <h1><a href="./index.html"><img src="https://jupiter.planett.co.kr/ko/src/img/PLANETT_logo.webp" alt="planett-logo"></a></h1>
+            <nav class="pc-nav">
+                <ul class="menu">
+                    <li><a href="./company.html">회사소개</a>
+                        <ul class="tab-menu">
+                            <li><a href="./company.html">소개</a></li>
+                            <li><a href="./company.html?event=history">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./brand.html">브랜드 · 상품소개</a>
+                        <ul class="tab-menu">
+                            <li><a href="./brand.html">eSIM</a></li>
+                            <li><a href="./brand.html?event=simcard">SIM Card</a></li>
+                            <li><a href="./brand.html?event=router">Mobile router</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./B2B.html">B2B 문의</a>
+                        <ul class="tab-menu">
+                            <li><a href="./B2B.html">eSIM B2B 솔루션</a></li>
+                            <li><a href="./B2B.html?event=business">비즈니스 제휴</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./support.html">채용</a>
+                    </li>
+                    <li><a href="./contact.html">고객지원</a>
+                        <ul class="tab-menu">
+                            <li><a href="./contact.html">오시는 길</a></li>
+                            <li><a href="./contact.html?event=mall">브랜드 몰</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="lang">
+                <a href="./contact.html">KOR</a>
+                <a href="../en/contact.html">ENG</a>
+                <div class="lang-img">
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/lang_img.webp" alt="lang">
+                </div>
+            </div>
+            <nav class="mb-nav">
+                <ul class="menu change" id="menu">
+                    <li><a href="#">회사소개</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.webp" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./company.html">소개</a></li>
+                            <li><a href="./company.html?event=history">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">브랜드 · 상품소개</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.webp" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./brand.html">eSIM</a></li>
+                            <li><a href="./brand.html?event=simcard">SIM Card</a></li>
+                            <li><a href="./brand.html?event=router">Mobile router</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">B2B 문의</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.webp" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./B2B.html">eSIM B2B 솔루션</a></li>
+                            <li><a href="./B2B.html?event=business">비즈니스 제휴</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./support.html">채용</a></li>
+                    <li><a href="#">고객지원</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.webp" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./contact.html">오시는 길</a></li>
+                            <li><a href="./contact.html?event=mall">브랜드 몰</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">
+                <div class="mn-icon" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+        </header>
+
+        <section class="top-banner">
+            <div class="top-content">
+                <div class="banner-tit">
+                    <h2>고객 지원</h2>
+                </div>
+                <div class="tab-container">
+                    <div id="tabroute" class="tabs on" onclick="openTab('contactus')">오시는 길</div>
+                    <div id="tabmall" class="tabs" onclick="openTab('brandmall')">브랜드몰</div>
+                </div>
+            </div>
+        </section>
+        <section class="tab_wrap">
+            <div id="contactus" class="tab on">
+                <div class="us-wrap">
+                    <div class="us-top">
+                        <div class="top-tit">
+                            <h3>Contact us</h3>
+                            <span>플래닛티에 궁금한 사항이나 필요한 정보가 있다면 <br class="pc-dn tb-dn"> 언제든지 문의해 주시기 바랍니다.</span>
+                        </div>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/map-bus.webp" alt="map" class="sim-map mb-dn tb-dn">
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/map-mb.webp" alt="map" class="sim-map pc-dn">
+                        <div class="map-btn">
+                            <a href='https://place.map.kakao.com/1410701048'>
+                                <img src="https://jupiter.planett.co.kr/ko/src/img/kakaomap.webp" alt="kakaomap">
+                                <p class="mb-dn">카카오 로드맵 보기</p>
+                                <p class="pc-dn tb-dn">카카오맵</p>
+                            </a>
+                            <a href='https://maps.app.goo.gl/efFPNkkP6S9S8puz8'>
+                                <img src="https://jupiter.planett.co.kr/ko/src/img/ggmap.webp" alt="googlemap">
+                                <p class="mb-dn">구글 로드맵 보기</p>
+                                <p class="pc-dn tb-dn">구글맵</p>
+                            </a>
+                            <a href='https://naver.me/FfMYyM3V'>
+                                <img src="https://jupiter.planett.co.kr/ko/src/img/navermap.webp" alt="navermap">
+                                <p class="mb-dn">네이버 로드맵 보기</p>
+                                <p class="pc-dn tb-dn">네이버맵</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="us-bottom">
+                        <div class="us-cont">
+                            <div class="adr-left mb-dn">
+                                <div class="adr-l-l">
+                                    <p>주소</p>
+                                    <p>전화</p>
+                                    <p>팩스</p>
+                                    <p>이메일</p>
+                                    <p>운영시간</p>
+                                </div>
+                                <div class="adr-l-r">
+                                    <span>서울특별시 강서구 양천로 424, 데시앙플렉스 1001호 (등촌동)</span>
+                                    <span>02-737-8282</span>
+                                    <span>02-775-0808</span>
+                                    <span>anss2@planett.co.kr</span>
+                                    <span>평일 09:00 ~ 18:00 &emsp;점심시간 12:00 ~ 13:00 &emsp;주말 및 공휴일 휴무</span>
+                                </div>
+                            </div>
+                            <div class="adr-left pc-dn tb-dn">
+                                <p>주소</p><span>서울특별시 강서구 양천로 424, 데시앙플렉스 1001호</span>
+                                <p>전화 · 팩스</p><span style="color: #000;">02-737-8282 · 02-775-0808</span>
+                                <p>이메일</p><span>anss2@planett.co.kr</span>
+                                <p>운영시간</p><span>평일 09:00 ~ 18:00 &emsp;점심시간 12:00 ~ 13:00<br>주말 및 공휴일 휴무</span>
+                              </div>
+                                <div class="adr-right">
+                                <div class="bus">
+                                    <p>버스 이용 시</p>
+                                    <div class="bus-sub"> 
+                                        <div class="bus-sub-l">
+                                            <button>강서한강자이아파트</button>
+                                            <button>등촌동대림아파트</button>
+                                            <button>SBS공개홀</button>
+                                        </div>
+                                        <div class="bus-sub-r">
+                                            <span style="color: #333">652&emsp;672&emsp;6657</span>
+                                            <span style="color: #333">652&emsp;672</span>
+                                            <span style="color: #333">660&emsp;6632</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="subway">
+                                    <p>지하철 이용 시</p>
+                                    <div class="subway-sub">
+                                        <button>9</button>
+                                        <p>9호선</p>
+                                        <span>가양역 10번 출구에서 800m 이내</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <button type="button" class="popup-btn pc-dn tb-dn" id="popup-btn">
+                                문의하기
+                            </button>
+                            <div class="contact-form pc-dn tb-dn" id="popup"> 
+                                <div class="us-form popup-content" >
+                                    <h3>Contact us</h3>
+                                    <button type="button" class="popup-close">&times;</button>
+                                    <form class="form_area gform" id="gform5" name="fmain_form" method="post" action="https://jupiter.planett.co.kr/api/submit" onsubmit="onSubmit5(); return false;">
+                                        <ul>
+                                            <li>
+                                                <label for="category">문의 유형</label>                                       
+                                                <select name="dropdown" id="form-select5" required class="f-select f-input" onchange="updateDropdownText5()">
+                                                    <option value="" disabled>문의유형 선택</option>
+                                                    <option value="CScenter"  selected>일반 문의</option>
+                                                    <option value="Partnership">비즈니스 제휴</option>
+                                                    <option value="B2B" >B2B 문의</option>
+                                                    <option value="Recruitment">채용 문의</option>
+                                                </select>
+                                                <input type="hidden" name="dropdownText" id="dropdownText5" class="pc-dn tb-dn mb-dn">
+                                            </li>
+                                            <li>
+                                                <label for="name">업체명</label>                
+                                                <input type="text" name="company" id="company5" class="f-input" maxlength="50">
+                                            </li>
+                                            <li>
+                                                <label for="name">이름</label>                
+                                                <input type="text" name="name" id="name5" required class="f-input" maxlength="20">
+                                            </li>
+                                            <li>
+                                                <label for="email">이메일</label>                
+                                                <input pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" type="email" name="email" required class="f-input" id="email5">             
+                                            </li>
+                                            <li>
+                                                <label for="message">문의 내용</label>
+                                                <textarea type="text" name="message" id="message5" class="f-input" style="width: auto;" required></textarea>
+                                            </li>                                
+                                        </ul>
+                                        <input type="hidden" id="recaptchaToken5" name="recaptchaToken">
+                                        <div class="responseMessage" style="margin-top: 10px;"></div>
+                                        <input type="submit" value="문의하기" class="send">
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div id="brandmall" class="tab">
+                <div class="mall-wrap">
+                    <div class="mall-top">
+                        <h3>브랜드</h3>
+                        <span>플래닛티의 쇼핑몰 및 SNS입니다. <br class="pc-dn tb-dn"> 각 브랜드의 몰을 선택하시면 해당 사이트로 이동됩니다.</span>
+                    </div>
+                    <div class="mall-contents">
+                        <ul class="mall-con-top mall-con">
+                            <li class="site-menu">
+                                <div class="mall-tit">
+                                    <img src="https://jupiter.planett.co.kr/ko/src/img/usimstore.webp" alt="usimstore">
+                                    <p class="mb-dn">유심스토어</p>
+                                </div>
+                                <div class="mall-list">
+                                    <div class="custom-select selc1">
+                                        <div class="select-selected">
+                                            <span class="mb-dn">유심스토어</span>
+                                            <img src="https://jupiter.planett.co.kr/ko/src/img/usimstore.webp" alt="usimstore" class="pc-dn tb-dn">
+                                            <div class="arrow"></div>
+                                        </div>
+                                        <ul class="select-items">
+                                            <li data-link="https://usimstore.com">자사몰</li>
+                                            <li data-link="https://smartstore.naver.com/usimstore">스마트스토어</li>
+                                            <li data-link="https://shop.coupang.com/usimstore">쿠팡</li>
+                                        </ul>
+                                    </div>
+                                    <button class="gotolink" style="background-color: #ff9e2f;">이동</button>
+                                </div>
+                            </li>
+                            <li class="site-menu">
+                                <div class="mall-tit">
+                                    <img src="https://jupiter.planett.co.kr/ko/src/img/esimplay.webp" alt="esimplay">
+                                    <p class="mb-dn">이심플레이</p>
+                                </div>
+                                <div class="mall-list">
+                                    <div class="custom-select  selc2">
+                                        <div class="select-selected">
+                                            <span class="mb-dn">이심플레이</span>
+                                            <img src="https://jupiter.planett.co.kr/ko/src/img/esimplay.webp" alt="esimplay" class="pc-dn tb-dn">
+                                            <div class="arrow"></div>
+                                        </div>
+                                        <ul class="select-items">
+                                            <li data-link="https://esimplay.com/">한국몰</li>
+                                            <li data-link="https://en.esimplay.com/">영문몰</li>
+                                            <li data-link="https://jp.esimplay.com/">일문몰</li>
+                                            <li data-link="https://cn.esimplay.com/">중국몰(간체)</li>
+                                            <li data-link="https://ch.esimplay.com/">중국몰(번체)</li>
+
+                                        </ul>
+                                    </div>
+                                    <button class="gotolink" style="background-color: #00aeff;">이동</button>
+                                </div>
+                            </li>
+                        </ul>
+                        <ul class="mall-con-bottom mall-con">
+                            <li class="site-menu">
+                                <div class="mall-tit">
+                                    <img src="https://jupiter.planett.co.kr/ko/src/img/wifi-simbol.webp" alt="wifiegg">
+                                    <p class="mb-dn">와이파이에그</p>
+                                </div>
+                                <div class="mall-list">
+                                    <div class="custom-select  selc3">
+                                        <div class="select-selected">
+                                            <img src="https://jupiter.planett.co.kr/ko/src/img/wifiegg.webp" alt="wifiegg" class="pc-dn tb-dn">
+                                            <span class="mb-dn">와이파이에그</span>
+                                            <div class="arrow"></div>
+                                        </div>
+                                        <ul class="select-items">
+                                            <li data-link="https://smartstore.naver.com/wifiegg">스마트스토어</li>
+                                        </ul>
+                                    </div>
+                                    <button class="gotolink" style="background-color: #be2409;">이동</button>
+                                </div>
+                            </li>
+                            <li class="site-menu">
+                                <div class="mall-tit">
+                                    <img src="https://jupiter.planett.co.kr/ko/src/img/sns.webp" alt="sns">
+                                    <p class="mb-dn">SNS</p>
+                                </div>
+                                <div class="mall-list">
+                                    <div class="custom-select  selc4">
+                                        <div class="select-selected">
+                                            <span class="mb-dn">플래닛티</span>
+                                            <img src="https://jupiter.planett.co.kr/ko/src/img/sns.webp" alt="sns" class="pc-dn tb-dn">
+                                            <div class="arrow"></div>
+                                        </div>
+                                        <ul class="select-items">
+                                            <li data-link="https://www.youtube.com/@usimstore9506">유심스토어 유튜브</li>
+                                            <li data-link="https://www.youtube.com/@esimplay">이심플레이 유튜브</li>
+                                            <li data-link="https://www.instagram.com/usimstore/">유심스토어 인스타그램</li>
+                                            <li data-link="https://www.instagram.com/esimplay/">이심플레이 인스타그램</li>
+                                            <li data-link="https://blog.naver.com/usimstory">네이버 블로그</li>
+                                        </ul>
+                                    </div>
+                                    <button class="gotolink" style="background-color: #73ac00;">이동</button>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+        </section>
+
+
+        <footer class="footer" id="footer"> 
+            <div class="f-logo">
+                <a href="../ko/index.html">
+                    <img src="https://jupiter.planett.co.kr/ko/src/img/PLANETT_footerlogo.webp" alt="logo">
+                </a>
+                <div class="family-site pc-dn">
+                    <select name="none"  id="familySiteSelect" onchange="openLink();">
+                        <option value="none">Family Site</option>
+                        <option value="https://www.usimstore.com/shop/">유심스토어</option>
+                        <option value="https://esimplay.com/">이심플레이</option>
+                        <option value="https://smartstore.naver.com/wifiegg">와이파이에그</option>
+                   </select>
+                </div>
+            </div>
+            <div class="f-addr mb-dn">
+                <div class="f-addr-txt">
+                    <p>상호명 : (주)플래닛티&nbsp;&nbsp;|&nbsp;&nbsp;
+                        주소 : 서울특별시 강서구 양천로 424, 데시앙플렉스 1001호 (등촌동)
+                    </p>
+                    <p>대표자 : 서갑수&nbsp;&nbsp;|&nbsp;&nbsp;사업자등록번호 : 104-81-86880
+                        &nbsp;&nbsp;|&nbsp;&nbsp;통신판매업신고번호 : 2020-서울강서-2750
+                    </p>
+                    <p>전화 : 02-737-8282&nbsp;&nbsp;|&nbsp;&nbsp;팩스 : 02-775-0808&nbsp;&nbsp;|&nbsp;&nbsp;이메일 : help@usimstore.com
+                    </p>
+                    <p>
+                        개인정보보호책임자 : 서준혁
+                    </p>
+                </div>
+            </div>
+            <div class="f-addr pc-dn tb-dn">
+                <div class="f-addr-txt">
+                    <span style="color: #fff">
+                        상호명 : (주)플래닛티<br>
+                        주소 : 서울특별시 강서구 양천로 424, 데시앙플렉스 1001호 (등촌동)<br>
+                        대표자 : 서갑수&emsp;사업자등록번호 : 104-81-86880<br>
+                        통신판매업신고번호 : 2020-서울강서-2750<br>
+                        전화 : 02-737-8282&emsp;팩스 : 02-775-0808<br>
+                        이메일 : help@usimstore.com<br>
+                        개인정보보호책임자 : 서준혁
+                    </span>
+                </div>
+                <div class="f-copy">
+                    Copyright ⓒ 2024 PlanetT.All rights reserved.
+                </div>
+            </div>
+            <div class="family-site mb-dn tb-dn">
+                <select name="none" onchange="window.open(value,'_blank');">
+                    <option value="none">Family Site</option>
+                    <option value="https://www.usimstore.com/shop/">유심스토어</option>
+                    <option value="https://esimplay.com/">이심플레이</option>
+                    <option value="https://smartstore.naver.com/wifiegg">와이파이에그</option>
+               </select>
+            </div>
+        </footer>
+        <div id="divGotoTop" style="display: none; position:fixed; right: 5%; bottom: 50px; z-index: 999;" class="mb-dn">
+            <a href="javascript:void(0);" id="btnGotoTop"><img src="https://jupiter.planett.co.kr/ko/src/img/fmsite.webp" alt=""></a>
+            </div>
+    </div>   
+
+
+    
+    <!-- 모바일 푸터 드롭다운 -->
+    <script>
+        function openLink() {
+            var select = document.getElementById("familySiteSelect");
+            var url = select.value;
+            if (url !== "none") {
+                window.location.href = url; // 현재 창에서 이동
+            }
+        }
+        </script>
+    <!-- 헤더 js -->
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+          var x = document.getElementById("menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+    <script>
+        $(function() {
+    var prevScrollTop = 0;
+
+    document.addEventListener("scroll", function() {
+        var nowScrollTop = $(window).scrollTop(); // 현재 스크롤 위치를 nowScrollTop에 저장
+
+        if (nowScrollTop <= 0) {
+            return;
+        }
+
+        if (nowScrollTop > prevScrollTop) {
+            $('header').addClass('active'); // 스크롤 방향(Down) 내릴 때 -> 헤더에 active 클래스 추가
+        } else {
+            $('header').removeClass('active'); // 스크롤 방향(Up) 올릴 때 -> 헤더에 active 클래스 제거
+        }
+        prevScrollTop = nowScrollTop; // prevScrollTop에 현재 스크롤 값을 저장
+    });
+});
+    </script>
+        <script>
+            $(document).ready(function() {
+                $('#menu > li').click(function(e) {
+                    e.stopPropagation(); // 클릭 이벤트가 상위 요소로 전파되지 않도록 합니다.
+                    var $this = $(this);
+                    $this.toggleClass('open'); // 현재 클릭한 항목에 'open' 클래스 토글
+                    
+                    // 현재 클릭한 항목 외의 모든 항목에서 'open' 클래스 제거
+                    $('#menu > li').not($this).removeClass('open');
+                });
+                
+                // 클릭 외부 영역 클릭 시 서브 메뉴 닫기
+                $(document).click(function(e) {
+                    if (!$(e.target).closest('#menu > li').length) {
+                        $('#menu > li').removeClass('open');
+                    }
+                });
+            });
+           </script>
+
+    <!-- 부제목 탭 js -->
+     <script>
+        function openTab(tabName) {
+        document.querySelectorAll('.tab, .tabs').forEach(function(el) {
+            el.classList.remove('on');
+        });
+        document.getElementById(tabName).classList.add('on');
+        document.querySelector('.tabs[onclick="openTab(\'' + tabName + '\')"]').classList.add('on');
+    }
+     </script>
+      <!-- gototop -->
+      <script>
+        $(function () {
+            // 맨위로 이동하기
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) { // 높이 300을 기준으로 
+                    $('#divGotoTop').fadeIn();
+                    //this.console.log("show");
+                } else {
+                    $('#divGotoTop').fadeOut();
+                    //this.console.log("hide");
+                }
+            });
+            // 맨위로 버튼클릭
+            $("#btnGotoTop").click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });      
+    </script>
+    <!-- 스크롤 애니메이션 -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 700,  // 애니메이션 지속 시간 (밀리초)
+        easing: 'ease-in-out',  // 애니메이션의 이징 함수
+        delay: 100,  // 애니메이션 지연 시간 (밀리초)
+        offset: 120,  // 스크롤 감지의 시작 위치 (픽셀)
+        });
+    </script>
+    <!-- 브랜드몰 링크이동 -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const customSelects = document.querySelectorAll('.custom-select');
+
+            customSelects.forEach(customSelect => {
+                const selected = customSelect.querySelector('.select-selected');
+                const items = customSelect.querySelector('.select-items');
+                const itemsList = items.querySelectorAll('li');
+                const goToLinkButton = customSelect.nextElementSibling; // "이동" 버튼은 드롭다운 다음에 위치한다고 가정
+
+                // Toggle dropdown on click
+                selected.addEventListener('click', function () {
+                    // Close all other dropdowns
+                    customSelects.forEach(otherSelect => {
+                        if (otherSelect !== customSelect) {
+                            otherSelect.querySelector('.select-items').classList.remove('show');
+                            otherSelect.querySelector('.select-selected').classList.remove('select-arrow-active');
+                        }
+                    });
+
+                    // Toggle current dropdown
+                    items.classList.toggle('show');
+                    selected.classList.toggle('select-arrow-active');
+                });
+
+                // Handle item selection based on window width
+                itemsList.forEach(item => {
+                    item.addEventListener('click', function () {
+                        const link = this.dataset.link;
+                        const text = this.textContent;
+
+                        if (link) {
+                            if (window.innerWidth <= 700) {
+                                window.open(link, '_blank'); // 700px 이하에서는 링크를 새 창에서 열기
+                                items.classList.remove('show'); // 드롭다운 닫기
+                                selected.classList.remove('select-arrow-active'); // 화살표 회전 제거
+                            } else {
+                                // For larger screens: update select-selected and close dropdown
+                                selected.querySelector('span').textContent = text; // .select-selected의 텍스트 업데이트
+                                items.querySelectorAll('li').forEach(li => li.classList.remove('selected')); // 모든 항목에서 .selected 제거
+                                this.classList.add('selected'); // 클릭한 항목에 .selected 추가
+                                items.classList.remove('show'); // 드롭다운 닫기
+                                selected.classList.remove('select-arrow-active'); // 화살표 회전 제거
+                            }
+                        }
+                    });
+                });
+
+                // Handle "이동" 버튼 click event
+                goToLinkButton.addEventListener('click', function () {
+                    if (window.innerWidth > 700) {
+                        const selectedItem = items.querySelector('.select-items .selected');
+                        if (selectedItem) {
+                            const link = selectedItem.dataset.link;
+                            if (link) {
+                                window.open(link, '_blank'); // 버튼 클릭 시 선택된 항목의 링크를 새 창에서 열기
+                            }
+                        }
+                    }
+                });
+            });
+
+            // Close dropdown if clicked outside
+            document.addEventListener('click', function (e) {
+                customSelects.forEach(customSelect => {
+                    const items = customSelect.querySelector('.select-items');
+                    const selected = customSelect.querySelector('.select-selected');
+
+                    if (!customSelect.contains(e.target)) {
+                        items.classList.remove('show');
+                        selected.classList.remove('select-arrow-active');
+                    }
+                });
+            });
+        });
+    </script>
+
+        <!-- 모바일 문의하기 팝업 -->
+        <script>
+            // 모달 요소와 모달을 여닫는 버튼 요소를 선택
+            var modal = document.getElementById("popup");
+            var btn = document.getElementById("popup-btn");
+            var closeBtn = document.getElementsByClassName("popup-close")[0];
+
+            // 버튼 클릭 시 모달 열기
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            // 닫기 버튼 클릭 시 모달 닫기
+            closeBtn.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            // 모달 바깥 영역 클릭 시 모달 닫기
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+    </script>
+    <!-- 문의하기 -->
+    <script>
+        function onSubmit5() {
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfwMFMqAAAAAJ-UFpXShUBjji-vFesINLOCbX8d', {action: 'submit_inquiry'}).then(function(token) {
+                document.getElementById('recaptchaToken5').value = token;
+
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://jupiter.planett.co.kr/api/submit', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4) {
+                        const responseMessage = document.querySelector('#gform5 .responseMessage'); // 수정된 부분
+                        const data = JSON.parse(xhr.responseText);
+                        responseMessage.style.color = data.success ? 'green' : 'red';
+                        responseMessage.innerText = data.message;
+
+                        if (data.success) {
+                            document.getElementById('gform5').reset();
+                        }
+                    }
+                };
+
+                var formData = new FormData(document.getElementById('gform5'));
+                var urlEncodedData = new URLSearchParams(formData).toString();
+                xhr.send(urlEncodedData);
+            });
+        });
+    }
+    function updateDropdownText5() {
+    var selectElement = document.getElementById('form-select5');
+    var selectedText = selectElement.options[selectElement.selectedIndex].text;
+    document.getElementById('dropdownText5').value = selectedText;  // 선택한 옵션의 텍스트 값을 숨겨진 필드에 저장
+}
+
+    </script>
+</body>
+</html>

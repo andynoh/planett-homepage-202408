@@ -1,0 +1,586 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANETT</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link rel="stylesheet" href="https://jupiter.planett.co.kr/ko/src/css/style.css">
+    <link rel="stylesheet" href="https://jupiter.planett.co.kr/ko/src/css/header.css">
+    <link rel="stylesheet" href="https://jupiter.planett.co.kr/ko/src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/brand.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="icon" href="https://jupiter.planett.co.kr/ko/src/img/favicon.ico" type="image/x-icon">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="https://jupiter.planett.co.kr/ko/src/js/header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" /> 
+
+
+
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <h1><a href="../ko/index.html"><img src="https://jupiter.planett.co.kr/ko/src/img/PLANETT_logo.png" alt="planett-logo"></a></h1>
+            <nav class="pc-nav">
+                <ul class="menu">
+                    <li><a href="./company.html">회사소개</a>
+                        <ul class="tab-menu">
+                            <li><a href="./company.html">소개</a></li>
+                            <li><a href="./company.html?event=history">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./brand.html">브랜드 · 상품소개</a>
+                        <ul class="tab-menu">
+                            <li><a href="./brand.html">eSIM</a></li>
+                            <li><a href="./brand.html?event=simcard">SIM Card</a></li>
+                            <li><a href="./brand.html?event=router">Mobile router</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./B2B.html">B2B 문의</a>
+                        <ul class="tab-menu">
+                            <li><a href="./B2B.html">eSIM B2B 솔루션</a></li>
+                            <li><a href="./B2B.html?event=business">비즈니스 제휴</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./support.html">채용</a>
+                    </li>
+                    <li><a href="./contact.html">고객지원</a>
+                        <ul class="tab-menu">
+                            <li><a href="./contact.html">오시는 길</a></li>
+                            <li><a href="./contact.html?event=mall">브랜드 몰</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="lang">
+                <a href="../ko/brand.html">KOR</a>
+                <a href="../en/brand.html">ENG</a>
+                <div class="lang-img">
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/lang_img.png" alt="lang">
+                </div>
+            </div>
+            <nav class="mb-nav">
+                <ul class="menu change" id="menu">
+                    <li><a href="#">회사소개</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.png" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./company.html">소개</a></li>
+                            <li><a href="./company.html?event=history">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">브랜드 · 상품소개</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.png" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./brand.html">eSIM</a></li>
+                            <li><a href="./brand.html?event=simcard">SIM Card</a></li>
+                            <li><a href="./brand.html?event=router">Mobile router</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">B2B 문의</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.png" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./B2B.html">eSIM B2B 솔루션</a></li>
+                            <li><a href="./B2B.html?event=business">비즈니스 제휴</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./support.html">채용</a></li>
+                    <li><a href="#">고객지원</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.png" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./contact.html">오시는 길</a></li>
+                            <li><a href="./contact.html?event=mall">브랜드 몰</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </nav>
+            <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">
+                <div class="mn-icon" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+        </header>
+
+        <section class="top-banner">
+            <div class="top-content">
+                <div class="banner-tit">
+                    <h2>브랜드 · 상품 소개</h2>
+                </div>
+                <div class="tab-container">
+                    <div class="tabs on" onclick="openTab('eSIM')">eSIM</div>
+                    <div id="tabsimcard" class="tabs" onclick="openTab('SIMCard')">SIM Card</div>
+                    <div id="tabrouter" class="tabs" onclick="openTab('Mobilerouter')">Mobile router</div>
+                </div>
+            </div>
+        </section>
+        <section class="tab_wrap">
+            <div id="eSIM" class="tab on">
+                <div class="esim-wrap">
+                    <div class="pdt-top">
+                        <div class="pdt-tit">
+                            <h3>eSIM</h3>
+                            <span>3세대 로밍 eSIM 구매 플랫폼 이심플레이는
+                                <br>전세계에서 사용 가능한 다양한 상품을 판매하고 있으며,
+                                <br>실물없이 QR코드 스캔만으로 <br class="pc-dn tb-dn">간편하게 해외 데이터를 <br class="pc-dn mb-dn"> 이용할 수 있는 서비스 입니다.
+                            </span>
+                        </div>
+                        <div class="pdt-img">
+                            <img src="https://jupiter.planett.co.kr/ko/src/img/esim.png" alt="esim">
+                        </div>
+                    </div>
+                    <div class="mb-slide swiper mySwiper" >
+                        <div class="pdt-list tb-dn pc-dn swiper-container mb-pdtlist1">
+                            <ul class="swiper-wrapper" >
+                                <li class="swiper-slide">
+                                    <div class="pdt-li-tit">특징</div>
+                                    <ul class="pdt-sublist">
+                                        <li>글로벌 커버리지</li>
+                                        <li>간편한 활성화
+                                            <p>QR코드 스캔 방식</p>
+                                        </li>
+                                        <li>다국가 언어 지원
+                                            <p>한국어 · 영어 · 일본어 · 중국어(간체/번체)</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="pdt-li-tit">장점</div>
+                                    <ul class="pdt-sublist">
+                                        <li>해외여행 시 번거로운 유심 교체 불필요</li>
+                                        <li>다양한 요금제 선택 가능</li>
+                                        <li>빠르고 안정적인 데이터 통신 환경 제공</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div> 
+                        <div class="page-box">
+                            <div class="swiper-pagination1 pc-dn tb-dn"></div>
+                        </div>
+                    </div>
+                    <div class="pdt-list mb-dn">
+                        <ul>
+                            <li>
+                                <div class="pdt-li-tit">특징</div>
+                                <ul class="pdt-sublist">
+                                    <li>글로벌 커버리지</li>
+                                    <li>간편한 활성화
+                                        <p>QR코드 스캔 방식</p>
+                                    </li>
+                                    <li>다국가 언어 지원
+                                        <p>한국어 · 영어 · 일본어 · 중국어(간체/번체)</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="pdt-li-tit">장점</div>
+                                <ul class="pdt-sublist">
+                                    <li>해외 여행 시 번거로운 유심 교체 불필요</li>
+                                    <li>다양한 요금제 선택 가능</li>
+                                    <li>빠르고 안정적인 데이터 통신 환경 제공</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="site-link" data-aos="fade-up">
+                        <div class="link-tit">
+                            브랜드몰 바로가기
+                        </div>
+                        <div class="link-logo">
+                            <a href="https://esimplay.com" target='_blank'><img src="https://jupiter.planett.co.kr/ko/src/img/esimplay.png" alt="esimplay-logo"></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div id="SIMCard" class="tab">
+                <div class="simcard-wrap">
+                    <div class="pdt-top">
+                        <div class="pdt-tit">
+                            <h3>SIM Card</h3>
+                            <span>2011년 출시 이후 <br class="pc-dn tb-dn"> 10년 넘게 고객의 꾸준한 사랑을 받는
+                                <br>플래닛티의 대표 브랜드인 유심스토어는
+                                <br class="tb-dn">국내 최대 커버리지와<br class="pc-dn mb-dn"> 다양한 요금제로 <br class="pc-dn tb-dn">업계를 선도하고 있습니다.
+                            </span>
+                        </div>
+                        <div class="pdt-img">
+                            <img src="https://jupiter.planett.co.kr/ko/src/img/simcard.png" alt="simcard">
+                        </div>
+                    </div>
+                    <div class="mb-slide swiper mySwiper">
+                        <div class="pdt-list tb-dn pc-dn swiper-container mb-pdtlist2">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="pdt-li-tit">특징</div>
+                                    <ul class="pdt-sublist">
+                                        <li>글로벌 커버리지</li>
+                                        <li>다양한 상품 라인업
+                                            <p>국가별 맞춤형 유심 카드 제공</p>
+                                        </li>
+                                        <li>높은 고객 만족도
+                                            <p>40만 건 이상의 고객 리뷰</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="pdt-li-tit">장점</div>
+                                    <ul class="pdt-sublist">
+                                        <li>우수한 가성비</li>
+                                        <li>다양한 국가에서 사용 가능</li>
+                                        <li>안정적인 통신 품질</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="page-box">
+                            <div class="swiper-pagination2 pc-dn tb-dn"></div>
+                        </div>
+                    </div>
+                    <div class="pdt-list mb-dn">
+                        <ul>
+                            <li>
+                                <div class="pdt-li-tit">특징</div>
+                                <ul class="pdt-sublist">
+                                    <li>글로벌 커버리지</li>
+                                    <li>다양한 상품 라인업
+                                        <p>국가별 맞춤형 유심 카드 제공</p>
+                                    </li>
+                                    <li>높은 고객 만족도
+                                        <p>40만 건 이상의 고객 리뷰</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="pdt-li-tit">장점</div>
+                                <ul class="pdt-sublist">
+                                    <li>우수한 가성비</li>
+                                    <li>다양한 국가에서 사용 가능</li>
+                                    <li>안정적인 통신 품질</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="site-link" data-aos="fade-up">
+                        <div class="link-tit">
+                            브랜드몰 바로가기
+                        </div>
+                        <div class="link-logo">
+                            <a href="https://usimstore.com" target='_blank'><img src="https://jupiter.planett.co.kr/ko/src/img/usimstore.png" alt="usimstore-logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="Mobilerouter" class="tab">
+                <div class="router-wrap">
+                    <div class="pdt-top">
+                        <div class="pdt-tit">
+                            <h3>Mobile router</h3>
+                            <span>글로벌 데이터 네트워크를 기반으로,
+                                <br class="tb-dn">최대 5개 기기까지 <br class="pc-dn mb-dn">동시 연결하여 <br class="pc-dn tb-dn"> 안정적인 네트워크 환경을 제공하는
+                                <br>포켓 와이파이 대여 · 판매 브랜드입니다.
+                            </span>
+                        </div>
+                        <div class="pdt-img">
+                            <img src="https://jupiter.planett.co.kr/ko/src/img/router.png" alt="mobilerouter">
+                        </div>
+                    </div>
+                    <div class="mb-slide swiper mySwiper">
+                        <div class="pdt-list tb-dn pc-dn swiper-container mb-pdtlist3">
+                            <ul class="swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="pdt-li-tit">특징</div>
+                                    <ul class="pdt-sublist">
+                                        <li>글로벌 데이터 네트워크</li>
+                                        <li>다기기 동시 연결
+                                            <p>최대 5개 기기까지 자유롭게 사용</p>
+                                        </li>
+                                        <li>간편한 휴대성
+                                            <p>복잡한 설정 없이 가볍게 사용</p>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="pdt-li-tit">장점</div>
+                                    <ul class="pdt-sublist">
+                                        <li>합리적인 가격으로 다양한 기기에서 와이파이 사용 가능</li>
+                                        <li>배터리가 장착되어 있어 어디서든 사용 가능</li>
+                                        <li>어디서든 빠르고 안정적인 와이파이 환경</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="page-box">
+                            <div class="swiper-pagination3 pc-dn tb-dn"></div>
+                        </div>
+                    </div>
+                    <div class="pdt-list mb-dn">
+                        <ul>
+                            <li>
+                                <div class="pdt-li-tit">특징</div>
+                                <ul class="pdt-sublist">
+                                    <li>글로벌 데이터 네트워크</li>
+                                    <li>다기기 동시 연결
+                                        <p>최대 5개 기기까지 자유롭게 사용</p>
+                                    </li>
+                                    <li>간편한 휴대성
+                                        <p>복잡한 설정 없이 가볍게 사용</p>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="pdt-li-tit">장점</div>
+                                <ul class="pdt-sublist">
+                                    <li>합리적인 가격으로 다양한 기기에서 와이파이 사용 가능</li>
+                                    <li>배터리가 장착되어 있어 어디서든 사용 가능</li>
+                                    <li>어디서든 빠르고 안정적인 와이파이 환경</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="site-link" data-aos="fade-up">
+                        <div class="link-tit">
+                            브랜드몰 바로가기
+                        </div>
+                        <div class="link-logo">
+                            <a href="https://smartstore.naver.com/wifiegg" target='_blank'><img src="https://jupiter.planett.co.kr/ko/src/img/wifiegg.png" alt="wifiegg-logo"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer" id="footer"> 
+            <div class="f-logo">
+                <a href="../ko/index.html">
+                    <img src="https://jupiter.planett.co.kr/ko/src/img/PLANETT_footerlogo.png" alt="logo">
+                </a>
+                <div class="family-site pc-dn">
+                    <select name="none"  id="familySiteSelect" onchange="openLink();">
+                        <option value="none">Family Site</option>
+                        <option value="https://www.usimstore.com/shop/">유심스토어</option>
+                        <option value="https://esimplay.com/">이심플레이</option>
+                        <option value="https://smartstore.naver.com/wifiegg">와이파이에그</option>
+                   </select>
+                </div>
+            </div>
+            <div class="f-addr mb-dn">
+                <div class="f-addr-txt">
+                    <p>상호명 : (주)플래닛티&nbsp;&nbsp;|&nbsp;&nbsp;
+                        주소 : 서울특별시 강서구 양천로 424, 데시앙플렉스 1001호 (등촌동)
+                    </p>
+                    <p>대표자 : 서갑수&nbsp;&nbsp;|&nbsp;&nbsp;사업자등록번호 : 104-81-86880
+                        &nbsp;&nbsp;|&nbsp;&nbsp;통신판매업신고번호 : 2020-서울강서-2750
+                    </p>
+                    <p>전화 : 02-737-8282&nbsp;&nbsp;|&nbsp;&nbsp;팩스 : 02-775-0808&nbsp;&nbsp;|&nbsp;&nbsp;이메일 : help@usimstore.com
+                    </p>
+                    <p>
+                        개인정보보호책임자 : 서준혁
+                    </p>
+                </div>
+            </div>
+            <div class="f-addr pc-dn tb-dn">
+                <div class="f-addr-txt">
+                    상호명 : (주)플래닛티<br>
+                    주소 : 서울특별시 강서구 양천로 424, 데시앙플렉스 1001호 (등촌동)<br>
+                    대표자 : 서갑수&emsp;사업자등록번호 : 104-81-86880<br>
+                    통신판매업신고번호 : 2020-서울강서-2750<br>
+                    전화 : 02-737-8282&emsp;팩스 : 02-775-0808<br>
+                    이메일 : help@usimstore.com<br>
+                    개인정보보호책임자 : 서준혁
+                </div>
+                <div class="f-copy">
+                    Copyright ⓒ 2024 PlanetT.All rights reserved.
+                </div>
+            </div>
+            <div class="family-site mb-dn tb-dn">
+                <select name="none" onchange="window.open(value,'_blank');">
+                    <option value="none">Family Site</option>
+                    <option value="https://www.usimstore.com/shop/">유심스토어</option>
+                    <option value="https://esimplay.com/">이심플레이</option>
+                    <option value="https://smartstore.naver.com/wifiegg">와이파이에그</option>
+               </select>
+            </div>
+        </footer>
+        <div id="divGotoTop" style="display: none; position:fixed; right: 5%; bottom: 50px; z-index: 999;" class="mb-dn">
+            <a href="javascript:void(0);" id="btnGotoTop"><img src="https://jupiter.planett.co.kr/ko/src/img/fmsite.png" alt="" style="rotate: 180deg;"></a>
+            </div>
+    </div>   
+
+
+
+        <!-- 모바일 푸터 드롭다운 -->
+        <script>
+            function openLink() {
+                var select = document.getElementById("familySiteSelect");
+                var url = select.value;
+                if (url !== "none") {
+                    window.location.href = url; // 현재 창에서 이동
+                }
+            }
+            </script>
+    <!-- 헤더 js -->
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+          var x = document.getElementById("menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+
+<script>
+    $(function() {
+var prevScrollTop = 0;
+
+document.addEventListener("scroll", function() {
+    var nowScrollTop = $(window).scrollTop(); // 현재 스크롤 위치를 nowScrollTop에 저장
+
+    if (nowScrollTop <= 0) {
+        return;
+    }
+
+    if (nowScrollTop > prevScrollTop) {
+        $('header').addClass('active'); // 스크롤 방향(Down) 내릴 때 -> 헤더에 active 클래스 추가
+    } else {
+        $('header').removeClass('active'); // 스크롤 방향(Up) 올릴 때 -> 헤더에 active 클래스 제거
+    }
+    prevScrollTop = nowScrollTop; // prevScrollTop에 현재 스크롤 값을 저장
+});
+});
+</script>
+            <script>
+                $(document).ready(function() {
+                    $('#menu > li').click(function(e) {
+                        e.stopPropagation(); // 클릭 이벤트가 상위 요소로 전파되지 않도록 합니다.
+                        var $this = $(this);
+                        $this.toggleClass('open'); // 현재 클릭한 항목에 'open' 클래스 토글
+                        
+                        // 현재 클릭한 항목 외의 모든 항목에서 'open' 클래스 제거
+                        $('#menu > li').not($this).removeClass('open');
+                    });
+                    
+                    // 클릭 외부 영역 클릭 시 서브 메뉴 닫기
+                    $(document).click(function(e) {
+                        if (!$(e.target).closest('#menu > li').length) {
+                            $('#menu > li').removeClass('open');
+                        }
+                    });
+                });
+                    </script>
+
+    <!-- 부제목 탭 js -->
+     <script>
+        function openTab(tabName) {
+        document.querySelectorAll('.tab, .tabs').forEach(function(el) {
+            el.classList.remove('on');
+        });
+        document.getElementById(tabName).classList.add('on');
+        document.querySelector('.tabs[onclick="openTab(\'' + tabName + '\')"]').classList.add('on');
+    }
+     </script>
+      <!-- gototop -->
+      <script>
+        $(function () {
+            // 맨위로 이동하기
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) { // 높이 300을 기준으로 
+                    $('#divGotoTop').fadeIn();
+                    //this.console.log("show");
+                } else {
+                    $('#divGotoTop').fadeOut();
+                    //this.console.log("hide");
+                }
+            });
+            // 맨위로 버튼클릭
+            $("#btnGotoTop").click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });      
+    </script>
+    <!-- 스크롤 애니메이션 -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 500,  // 애니메이션 지속 시간 (밀리초)
+        easing: 'ease-in-out',  // 애니메이션의 이징 함수
+        delay: 100,  // 애니메이션 지연 시간 (밀리초)
+        offset: 120,  // 스크롤 감지의 시작 위치 (픽셀)
+        });
+    </script>
+    <!-- 모바일 특,장 슬라이드 -->
+    <script>
+        var swiper1 = new Swiper('.mb-pdtlist1', {
+            autoplay: {
+                    delay: 2000, 
+                        // 슬라이드가 자동으로 전환되기까지의 시간 간격
+                    desableOnInteraction: false, 
+                        // arrow나 pagination이용 후 자동 재생을 비활성화 할지의 여부
+                      },
+            speed: 1500,
+            // 슬라이드가 자동으로 전환되는 속도를 설정
+            loop: true,
+            slidesPerView: "1",
+            // 슬라이드가 표시되는 갯수를 설정
+            pagination: {
+                    el: '.swiper-pagination1',
+                    type: "fraction",
+                    clickable: true,
+                    },
+            // Enable debugger
+            debugger: true
+        });
+        var swiper2 = new Swiper('.mb-pdtlist2', {
+            autoplay: {
+                    delay: 1800, 
+                        // 슬라이드가 자동으로 전환되기까지의 시간 간격
+                    desableOnInteraction: false, 
+                        // arrow나 pagination이용 후 자동 재생을 비활성화 할지의 여부
+                      },
+            speed: 1500,
+            // 슬라이드가 자동으로 전환되는 속도를 설정
+            loop: true,
+            slidesPerView: "1",
+            // 슬라이드가 표시되는 갯수를 설정
+            pagination: {
+                    el: '.swiper-pagination2',
+                    type: "fraction",
+                    clickable: true,
+                    },
+            // Enable debugger
+            debugger: true
+        });
+        var swiper2 = new Swiper('.mb-pdtlist3', {
+            autoplay: {
+                    delay: 1800, 
+                        // 슬라이드가 자동으로 전환되기까지의 시간 간격
+                    desableOnInteraction: false, 
+                        // arrow나 pagination이용 후 자동 재생을 비활성화 할지의 여부
+                      },
+            speed: 1500,
+            // 슬라이드가 자동으로 전환되는 속도를 설정
+            loop: true,
+            slidesPerView: "1",
+            // 슬라이드가 표시되는 갯수를 설정
+            pagination: {
+                    el: '.swiper-pagination3',
+                    type: "fraction",
+                    clickable: true,
+                    },
+            // Enable debugger
+            debugger: true
+        });
+
+    </script>
+</body>
+</html>

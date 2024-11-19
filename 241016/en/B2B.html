@@ -1,0 +1,825 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANETT</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable.min.css" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/b2b.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./src/img/favicon.ico" type="image/x-icon">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="./src/js/header.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfwMFMqAAAAAJ-UFpXShUBjji-vFesINLOCbX8d"></script>
+
+
+    <meta name="viewport" content="initial-scale=1.0; maximum-scale=1.0; minimum-scale=1.0; user-scalable=no;" /> 
+
+    
+
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <h1><a href="./index.html"><img src="https://jupiter.planett.co.kr/en/src/img/PLANETT_logo.webp" alt="planett-logo"></a></h1>
+            <nav class="pc-nav">
+                <ul class="menu">
+                    <li><a href="./company.html">Company</a>
+                        <ul class="tab-menu">
+                            <li><a href="./company.html">About us</a></li>
+                            <li><a href="./company.html?event=history">History</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./brand.html">Brand · Product</a>
+                        <ul class="tab-menu">
+                            <li><a href="./brand.html">eSIM</a></li>
+                            <li><a href="./brand.html?event=simcard">SIM Card</a></li>
+                            <li><a href="./brand.html?event=router">Mobile router</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./B2B.html">B2B</a>
+                        <ul class="tab-menu">
+                            <li><a href="./B2B.html">eSIM B2B solutions</a></li>
+                            <li><a href="./B2B.html?event=business">Business partnership</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./support.html">Employment</a>
+                    </li>
+                    <li><a href="./contact.html">CS</a>
+                        <ul class="tab-menu">
+                            <li><a href="./contact.html">Address</a></li>
+                            <li><a href="./contact.html?event=mall">Brand mall</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="lang">
+                <a href="../ko/B2B.html">KOR</a>
+                <a href="./B2B.html">ENG</a>
+                <div class="lang-img">
+                        <img src="https://jupiter.planett.co.kr/en/src/img/lang_img.webp" alt="lang">
+                </div>
+            </div>
+            <nav class="mb-nav">
+                <ul class="menu change" id="menu">
+                    <li><a href="#">Company</a>
+                        <img src="https://jupiter.planett.co.kr/en/src/img/subicon.webp" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./company.html">About us</a></li>
+                            <li><a href="./company.html?event=history">History</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Brand · Product</a>
+                        <img src="https://jupiter.planett.co.kr/en/src/img/subicon.webp" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./brand.html">eSIM</a></li>
+                            <li><a href="./brand.html?event=simcard">SIM Card</a></li>
+                            <li><a href="./brand.html?event=router">Mobile router</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">B2B</a>
+                        <img src="https://jupiter.planett.co.kr/en/src/img/subicon.webp" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./B2B.html">eSIM B2B solutions</a></li>
+                            <li><a href="./B2B.html?event=business">Business partnership</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./support.html">Employment</a></li>
+                    <li><a href="#">CS</a>
+                        <img src="https://jupiter.planett.co.kr/en/src/img/subicon.webp" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./contact.html">Address</a></li>
+                            <li><a href="./contact.html?event=mall">Brand mall</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </nav>
+            <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">
+                <div class="mn-icon" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+        </header>
+
+        <section class="top-banner">
+            <div class="top-content">
+                <div class="banner-tit">
+                    <h2>B2B</h2>
+                </div>
+                <div class="tab-container">
+                    <div class="tabs on" onclick="openTab('solution')">eSIM B2B solutions</div>
+                    <div id="tabbusiness" class="tabs" onclick="openTab('business')">Business partnership</div>
+                </div>
+            </div>
+        </section>
+        <section class="tab_wrap">
+            <div id="solution" class="tab on">
+                <div class="sol-wrap">
+                    <div class="sol-top">
+                      <div class="sol-img"  data-aos="fade-in"></div>
+                      <div class="sol-txt" data-aos="fade-up" >
+                          <h3 data-aos="fade-up">API-based global eSIM wholesale platform <br class="pc-dn tb-dn"> eSIM Station</h3>
+                          <h4>Unlock the Future of Connectivity <br class="tb-dn">with Seamless Global eSIM Integration</h4>
+                          <span>Planet T's B2B eSIM Wholesale platform is 
+                            <br>a cutting-edge online marketplace that allows businesses 
+                            <br>to purchase eSIMs in bulk and resell them instantly.
+                          </span>
+                          <br>
+                          <br>
+
+                          <span>
+                            The virtual nature of eSIMs eliminates the need for physical SIM cards,
+                            <br>streamlining business operations, reducing logistics costs, 
+                            <br>and facilitating faster transactions.
+                          </span>
+                      </div>
+                    </div>
+                </div>
+                <div class="sol-mid1 sol-mid">
+                  <h3 data-aos="fade-up">Interlocking effect</h3>
+                  <div class="sol-mid-content">
+                      <ul class="effect">
+                          <li>
+                            <ul class="effect-sub">
+                                <li data-aos="fade-up">
+                                    <h4>Growing our market share and entering new markets</h4>
+                                    <span>
+                                        The introduction of eSIM as a new product category presents opportunities for business growth and increased revenue. By targeting diverse markets and customer segments, we can create additional revenue streams.                                    </span>
+                                </li>
+                                <li data-aos="fade-up">
+                                    <h4>Fast and easy system integration</h4>
+                                    <span>
+                                        By utilizing the RESTful API and JSON data format of eSIM Station, you can easily integrate it into your system and quickly start operations.
+                                    </span>
+                                </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <ul class="effect-sub">
+                                <li data-aos="fade-up">
+                                    <h4>Relief of inventory management burden</h4>
+                                    <span>
+                                        With eSIM Station, you can effortlessly sell eSIMs from multiple global telecommunications companies without the hassle of managing separate inventories. This eliminates inventory risks and optimizes operational efficiency.                                    </span>
+                                </li>
+                                <li data-aos="fade-up">
+                                    <h4>Global telecommunication network accessibility</h4>
+                                    <span>
+                                        Our partnerships with global telecommunications companies enable us to provide worldwide coverage and a diverse range of options for our customers.                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="sol-mid2 sol-mid">
+                  <h3 data-aos="fade-up">Feature</h3>
+                  <div class="sol-mid-icon mb-dn">
+                      <ul class="function1 function">
+                          <li>
+                              <img src="https://jupiter.planett.co.kr/en/src/img/api.webp" alt="api">
+                              <h4>RESTful API support</h4>
+                              <span>
+                                Easily access the system through standardized APIs 
+                                that provide simple integration and scalability.
+                              </span>
+                          </li>
+                          <li>
+                            <img src="https://jupiter.planett.co.kr/en/src/img/json.webp" alt="json">
+                              <h4>JSON data format</h4>
+                              <span>
+                                Using JSON format for intuitive and
+                                efficient data processing and exchange
+                              </span>
+                          </li>
+                          <li>
+                            <img src="https://jupiter.planett.co.kr/en/src/img/search.webp" alt="search">
+                              <h4>Product search</h4>
+                              <span>
+                                Check the latest eSIM product information in real time.
+                              </span>
+                          </li>
+                        </ul>
+                        <ul class="function2 function">
+                            <li>
+                              <img src="https://jupiter.planett.co.kr/en/src/img/manage.webp" alt="manage">
+                                <h4>Order management</h4>
+                                <span>
+                                    Easily process eSIM orders through the API and track order status in real time.
+                                </span>
+                            </li>
+                            <li>
+                              <img src="https://jupiter.planett.co.kr/en/src/img/order.webp" alt="order">
+                                <h4>Real-time order tracking</h4>
+                                <span>
+                                    Check your order history anytime through the API and quickly gather necessary information.
+                                </span>
+                            </li>
+                        </ul>
+                  </div>
+                  <div class="icon-swiper swiper mySwiper pc-dn tb-dn" data-aos="fade-up">
+                      <div class="sol-mid-icon  swiper-container icon-slide">
+                        <ul class="function swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="https://jupiter.planett.co.kr/en/src/img/api.webp" alt="api">
+                              <h4>RESTful API support</h4>
+                              <span>
+                                Easily access the system through standardized APIs 
+                                that provide simple integration and scalability.
+                              </span>
+                            </li>
+                            <li class="swiper-slide">
+                              <img src="https://jupiter.planett.co.kr/en/src/img/json.webp" alt="json">
+                              <h4>JSON data format</h4>
+                              <span>
+                                Using JSON format for intuitive and
+                                efficient data processing and exchange
+                              </span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="https://jupiter.planett.co.kr/en/src/img/search.webp" alt="search">
+                                <h4>Product search</h4>
+                              <span>
+                                Check the latest eSIM product information in real time.
+                              </span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="https://jupiter.planett.co.kr/en/src/img/manage.webp" alt="manage">
+                                <h4>Order management</h4>
+                                <span>
+                                    Easily process eSIM orders through the API and track order status in real time.
+                                </span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="https://jupiter.planett.co.kr/en/src/img/order.webp" alt="order">
+                                <h4>Real-time order tracking</h4>
+                                <span>
+                                    Check your order history anytime through the API 
+                                    and quickly gather necessary information.
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="swiper-button-prev pc-dn tb-dn"></div>
+                        <div class="swiper-button-next pc-dn tb-dn"></div>
+                        <div class="page-box">
+                            <div class="swiper-pagination1 pc-dn tb-dn"></div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="sol-mid3 sol-mid">
+                    <h3 data-aos="fade-up">Introduction process</h3>
+                    <div class="step" data-aos="fade-in">
+                        <ul class="step-sub step-top">
+                            <li class="step-cont">
+                                <p>STEP 01.</p>
+                                <h4>Contract Execution</h4>
+                                <span>Sign a service agreement to begin using our platform.</span>
+                            </li>
+                            <li class="step-cont bottom">
+                                <p>STEP 02.</p>
+                                <h4>Account and Credential Setup</h4>
+                                <span>Create an affiliate administrator account and receive API authentication credentials.</span>
+                            </li>
+                            <li class="step-cont">
+                                <p>STEP 03.</p>
+                                <h4>Product and Pricing Configuration</h4>
+                                <span>Set up the products you'll sell and their corresponding supply prices.</span>
+                            </li>
+                            <li class="step-cont bottom">
+                                <p>STEP 04.</p>
+                                <h4>API Integration Development</h4>
+                                <span>Integrate your affiliate system with our eSIM Station API.</span>
+                            </li>
+                            <li class="step-cont">
+                                <p>STEP 05.</p>
+                                <h4>Service Operation and Management</h4>
+                                <span>Begin using our service and manage your operations.</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="step-right tb-dn mb-dn">
+                        <img src="https://jupiter.planett.co.kr/en/src/img/step-right.webp" alt="step>">
+                    </div>
+                </div>
+                <div class="sol-bottom">
+                    <h3 data-aos="fade-up">Introduce B2B eSIM solutions and discover more global business opportunities.</h3>
+                    <div class="form">
+                        <h3>eSIM B2B Inquiry</h3>
+                        <span class="mb-dn">Please write the following content below and we will respond promptly.</span>
+                        <form class="form_area gform" id="gform3" name="fmain_form" method="post" action="https://jupiter.planett.co.kr/api/submit" onsubmit="onSubmit3(); return false;">
+                            <ul>
+                                <li class="form-top">
+                                    <div>
+                                        <label for="category">Category</label>                                       
+                                        <select name="dropdown" id="form-select3" required class="f-select f-input" onchange="updateDropdownText3()">
+                                            <option value="" disabled >Choose a category.</option>
+                                            <option value="CScenter">General inquiry</option>
+                                            <option value="Partnership" >Business partnership</option>
+                                            <option value="B2B" selected >B2B Inquiry</option>
+                                            <option value="Recruitment">Employment inquiry</option>
+                                        </select>
+                                        <input type="hidden" name="dropdownText" id="dropdownText3" class="pc-dn tb-dn mb-dn">
+                                    </div>
+                                    <div>
+                                        <label for="name">Company</label>                
+                                        <input type="text" name="company" id="company3" class="f-input" maxlength="50">
+                                    </div>
+                                </li>
+                                <li class="form-bottom">
+                                    <div>
+                                        <label for="name">Name</label>                
+                                        <input type="text" name="name" id="name3" required class="f-input" maxlength="20">
+                                    </div>
+                                    <div>
+                                        <label for="email">Email</label>                
+                                        <input pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" type="email" name="email" required class="f-input" id="email3">             
+                                    </div>
+                                </li>
+                                <li>
+                                    <label for="message">Inquiry content</label>
+                                    <textarea type="text" name="message" id="message3" class="f-input" style="width: auto;" required></textarea>
+                                </li>                                
+                            </ul>
+                            <input type="hidden" id="recaptchaToken3" name="recaptchaToken">
+                            <div class="responseMessage" style="margin-top: 10px;"></div>
+                            <input type="submit" value="Submit" class="send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div id="business" class="tab">
+                <div class="busi-wrap">
+                    <div class="busi-top">
+                        <h3 data-aos="fade-up">Affiliate Information</h3>
+                        <span data-aos="fade-up">Planet T is pursuing innovative and mutually beneficial business partnerships 
+                            <br class="tb-dn mb-dn">in various fields such as retail, travel industry, telecommunications, and marketing. 
+                            <br class="tb-dn mb-dn">We are seeking opportunities to grow with our partners based on our global network and expertise.</span>
+                        <img src="https://jupiter.planett.co.kr/en/src/img/businessgroup.webp" alt="group" data-aos="fade-in">
+                    </div>
+                    <div class="busi-mid swiper mySwiper">
+                        <h3 data-aos="fade-up">Affiliate field</h3>
+                        <div class="slide-container swiper-container">
+                            <div class="swiper-button-prev"></div>
+                            <ul class="part-slide swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="part-tit">
+                                        <h4>Wholesale partnership</h4>
+                                        <img src="https://jupiter.planett.co.kr/en/src/img/part1.webp" alt="1">
+                                    </div>
+                                    <div class="part-txt">
+                                        Planet T is strengthening its position in the global market 
+                                        through collaboration with various wholesale partners. 
+                                        By partnering with global roaming service providers, 
+                                        distribution partners, travel industry companies, 
+                                        and resellers, it provides services to a wider range of customers. 
+                                        <br>
+                                        In particular, it has launched eSIM Station, 
+                                        a global eSIM wholesale platform based on API, 
+                                        to help business partners operate more efficiently, 
+                                        reduce logistics costs, and support fast transactions.
+                                    </div>
+                                    <ul class="part-list">
+                                        <li>Global roaming service provider</li>
+                                        <li>Distribution partner</li>
+                                        <li>Travel industry company</li>
+                                        <li>Reseller</li>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="part-tit">
+                                        <h4>Retail partnership</h4>
+                                        <img src="https://jupiter.planett.co.kr/en/src/img/part2.webp" alt="2">
+                                    </div>
+                                    <div class="part-txt">
+                                        We are expanding our sales channels targeting online shopping malls, 
+                                        offline stores, overseas travelers, and corporate clients. 
+                                        <br>
+                                        Our retail partnership with Planet T provides an opportunity 
+                                        to increase competitiveness in the market by supplying products 
+                                        of reasonable price and good quality.
+                                    </div>
+                                    <ul class="part-list">
+                                        <li>Online shopping mall</li>
+                                        <li>Offline store</li>
+                                        <li>Sales targeting overseas travelers</li>
+                                        <li>Sales targeting corporations</li>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="part-tit">
+                                        <h4>Travel industry partnership</h4>
+                                        <img src="https://jupiter.planett.co.kr/en/src/img/part3.webp" alt="3">
+                                    </div>
+                                    <div class="part-txt">
+                                        We support convenient and smooth data usage during travel 
+                                        by combining and selling travel products such as hotels, 
+                                        tickets, and tours through partnerships.
+                                    </div>
+                                    <ul class="part-list">
+                                        <li>Travel platform<br>
+                                            Providing travel-related services such as
+                                            <br>overseas roaming services, eSIM sales, etc.
+                                            </li>
+                                        <li>Travel agencies and OTAs (Online Travel Agencies)</li>
+                                        <li>Airlines and cruise lines</li>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="part-tit">
+                                        <h4>Telecommunications partnership</h4>
+                                        <img src="https://jupiter.planett.co.kr/en/src/img/part4.webp" alt="4">
+                                    </div>
+                                    <div class="part-txt">
+                                        Planet T offers reliable and extensive communication services 
+                                        by partnering with MNOs and MVNOs. 
+                                        This collaboration ensures that our customers 
+                                        enjoy the best possible communication experience. 
+                                        <br>
+                                        Moreover, Planet T holds distribution rights 
+                                        for LG U+ inbound products and actively supports 
+                                        our partners in expanding their product sales, 
+                                        facilitating successful sales through diverse channels.
+                                    </div>
+                                    <ul class="part-list">
+                                        <li>MNO (Mobile Network Operator)</li>
+                                        <li>MVNO (Mobile Virtual Network Operator)</li>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="part-tit">
+                                        <h4>Marketing partnership</h4>
+                                        <img src="https://jupiter.planett.co.kr/en/src/img/part5.webp" alt="5">
+                                    </div>
+                                    <div class="part-txt">
+                                        We collaborate with influencers, creators, 
+                                        and media to amplify Planet T's brand value. 
+                                        By leveraging diverse marketing channels, 
+                                        we aim to introduce our innovative services 
+                                        and products to a broader audience.
+                                    </div>
+                                    <ul class="part-list">
+                                        <li>Influencer/creator</li>
+                                        <li>Content creator</li>
+                                        <li>Media</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="busi-bottom">
+                        <h3 data-aos="fade-up">Try creating more sales opportunities <br class="pc-dn mb-dn">through business partnerships.</h3>
+                        <div class="form">
+                            <h3>Partnership Inquiry</h3>
+                            <span class="mb-dn">Please write the following content below and we will respond promptly.</span>
+    
+                            <form class="form_area gform" id="gform4" name="fmain_form" method="post" action="https://jupiter.planett.co.kr/api/submit" onsubmit="onSubmit4(); return false;">
+                                <ul>
+                                    <li class="form-top">
+                                        <div>
+                                            <label for="category">Category</label>                                       
+                                            <select name="dropdown" id="form-select4" required class="f-select f-input" onchange="updateDropdownText4()">
+                                                <option value="" disabled >Choose a category.</option>
+                                                <option value="CScenter">General inquiry</option>
+                                                <option value="Partnership" selected>Business partnership</option>
+                                                <option value="B2B" >B2B Inquiry</option>
+                                                <option value="Recruitment">Employment inquiry</option>
+                                            </select>
+                                            <input type="hidden" name="dropdownText" id="dropdownText4" class="pc-dn tb-dn mb-dn">
+                                        </div>
+                                        <div>
+                                            <label for="name">Company</label>                
+                                            <input type="text" name="company" id="company4" class="f-input" maxlength="50">
+                                        </div>
+                                    </li>
+                                    <li class="form-bottom">
+                                        <div>
+                                            <label for="name">Name</label>                
+                                            <input type="text" name="name" id="name4" required class="f-input" maxlength="20">
+                                        </div>
+                                        <div>
+                                            <label for="email">Email</label>                
+                                            <input pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" type="email" name="email" required class="f-input" id="email4">             
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label for="message">Inquiry content</label>
+                                        <textarea type="text" name="message" id="message4" class="f-input" style="width: auto;" required></textarea>
+                                    </li>                                
+                                </ul>
+                                <input type="hidden" id="recaptchaToken4" name="recaptchaToken">
+                                <div class="responseMessage" style="margin-top: 10px;"></div>
+                                <input type="submit" value="Submit" class="send">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer" id="footer"> 
+            <div class="f-logo">
+                <a href="./index.html">
+                    <img src="https://jupiter.planett.co.kr/en/src/img/PLANETT_footerlogo.webp" alt="logo">
+                </a>
+                <div class="family-site pc-dn">
+                    <select name="none"  id="familySiteSelect" onchange="openLink();">
+                        <option value="none">Family Site</option>
+                        <option value="https://www.usimstore.com/shop/">Usimstore</option>
+                        <option value="https://en.esimplay.com/">eSIMplay</option>
+                        <option value="https://smartstore.naver.com/wifiegg">wifiegg</option>
+                   </select>
+                </div>
+            </div>
+            <div class="f-addr mb-dn">
+                <div class="f-addr-txt">
+                    <p>Company Name : Planet T INC.&nbsp;&nbsp;|&nbsp;&nbsp;
+                        Address : 1001, 424, Yangcheon-ro, Gangseo-gu, Seoul, Republic of Korea
+                    </p>
+                    <p>CEO : Seo Gab Soo&nbsp;&nbsp;|&nbsp;&nbsp;Business No. : 104-81-86880 (Republic of Korea)
+                        &nbsp;&nbsp;|&nbsp;&nbsp;Mail order sales approval No. : 2020-서울강서-2750
+                    </p>
+                    <p>Tel : 82-2-737-8282&nbsp;&nbsp;|&nbsp;&nbsp;Fax : 82-2-775-0808&nbsp;&nbsp;|&nbsp;&nbsp;e-mail : help@usimstore.com
+                    </p>
+                    <p>
+                        Online Privacy Policy Manager : Seo Jun Hyuck
+                    </p>
+                </div>
+            </div>
+            <div class="f-addr pc-dn tb-dn">
+                <div class="f-addr-txt">
+                    Company Name : Planet T INC.<br>
+                    Address : 1001, 424, Yangcheon-ro, Gangseo-gu, Seoul<br>
+                    CEO : Seo Gab Soo&emsp;Business No. : 104-81-86880 (Republic of Korea)<br>
+                    Mail order sales approval No. : 2020-서울강서-2750<br>
+                    Tel : 82-2-737-8282&emsp;Fax : 82-2-775-0808<br>
+                    e-mail : help@usimstore.com<br>
+                    Online Privacy Policy Manager : Seo Jun Hyuck
+                </div>
+                <div class="f-copy">
+                    Copyright ⓒ 2024 PlanetT.All rights reserved.
+                </div>
+            </div>
+            <div class="family-site mb-dn tb-dn">
+                <select name="none" onchange="window.open(value,'_blank');">
+                    <option value="none">Family Site</option>
+                    <option value="https://www.usimstore.com/shop/">Usimstore</option>
+                    <option value="https://en.esimplay.com/">eSIMplay</option>
+                    <option value="https://smartstore.naver.com/wifiegg">WIFIegg</option>
+               </select>
+            </div>
+        </footer>
+        <div id="divGotoTop" style="display: none; position:fixed; right: 5%; bottom: 50px; z-index: 999;" class="mb-dn">
+            <a href="javascript:void(0);" id="btnGotoTop"><img src="https://jupiter.planett.co.kr/en/src/img/fmsite.webp" alt="" style="rotate: 180deg;"></a>
+            </div>
+    </div>   
+
+
+
+    
+    <!-- 모바일 푸터 드롭다운 -->
+    <script>
+        function openLink() {
+            var select = document.getElementById("familySiteSelect");
+            var url = select.value;
+            if (url !== "none") {
+                window.location.href = url; // 현재 창에서 이동
+            }
+        }
+        </script>
+    <!-- 헤더 js -->
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+          var x = document.getElementById("menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+    <script>
+        $(function() {
+    var prevScrollTop = 0;
+
+    document.addEventListener("scroll", function() {
+        var nowScrollTop = $(window).scrollTop(); // 현재 스크롤 위치를 nowScrollTop에 저장
+
+        if (nowScrollTop <= 0) {
+            return;
+        }
+
+        if (nowScrollTop > prevScrollTop) {
+            $('header').addClass('active'); // 스크롤 방향(Down) 내릴 때 -> 헤더에 active 클래스 추가
+        } else {
+            $('header').removeClass('active'); // 스크롤 방향(Up) 올릴 때 -> 헤더에 active 클래스 제거
+        }
+        prevScrollTop = nowScrollTop; // prevScrollTop에 현재 스크롤 값을 저장
+    });
+});
+    </script>
+            <script>
+                $(document).ready(function() {
+                    $('#menu > li').click(function(e) {
+                        e.stopPropagation(); // 클릭 이벤트가 상위 요소로 전파되지 않도록 합니다.
+                        var $this = $(this);
+                        $this.toggleClass('open'); // 현재 클릭한 항목에 'open' 클래스 토글
+                        
+                        // 현재 클릭한 항목 외의 모든 항목에서 'open' 클래스 제거
+                        $('#menu > li').not($this).removeClass('open');
+                    });
+                    
+                    // 클릭 외부 영역 클릭 시 서브 메뉴 닫기
+                    $(document).click(function(e) {
+                        if (!$(e.target).closest('#menu > li').length) {
+                            $('#menu > li').removeClass('open');
+                        }
+                    });
+                });
+                    </script>
+
+    <!-- 부제목 탭 js -->
+     <script>
+        function openTab(tabName) {
+        document.querySelectorAll('.tab, .tabs').forEach(function(el) {
+            el.classList.remove('on');
+        });
+        document.getElementById(tabName).classList.add('on');
+        document.querySelector('.tabs[onclick="openTab(\'' + tabName + '\')"]').classList.add('on');
+    }
+     </script>
+      <!-- gototop -->
+      <script>
+        $(function () {
+            // 맨위로 이동하기
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) { // 높이 300을 기준으로 
+                    $('#divGotoTop').fadeIn();
+                    //this.console.log("show");
+                } else {
+                    $('#divGotoTop').fadeOut();
+                    //this.console.log("hide");
+                }
+            });
+            // 맨위로 버튼클릭
+            $("#btnGotoTop").click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });      
+    </script>
+    <!-- 스크롤 애니메이션 -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 700,  // 애니메이션 지속 시간 (밀리초)
+        easing: 'ease-in-out',  // 애니메이션의 이징 함수
+        delay: 100,  // 애니메이션 지연 시간 (밀리초)
+        offset: 120,  // 스크롤 감지의 시작 위치 (픽셀)
+        });
+    </script>
+    <!-- 제휴 분야 슬라이드 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper1 = new Swiper(".slide-container", {
+          autoplay: {
+                    delay: 1500, 
+                        // 슬라이드가 자동으로 전환되기까지의 시간 간격
+                    desableOnInteraction: false, 
+                        // arrow나 pagination이용 후 자동 재생을 비활성화 할지의 여부
+                      },
+          speed: 1500,
+            // 슬라이드가 자동으로 전환되는 속도를 설정
+          grabCursor: true,
+          breakpoints: {
+            300:{
+                slidesPerView: 1,
+            },
+            1200: {
+                slidesPerView: 2,
+            },
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          loop : true
+        });
+      </script>
+    <!-- 모바일 주요기능 슬라이드 -->
+    <script>
+        var swiper2 = new Swiper(".icon-slide", {
+          autoplay: {
+                    delay: 1500, 
+                        // 슬라이드가 자동으로 전환되기까지의 시간 간격
+                      },
+          speed: 2000,
+            // 슬라이드가 자동으로 전환되는 속도를 설정
+          slidesPerView: "1",
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+                    el: '.swiper-pagination1',
+                    type: "fraction",
+                    },
+         loop :true
+        });
+      </script>
+    <!-- 문의하기 -->
+    <script>
+        function onSubmit3() {
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LfwMFMqAAAAAJ-UFpXShUBjji-vFesINLOCbX8d', {action: 'submit_inquiry'}).then(function(token) {
+            document.getElementById('recaptchaToken3').value = token;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://jupiter.planett.co.kr/api/submit', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    const responseMessage = document.querySelector('#gform3 .responseMessage'); // 수정된 부분
+                    const data = JSON.parse(xhr.responseText);
+                    responseMessage.style.color = data.success ? 'green' : 'red';
+                    
+                    // 사용자 지정 메시지 설정
+                    if (xhr.status === 200) {
+                        responseMessage.innerText = 'It has been submitted successfully!'; // 성공 메시지
+                        document.getElementById('gform3').reset(); // 성공 시 폼 리셋
+                    } else {
+                        responseMessage.innerText = 'Submission failed. Please try again.'; // 실패 메시지
+                    }
+                }
+            };
+
+            var formData = new FormData(document.getElementById('gform3'));
+            var urlEncodedData = new URLSearchParams(formData).toString();
+            xhr.send(urlEncodedData);
+        });
+    });
+}
+    function updateDropdownText3() {
+    var selectElement = document.getElementById('form-select3');
+    var selectedText = selectElement.options[selectElement.selectedIndex].text;
+    document.getElementById('dropdownText3').value = selectedText;  // 선택한 옵션의 텍스트 값을 숨겨진 필드에 저장
+}
+
+
+
+function onSubmit4() {
+    grecaptcha.ready(function() {
+        grecaptcha.execute('6LfwMFMqAAAAAJ-UFpXShUBjji-vFesINLOCbX8d', {action: 'submit_inquiry'}).then(function(token) {
+            document.getElementById('recaptchaToken4').value = token;
+
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', 'https://jupiter.planett.co.kr/api/submit', true);
+            xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+            xhr.onreadystatechange = function() {
+                if (xhr.readyState === 4) {
+                    const responseMessage = document.querySelector('#gform4 .responseMessage'); // 수정된 부분
+                    const data = JSON.parse(xhr.responseText);
+                    responseMessage.style.color = data.success ? 'green' : 'red';
+                    
+                    // 사용자 지정 메시지 설정
+                    if (xhr.status === 200) {
+                        responseMessage.innerText = 'It has been submitted successfully!'; // 성공 메시지
+                        document.getElementById('gform4').reset(); // 성공 시 폼 리셋
+                    } else {
+                        responseMessage.innerText = 'Submission failed. Please try again.'; // 실패 메시지
+                    }
+                }
+            };
+
+            var formData = new FormData(document.getElementById('gform4'));
+            var urlEncodedData = new URLSearchParams(formData).toString();
+            xhr.send(urlEncodedData);
+        });
+    });
+}
+    function updateDropdownText4() {
+    var selectElement = document.getElementById('form-select4');
+    var selectedText = selectElement.options[selectElement.selectedIndex].text;
+    document.getElementById('dropdownText4').value = selectedText;  // 선택한 옵션의 텍스트 값을 숨겨진 필드에 저장
+}
+
+</script>
+</body>
+</html>

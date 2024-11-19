@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanetT</title>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.8/dist/web/variable/pretendardvariable-dynamic-subset.css" />
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/main-pc.css">
+    <link rel="stylesheet" href="./src/css/main-mb.css"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" />
+    
+    <script type="text/javascript" src="./src/js/header.js"></script>
+
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <h1><a href="./main.html"><img src="./src/img/PLANETT_logo.png" alt="planett-logo"></a></h1>
+            <nav class="pc-nav">
+                <ul class="menu">
+                    <li><a href="./company.html">회사소개</a>
+                        <ul class="tab-menu">
+                            <li><a href="./company.html">소개</a></li>
+                            <li><a href="./company.html?event=history">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./brand.html">브랜드 · 상품소개</a>
+                        <ul class="tab-menu">
+                            <li><a href="./brand.html">eSIM</a></li>
+                            <li><a href="./brand.html?event=simcard">SIM Card</a></li>
+                            <li><a href="./brand.html?event=router">Mobile router</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./B2B.html">B2B 문의</a>
+                        <ul class="tab-menu">
+                            <li><a href="./B2B.html">eSIM B2B 솔루션</a></li>
+                            <li><a href="./B2B.html?event=business">비즈니스 제휴</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./support.html">채용</a>
+                    </li>
+                    <li><a href="./contact.html">고객지원</a>
+                        <ul class="tab-menu">
+                            <li><a href="./contact.html">오시는 길</a></li>
+                            <li><a href="./contact.html?event=mall">브랜드 몰</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="lang">
+                <a href="http://192.168.0.11:8080/">KOR</a>
+                <a href="/en">ENG</a>
+                <div class="lang-img">
+                        <img src="./src/img/lang_img.png" alt="lang">
+                </div>
+            </div>
+            <nav class="mb-nav">
+                <ul class="menu change" id="menu">
+                    <li onclick="arrowFlip(0)"><a href="#">회사소개</a>
+                        <img src="./src/img/subicon.png" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./company.html">소개</a></li>
+                            <li><a href="./company.html?event=history">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="arrowFlip(1)"><a href="#">브랜드 · 상품소개</a>
+                        <img src="./src/img/subicon.png" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./brand.html">eSIM</a></li>
+                            <li><a href="./brand.html?event=simcard">SIM Card</a></li>
+                            <li><a href="./brand.html?event=router">Mobile router</a></li>
+                        </ul>
+                    </li>
+                    <li onclick="arrowFlip(2)"><a href="#">B2B 문의</a>
+                        <img src="./src/img/subicon.png" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./B2B.html">eSIM B2B 솔루션</a></li>
+                            <li><a href="./B2B.html?event=business">비즈니스 제휴</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./support.html">채용</a></li>
+                    <li onclick="arrowFlip(3)"><a href="#">고객지원</a>
+                        <img src="./src/img/subicon.png" alt="" class="subicon" class="menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./contact.html">오시는 길</a></li>
+                            <li><a href="./contact.html?event=mall">브랜드 몰</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </nav>
+            <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">
+                <div class="mn-icon" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+        </header>
+        
+        <div id="scroll" data-aos="fade-in">
+            <button type="button" onclick="location.href='#pdt'"><div class="circle"></div></button>
+        </div>
+        <section class="section sec1" id="title">
+            <div class="main">
+                <div class="main-text" data-aos="fade-right">
+                    <h1 class="pc-txt">Your Bridge to<br>Global Communication</h1>
+                    <h1 class="mb-txt">Your Bridge to<br>Global Communication</h1>
+                    <p>플래닛티는 유심, eSIM, 포켓와이파이 등의</p>
+                    <p>다양한 상품을 통해 전 세계 어디서든</p>
+                    <p>편리하고 안정적인 통신 환경을 제공합니다.</p>
+                </div>
+            </div>
+        </section>
+        <section class="section sec2 swiper mySwiper" id="pdt">
+            <div class="sec2title" data-aos="fade-up">
+                <h2>좋은 제품, 합리적인 가격</h2>
+                <span>2004년 창립 이후,<br>
+                    글로벌 데이터 서비스 사업에 지속적으로<br class="pc-dn tb-dn"> 개발과 투자를 확대하고 있습니다.
+                </span>
+            </div>
+                <div class="sec2contents mb-dn" data-aos="fade-up">
+                    <ul class="sec2cont1">
+                        <li>
+                            <h3>eSIM</h3>
+                            <span>eSIM 온라인 판매</span>
+                            <button type="button" onclick="location.href='./brand.html'">
+                                더 알아보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→
+                            </button>
+                        </li>
+                        <li>
+                            <h3>SIM Card</h3>
+                            <span>SIM Card 판매</span>
+                            <button type="button" onclick="location.href='./brand.html?event=simcard'">
+                                더 알아보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="sec2cont2">
+                        <li>
+                            <h3>Mobile router</h3>
+                            <span>라우터 대여 및 판매</span>
+                            <button type="button" onclick="location.href='./brand.html?event=router'">
+                                더 알아보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→
+                            </button>
+                        </li>
+                        <li>
+                            <h3>eSIMSTA</h3>
+                            <span>B2B 판매 플랫폼</span>
+                            <button type="button" onclick="location.href='./B2B.html'">
+                                더 알아보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            <div class="swiper-container mb-pdt pc-dn tb-dn" data-aos="fade-up">
+                <div class="sec2contents swiper-wrapper" >
+                    <ul class="sec2cont swiper-slide">
+                        <li>
+                            <h3>eSIM</h3>
+                            <span>eSIM 온라인 판매</span>
+                            <button type="button" onclick="location.href='./brand.html'">
+                                더 알아보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→
+                            </button>
+                        </li>
+                        <li>
+                            <h3>SIM Card</h3>
+                            <span>SIM Card 판매</span>
+                            <button type="button" onclick="location.href='./brand.html?event=simcard'">
+                                더 알아보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="sec2cont swiper-slide">
+                        <li>
+                            <h3>Mobile router</h3>
+                            <span>라우터 대여 및 판매</span>
+                            <button type="button" onclick="location.href='./brand.html?event=router'">
+                                더 알아보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→
+                            </button>
+                        </li>
+                        <li>
+                            <h3>eSIMSTA</h3>
+                            <span>B2B 판매 플랫폼</span>
+                            <button type="button" onclick="location.href='./B2B.html'">
+                                더 알아보기&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;→
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="swiper-pagination pc-dn tb-dn"></div>
+        </section>
+        <section class="section sec3" id="count">
+            <div class="sec3title">
+                <h2  data-aos="fade-up">플래닛티의 성과는 고객이 증명합니다.</h2>
+                <span  data-aos="fade-up">좋은 제품, 합리적인 가격을 추구해온 플래닛티는<br>
+                    고객의 마음을 우선으로 생각하며,<br class="pc-dn tb-dn"> 지속적으로 성장하고 있습니다.
+                </span>
+                <div class="cnt-img"  data-aos="zoom-in">
+                    <img src="./src/img/countimg.png" alt="">
+                </div>
+            </div>
+            <div class="sec3contents"  data-aos="fade-in">
+                <ul class="count-list">
+                    <li>
+                        <p><span class="counting" data-count="40">0</span>만+</p>
+                          <p class="c-tit">누적 고객 리뷰수</p>
+                      </li>
+                    <li>
+                        <p><span class="counting" data-count="10">0</span>만+</p>
+                          <p class="c-tit">누적 고객수</p>
+                      </li>
+                </ul>
+                <ul class="count-list">
+                    <li>
+                        <p><span class="count_num"></span>점+</p>
+                          <p class="c-tit">평균 별점</p>
+                      </li>
+                    <li>
+                        <p><span class="counting" data-count="250">0</span>개국+</p>
+                          <p class="c-tit">서비스 국가</p>
+                      </li>
+                </ul>
+                <ul class="count-list">
+                    <li>
+                        <p><span class="counting" data-count="20">0</span>년+</p>
+                          <p class="c-tit">통신 부가서비스<br>운영 경력</p>
+                      </li>
+                    <li>
+                        <p><span class="counting" data-count="100">0</span>만+</p>
+                          <p class="c-tit">연간 데이터 상품<br>판매 건수</p>
+                      </li>
+                </ul>
+            </div>
+        </section>       
+        <section class="section sec4" id="review">
+            <div class="sec4title">
+                <div class="stars"  data-aos="zoom-in">
+                    <img src="./src/img/star.png" alt="">
+                    <img src="./src/img/star.png" alt="">
+                    <img src="./src/img/star.png" alt="">
+                    <img src="./src/img/star.png" alt="">
+                    <img src="./src/img/star.png" alt="">
+                </div>
+                <h2  data-aos="fade-up">1,000만 고객의 선택</h2>
+                <span  data-aos="fade-up">실제 사용 고객들의 리뷰를 통해 <br class="pc-dn tb-dn"> 상품의 우수한 사용성을 확인해 보세요.
+                </span>
+            </div> 
+            <div class="sec4contents swiper mySwipe">      
+                <div class="review-slide swiper-container">
+                    <div class="review-list swiper-wrapper">
+                        <div class="rev-box swiper-slide">
+                            <div class="rev-img"><img src="./src/img/review.jpg" alt=""></div>
+                            <div class="rev-txt">
+                                <span>데이터 끊김 현상 전혀 없었고, 
+                                    같이 여행가신 분들 중에 유심스토어 상품이
+                                    가장 빨랐어요!
+                                </span>
+                                <p>momo**** 님</p>
+                            </div>
+                        </div>
+                        <div class="rev-box swiper-slide">
+                            <div class="rev-img"><img src="./src/img/review.jpg" alt=""></div>
+                            <div class="rev-txt">
+                                <span>데이터 끊김 현상 전혀 없었고, 
+                                    같이 여행가신 분들 중에 유심스토어 상품이
+                                    가장 빨랐어요!
+                                </span>
+                                <p>momo**** 님</p>
+                            </div>
+                        </div>
+                        <div class="rev-box swiper-slide">
+                            <div class="rev-img"><img src="./src/img/review.jpg" alt=""></div>
+                            <div class="rev-txt">
+                                <span>데이터 끊김 현상 전혀 없었고, 
+                                    같이 여행가신 분들 중에 유심스토어 상품이
+                                    가장 빨랐어요!
+                                </span>
+                                <p>momo**** 님</p>
+                            </div>
+                        </div>
+                        <div class="rev-box swiper-slide">
+                            <div class="rev-img"><img src="./src/img/review.jpg" alt=""></div>
+                            <div class="rev-txt">
+                                <span>데이터 끊김 현상 전혀 없었고, 
+                                    같이 여행가신 분들 중에 유심스토어 상품이
+                                    가장 빨랐어요!
+                                </span>
+                                <p>momo**** 님</p>
+                            </div>
+                        </div>
+                        <div class="rev-box swiper-slide">
+                            <div class="rev-img"><img src="./src/img/review.jpg" alt=""></div>
+                            <div class="rev-txt">
+                                <span>데이터 끊김 현상 전혀 없었고, 
+                                    같이 여행가신 분들 중에 유심스토어 상품이
+                                    가장 빨랐어요!
+                                </span>
+                                <p>momo**** 님</p>
+                            </div>
+                        </div>
+                        <div class="rev-box swiper-slide">
+                            <div class="rev-img"><img src="./src/img/review.jpg" alt=""></div>
+                            <div class="rev-txt">
+                                <span>데이터 끊김 현상 전혀 없었고, 
+                                    같이 여행가신 분들 중에 유심스토어 상품이
+                                    가장 빨랐어요!
+                                </span>
+                                <p>momo**** 님</p>
+                            </div>
+                        </div>
+                        <div class="rev-box swiper-slide">
+                            <div class="rev-img"><img src="./src/img/review.jpg" alt=""></div>
+                            <div class="rev-txt">
+                                <span>데이터 끊김 현상 전혀 없었고, 
+                                    같이 여행가신 분들 중에 유심스토어 상품이
+                                    가장 빨랐어요!
+                                </span>
+                                <p>momo**** 님</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section sec5" id="main-contact">
+            <div class="sec5-top">
+                <div class="sec5-top-l"  data-aos="fade-left">
+                    <div class="sec5title">
+                        <h2>CONTACT US</h2>
+                        <span>플래닛티의 차별화된 데이터 서비스,<br>
+                            지금 바로 문의하여 글로벌 시장에 진출하세요.
+                        </span>
+                        <div class="btn-area">
+                            <button type="button" onclick="location.href='./B2B.html'" class="b2b-btn">
+                                B2B 솔루션 자세히 알아보기
+                            </button>
+                            <button type="button" class="popup-btn pc-dn" id="popup-btn">
+                                문의하기
+                            </button>
+                        </div>
+                        
+                    </div> 
+                    <div class="sec5-addr mb-dn tb-dn">
+                        <div class="addr-tit">
+                            <p>주소</p>
+                            <p>전화</p>
+                            <p>팩스</p>
+                            <p>운영시간</p>
+                        </div>
+                        <div class="addr-txt">
+                            <span>서울특별시 강서구 양천로 424, 데시앙플렉스 1001호 (등촌동)</span>
+                            <span>02-737-8282</span>
+                            <span>02-775-0808</span>
+                            <span>평일 09:00 - 18:00&nbsp;&nbsp;<span style="color: #b4b4b4;">|</span>&nbsp;&nbsp;점심시간 12:00 - 13:00&nbsp;&nbsp;<span style="color: #b4b4b4;">|</span>&nbsp;&nbsp;주말 및 공휴일 휴무</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="sec5-top-r"  data-aos="fade-right" id="popup">
+                    <div class="sec5-form mb-dn tb-dn">
+                        <h3>eSIM B2B 문의</h3>
+                        <form class="form_area" name="fmain_form" method="post" action="" onsubmit="return fmain_submit(this);">
+                            <input type="hidden" name="form_url" value="" />
+                            <ul>
+                                <li>
+                                    <input type="text" name="wr_name" id="wr_name" required class="sh_input" maxlength="20">
+                                    <label for="wr_name">이름</label>                
+                                </li>
+                                <li>
+                                    <input pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" type="email" name="sh_email" required class="sh_input" title="phone">             
+                                    <label for="sh_email">이메일</label>                
+                                </li>
+                                <li>
+                                    <textarea type="text" name="wr_content" id="wr_content" class="sh_input" style="width: auto;"></textarea>
+                                    <label for="wr_content">문의내용</label>                
+                                </li>                                
+                            </ul>
+                            <div class="prv_area">
+                                <input type="checkbox" name="prv_check" id="prv_check" class="ck_box">
+                                <a id="agree_link" onclick="window.open('', 'window', 'width=600; height=800; left=150; top=0; scrollbars=no')">
+                                    제휴 문의를 위한 입력 정보 제공에 동의합니다.
+                                </a>
+                            </div>
+                            <input type="submit" value="문의하기" id="btn_submit" class="send">
+                        </form>
+                    </div>
+                    <div class="sec5-form pc-dn popup-content">
+                        <h3>eSIM B2B 문의</h3>
+                        <button type="button" class="popup-close">&times;</button>
+                        <form class="form_area" name="fmain_form" method="post" action="" onsubmit="return fmain_submit(this);">
+                            <input type="hidden" name="form_url" value="" />
+                            <ul>
+                                <li>
+                                    <input type="text" name="wr_name" id="wr_name" required class="sh_input" maxlength="20">
+                                    <label for="wr_name">이름</label>                
+                                </li>
+                                <li>
+                                    <input pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" type="email" name="sh_email" required class="sh_input" title="phone">             
+                                    <label for="sh_email">이메일</label>                
+                                </li>
+                                <li>
+                                    <textarea type="text" name="wr_content" id="wr_content" class="sh_input" style="width: auto;"></textarea>
+                                    <label for="wr_content">문의내용</label>                
+                                </li>                                
+                            </ul>
+                            <div class="prv_area">
+                                <input type="checkbox" name="prv_check" id="prv_check" class="ck_box">
+                                <a id="agree_link" onclick="window.open('', 'window', 'width=600; height=800; left=150; top=0; scrollbars=no')">
+                                    제휴 문의를 위한 입력 정보 제공에 동의합니다.
+                                </a>
+                            </div>
+                            <input type="submit" value="문의하기" id="btn_submit" class="send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="sec5-map"  data-aos="fade-up">
+                <img src="./src/img/map.jpg" alt="map" class="sim-map mb-dn tb-dn">
+                <img src="./src/img/map-mb.jpg" alt="map" class="sim-map pc-dn">
+                <div class="map-btn">
+                    <button type="button" onclick="window.open('https://place.map.kakao.com/1410701048');">
+                        <img src="./src/img/kakaomap.png" alt="kakaomap">
+                        <p class="mb-dn">카카오 로드맵 보기</p>
+                        <p class="pc-dn tb-dn">카카오맵</p>
+                    </button>
+                    <button type="button" onclick="window.open('https://maps.app.goo.gl/efFPNkkP6S9S8puz8');">
+                        <img src="./src/img/ggmap.png" alt="googlemap">
+                        <p class="mb-dn">구글 로드맵 보기</p>
+                        <p class="pc-dn tb-dn">구글맵</p>
+                    </button>
+                    <button type="button" onclick="window.open('https://naver.me/FfMYyM3V');">
+                        <img src="./src/img/navermap.png" alt="navermap">
+                        <p class="mb-dn">네이버 로드맵 보기</p>
+                        <p class="pc-dn tb-dn">네이버맵</p>
+                    </button>
+                </div>
+            </div>
+            <div class="sec5-addr pc-dn">
+                <div class="addr-tit">
+                    <p>주소</p>
+                    <p>전화</p>
+                    <p>팩스</p>
+                    <p>운영시간</p>
+                </div>
+                <div class="addr-txt">
+                    <span>서울특별시 강서구 양천로 424, 데시앙플렉스 1001호</span>
+                    <span>02-737-8282</span>
+                    <span>02-775-0808</span>
+                    <span>평일 09:00 - 18:00&nbsp;&nbsp;<span style="color: #b4b4b4;">|</span>&nbsp;&nbsp;점심시간 12:00 - 13:00<br>(주말 및 공휴일 휴무)</span>
+                </div>
+            </div>
+        </section>
+        <footer class="footer" id="footer"> 
+            <div class="f-logo">
+                <a href="#">
+                    <img src="./src/img/PLANETT_footerlogo.png" alt="logo">
+                </a>
+                <div class="family-site pc-dn">
+                    <select name="none" onchange="window.open(value,'_blank');">
+                        <option value="none">Family Site</option>
+                        <option value="https://www.usimstore.com/shop/">유심스토어</option>
+                        <option value="https://esimplay.com/">이심플레이</option>
+                        <option value="https://smartstore.naver.com/wifiegg">와이파이에그</option>
+                   </select>
+                </div>
+            </div>
+            <div class="f-addr mb-dn">
+                <div class="f-addr-txt">
+                    <p>상호명 : (주)플래닛티&nbsp;&nbsp;|&nbsp;&nbsp;
+                        주소 : 서울특별시 강서구 양천로 424, 데시앙플렉스 1001호 (등촌동)
+                    </p>
+                    <p>대표자 : 서갑수&nbsp;&nbsp;|&nbsp;&nbsp;사업자등록번호 : 104-81-86880
+                        &nbsp;&nbsp;|&nbsp;&nbsp;통신판매업신고번호 : 2020-서울강서-2750
+                    </p>
+                    <p>전화 : 02-737-8282&nbsp;&nbsp;|&nbsp;&nbsp;팩스 : 02-775-0808&nbsp;&nbsp;|&nbsp;&nbsp;이메일 : help@usimstore.com
+                    </p>
+                    <p>
+                        개인정보보호책임자 : 서준혁
+                    </p>
+                </div>
+            </div>
+            <div class="f-addr pc-dn tb-dn">
+                <div class="f-addr-txt">
+                    상호명 : (주)플래닛티<br>
+                    주소 : 서울특별시 강서구 양천로 424, 데시앙플렉스 1001호 (등촌동)<br>
+                    대표자 : 서갑수&emsp;사업자등록번호 : 104-81-86880<br>
+                    통신판매업신고번호 : 2020-서울강서-2750<br>
+                    전화 : 02-737-8282&emsp;팩스 : 02-775-0808<br>
+                    이메일 : help@usimstore.com<br>
+                    개인정보보호책임자 : 서준혁
+                </div>
+                <div class="f-copy">
+                    Copyright ⓒ 2024 PlanetT.All rights reserved.
+                </div>
+            </div>
+            <div class="family-site mb-dn tb-dn">
+                <select name="none" onchange="window.open(value,'_blank');">
+                    <option value="none">Family Site</option>
+                    <option value="https://www.usimstore.com/shop/">유심스토어</option>
+                    <option value="https://esimplay.com/">이심플레이</option>
+                    <option value="https://smartstore.naver.com/wifiegg">와이파이에그</option>
+               </select>
+            </div>
+        </footer>
+        <div id="divGotoTop" style="display: none; position:fixed; right: 5%; bottom: 50px; z-index: 999;" class="mb-dn">
+            <a href="javascript:void(0);" id="btnGotoTop"><img src="./src/img/fmsite.png" alt="" style="rotate: 180deg;"></a>
+            </div>
+    </div>   
+
+
+    <!-- 헤더 js -->
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+          var x = document.getElementById("menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+    <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $("nav ul.sub").hide();
+            $("nav ul.menu li").click(function(){
+                $("ul",this).slideToggle("fast");
+            });
+        });
+    </script>
+    <script>
+                $(function() {
+        var prevScrollTop = 0;
+
+        document.addEventListener("scroll", function(){
+            
+            var nowScrollTop = $(window).scrollTop(); //현재 스크롤 위치를 nowScrollTop 에 저장
+            
+            if (nowScrollTop > prevScrollTop){ $('header').addClass('active'); } 
+            // 스크롤 방향(Down) 내릴때 -> 헤더에 active 클래스 추가
+            else { $('header').removeClass('active'); } // 스크롤 방향(Up) 올릴때 -> 헤더에 active 클래스 제거
+            prevScrollTop = nowScrollTop;  // prevScroll, nowScrollTop 조건 판단 후, 현재 스크롤값을 prevScrollTop 에 저장
+
+        });
+
+        });
+    </script>
+    <!-- 숫자 카운팅 -->
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            var $window = $(window);
+            var sectionOffset = $('#count').offset().top; // 마지막 섹션의 상단 위치
+        
+            function animateCounters() {
+                $('.counting').each(function() {
+                    var $this = $(this);
+                    var countTo = $this.attr('data-count');
+                    
+                    $({ countNum: $this.text() }).animate({
+                        countNum: countTo
+                    },
+                    {
+                        duration: 2500,
+                        easing: 'linear',
+                        step: function() {
+                            $this.text(Math.floor(this.countNum));
+                        },
+                        complete: function() {
+                            $this.text(this.countNum);
+                            // alert('finished');
+                        }
+                    });
+                });
+        
+                $({ val: 0 }).animate({ val: 4.8 }, {
+                    duration: 2700,
+                    
+                    step: function() {
+                        var num = numberWithCommas(this.val.toFixed(1));
+                        $(".count_num").text(num);
+                    },
+                    complete: function() {
+                        var num = numberWithCommas(this.val.toFixed(1));
+                        $(".count_num").text(num);
+                    }
+                });
+            }
+        
+            function numberWithCommas(x) {
+                return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+            }
+        
+            $window.on('scroll', function() {
+                if ($window.scrollTop() + $window.height() > sectionOffset) {
+                    animateCounters();
+                    // 스크롤 이벤트가 계속해서 트리거되지 않도록 한 번만 실행하도록 함
+                    $window.off('scroll');
+                }
+            });
+        });
+        </script>
+    <!-- sec4 리뷰 슬라이드 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".review-slide", {                   
+                            autoplay: {
+                                delay: 500, 
+                                // 슬라이드가 자동으로 전환되기까지의 시간 간격
+                                desableOnInteraction: false, 
+                                // arrow나 pagination이용 후 자동 재생을 비활성화 할지의 여부
+                            },
+                            speed: 4000,
+                            // 슬라이드가 자동으로 전환되는 속도를 설정
+                            loop: true,
+                            // 슬라이드가 무한 순환
+                            slidesPerView: "auto",
+                            // 슬라이드가 표시되는 갯수를 설정
+                            freemode: false,
+                            // 슬라이드가 자유롭게 스와이프 되도록 설정
+                            centeredSlides: true,
+                            // 1번 슬라이드가 가운데 보이게 
+                    });
+         new Swiper( '.review-slide' );
+      </script>
+    <!-- gototop -->
+      <script>
+        $(function () {
+            // 맨위로 이동하기
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) { // 높이 300을 기준으로 
+                    $('#divGotoTop').fadeIn();
+                    //this.console.log("show");
+                } else {
+                    $('#divGotoTop').fadeOut();
+                    //this.console.log("hide");
+                }
+            });
+            // 맨위로 버튼클릭
+            $("#btnGotoTop").click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });      
+    </script>
+    <!-- 스크롤 애니메이션 -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 700,  // 애니메이션 지속 시간 (밀리초)
+        easing: 'ease-in-out',  // 애니메이션의 이징 함수
+        delay: 100,  // 애니메이션 지연 시간 (밀리초)
+        offset: 120,  // 스크롤 감지의 시작 위치 (픽셀)
+        });
+    </script>
+    <!-- 이미지 클릭시 새창
+    <script type="text/javascript">
+        var img = document.getElementsByClassName('sim-map');
+            for (var x = 0; x < img.length; x++) {
+              img.item(x).onclick=function() {window.open(this.src)}; 
+            }
+        </script> -->
+    <!-- 모바일 sec2 슬라이드 -->
+    <script>
+        var swiper = new Swiper(".mb-pdt", {
+            autoplay: {
+                    delay: 3500, 
+                        // 슬라이드가 자동으로 전환되기까지의 시간 간격
+                    desableOnInteraction: false, 
+                        // arrow나 pagination이용 후 자동 재생을 비활성화 할지의 여부
+                      },
+                      speed: 2000,
+                      // 슬라이드가 자동으로 전환되는 속도를 설정
+                      loop: true,
+                    pagination: {
+                        el: ".swiper-pagination",
+                        type: "fraction",
+                    },
+                    slidesPerView: "1",
+                    // 슬라이드가 표시되는 갯수를 설정
+        });
+
+        new Swiper( '.mb-pdt' );
+
+    </script>
+    <!-- 모바일 문의하기 팝업 -->
+    <script>
+            // 모달 요소와 모달을 여닫는 버튼 요소를 선택
+            var modal = document.getElementById("popup");
+            var btn = document.getElementById("popup-btn");
+            var closeBtn = document.getElementsByClassName("popup-close")[0];
+
+            // 버튼 클릭 시 모달 열기
+            btn.onclick = function() {
+            modal.style.display = "block";
+            }
+
+            // 닫기 버튼 클릭 시 모달 닫기
+            closeBtn.onclick = function() {
+            modal.style.display = "none";
+            }
+
+            // 모달 바깥 영역 클릭 시 모달 닫기
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+            }
+    </script>
+</body>
+</html>

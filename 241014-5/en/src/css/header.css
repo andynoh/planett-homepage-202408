@@ -1,0 +1,431 @@
+
+
+/* 헤더 시작 */
+
+#header{
+    position: sticky;
+    top: 0;
+    width: 100%;
+    height: 110px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffffffd7;
+    z-index: 999;
+}
+
+/* 로고 */
+#header h1{
+    width: 15%;
+    margin-left: 3vw;
+}
+#header h1 img{
+    width: 100%;
+    max-width: 250px;
+}
+
+/* 네비게이션 메뉴 */
+#header .pc-nav{
+    width: 35%;
+}
+#header .pc-nav .menu{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+#header .pc-nav .menu > li{
+    height: 110px;
+    line-height: 110px;
+    display: flex;
+    justify-content: center;
+}
+#header .pc-nav .menu > li:hover > a{
+    color: #013EB0;
+}
+
+#header .pc-nav .menu > li > a{
+    height: 110px;
+    font-size: 20px;
+    font-weight: 800;
+    color: #333;
+}
+#header .pc-nav .menu > li > a:hover{
+    color: #0054ef;
+}
+
+/* 서브메뉴 */
+#header .pc-nav .menu > li:hover > ul{
+    border-top: #0054ef 4px solid;
+}
+#header .pc-nav .menu > li > ul{
+    position: absolute;
+    top: 110px;
+    display: flex;
+    flex-direction: column;
+    display: none;
+}
+#header .pc-nav .menu li > ul > li {
+    width: 170px;
+    height: 50px;
+    background-color: #ffffff;
+    line-height: 50px;
+    text-align: center;
+}
+#header .pc-nav .menu li > ul > li:first-child{
+    border: none;
+}
+
+#header .pc-nav .menu li > ul > li > a{
+    display: block;
+    font-size: 16px;
+    font-weight: 500;
+    color: #333;
+    box-sizing: border-box;
+}
+#header .pc-nav .menu > li:hover > ul {
+    display: flex;
+}
+#header .pc-nav .menu li > ul > li:hover{
+    background-color: #f4f4f4;
+}
+#header .pc-nav .menu li > ul > li:hover > a{
+    color: #000000;
+}
+
+/* 다국어 페이지 연결 */
+#header .lang{
+    width: 15%;
+    margin-right: 4vw;
+    display: flex;
+    justify-content: right;
+}
+#header .lang a{
+    margin-right: 20px;
+    margin-top: 3px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333;
+}
+#header .lang a:first-child{
+    color: #999;
+}
+.lang .lang-img img{
+    width: 30px;
+}
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* 태블릿 css */
+
+@media screen and (min-width:700px) and (max-width: 1200px){
+
+    /* pc와 겹치는 요소 */
+    .pc-txt,.pc-nav, .lang .lang-img img{
+        display: none;
+    }
+
+
+    /* 헤더 */
+    #header{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        transition: .2s;
+    }
+
+    /* 스크롤 헤더 숨김 */
+    header.active {transform: translateY(-100%);}
+
+    /* 헤더 로고 */
+    #header h1{
+        width: 45%;
+        margin-left: 5vw;
+    }
+    #header h1 img{
+        width: 100%;
+        max-width: 220px;
+        margin-top: 2vw;
+    }
+
+    /* 헤더 다국어 */
+    #header .lang{
+        width: 40%;
+        display: flex;
+        justify-content: right;
+        margin-right: 0;
+    }
+    #header .lang a{
+        margin-right: 2vw;
+        font-size: 17px;
+        font-weight: 700;
+        color: #333;
+    }
+    #header .lang a:first-child{
+        color: #999;
+    }
+
+    /* 서브메뉴 아이콘 */
+    a.nav-icon {
+        display: block;
+        margin-right: 3vw;
+      }
+    .bar1, .bar2, .bar3 {
+        width: 25px;
+        height: 4px;
+        background-color: #333;
+        margin: 5px 0;
+        transition: 0.4s;
+    }
+    
+    /* 클릭시 아이콘 회전 */
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-8px, 5px);
+        transform: rotate(-45deg) translate(-8px, 5px);
+    }
+    
+    .change .bar2 {opacity: 0;}
+    
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -5px);
+        transform: rotate(45deg) translate(-8px, -5px);
+    }
+
+    /* 메인 메뉴 */
+    .mb-nav {
+        position: absolute;
+        top: 100px;
+        width: 100%;
+        background-color: #fff;
+    }
+    .mb-nav #menu{
+        display: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    #menu > li{
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+/* 서브 메뉴 펼침 아이콘 */
+#menu > li img {
+    width: 30px;
+    transition: transform 0.2s linear;
+}
+
+/* 서브 메뉴 열릴 때 아이콘 회전 */
+#menu > li.open img {
+    transform: rotate(180deg);
+}
+    #menu > li > a {
+        display: inline-block;
+        width: 80%;
+        padding-left: 70px;
+        color: #000000;
+        font-size: 18px;
+        font-weight: 700;
+        line-height: 7vh;
+    }
+    /* 서브 메뉴 */
+    .mb-nav ul.menu li .sub li a{
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+        height: 7vh;
+        z-index: 999;
+        background-color: #ffffffe1;
+        padding-left: 17vw;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 7vh;
+        color: #333;
+    } 
+
+    .mb-nav ul.menu li .sub {
+        display: none; /* 기본적으로 서브 메뉴 숨기기 */
+        background-color: #ffffffe1;
+    }
+    #menu > li.open .sub {
+        display: block; /* 클릭 시 서브 메뉴 표시 */
+    }
+    #menu > li .sub li a {
+        display: block;
+        width: 100%;
+        height: 7vh;
+        padding-left: 17vw;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 7vh;
+        color: #333;
+    }
+
+
+}
+
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------------- */
+
+@media screen and (min-width:300px) and (max-width: 700px){
+    
+    /* pc와 겹치는 부분 */
+    .pc-txt,.pc-nav, .lang .lang-img img{
+        display: none;
+    }
+
+    /* 헤더 */
+    #header{
+        width: 100%;
+        height: 90px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #fff;
+        transition: .2s;
+    }
+
+    /* 스크롤시 헤더 숨김 */
+    header.active {transform: translateY(-100%);}
+
+    /* 헤더 로고 */
+    #header h1{
+        width: 42%;
+        margin-left: 5vw;
+    }
+    #header h1 img{
+        width: 100%;
+        max-width: 300px;
+        margin-top: 3vw;
+    }
+
+    /* 헤더 다국어 */
+    #header .lang{
+        width: 35%;
+        display: flex;
+        justify-content: right;
+        padding-right: 10vw;
+    }
+    #header .lang a{
+        margin-right: 2vw;
+        font-size: 15px;
+        font-weight: 700;
+        color: #333;
+    }
+    #header .lang a:first-child{
+        color: #999;
+    }
+    
+    /* 메뉴 아이콘 */
+    a.nav-icon {
+        position: absolute;
+        top: 32px;
+        right: 3vw;
+        display: block;
+        margin-right: 3vw;
+      }
+    .bar1, .bar2, .bar3 {
+        width: 25px;
+        height: 4px;
+        background-color: #333;
+        margin: 4px 0;
+        transition: 0.4s;
+    }
+    .change .bar1 {
+        -webkit-transform: rotate(-45deg) translate(-8px, 4px);
+        transform: rotate(-45deg) translate(-8px, 4px);
+    }
+    .change .bar2 {opacity: 0;}
+    .change .bar3 {
+        -webkit-transform: rotate(45deg) translate(-8px, -3.5px);
+        transform: rotate(45deg) translate(-8px, -3.5px);
+    }
+
+    /* 메인메뉴 */
+    .mb-nav {
+        position: absolute;
+        top: 90px;
+        width: 100%;
+        background-color: #fff;
+      }
+    .mb-nav #menu{
+        display: none;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }  
+    #menu > li{
+        position: relative;
+        float: left;
+        width: 100%;
+    }
+    /* 서브 메뉴 열릴 때 아이콘 회전 */
+    #menu > li.open img {
+        transform: rotate(180deg);
+    }
+
+    #menu > li > a {
+            display: inline-block;
+            width: 70%;
+            padding-left: 45px;
+            color: #333;
+            font-size: 4vw;
+            font-weight: 700;
+            line-height: 7vh;
+    }
+    #menu > li img {
+        
+    width: 25px;
+    }
+
+
+    /* 서브 메뉴 */
+    .mb-nav ul.menu li .sub li a{
+        position: relative;
+        float: left;
+        display: block;
+        width: 100%;
+        height: 6vh;
+        z-index: 999;
+        background-color: #ffffffe1;
+        padding-left: 17vw;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 6vh;
+        color: #333;
+    } 
+
+    .mb-nav ul.menu li .sub {
+        display: none; /* 기본적으로 서브 메뉴 숨기기 */
+        background-color: #ffffffe1;
+    }
+    #menu > li.open .sub {
+        display: block; /* 클릭 시 서브 메뉴 표시 */
+    }
+    #menu > li .sub li a {
+        display: block;
+        width: 100%;
+        height: 6vh;
+        padding-left: 17vw;
+        font-size: 15px;
+        font-weight: 600;
+        line-height: 6vh;
+        color: #333;
+    }
+
+
+}

@@ -1,0 +1,1037 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');/* regular-400, medium-500, semibold-600, bold-700 */ 
+
+@media screen and (min-width:1200px) {
+
+.pc-dn{
+    display: none;
+}
+
+section{
+    width: 100%;
+}
+.top-banner{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url(https://jupiter.planett.co.kr/ko/src/img/com-title.webp) no-repeat center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.top-banner .top-content{
+    width: 60%;
+    height: 100%;
+}
+.top-content .banner-tit{
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+.banner-tit h2{
+    color: #fff; 
+    font-size: 60px;
+    line-height: 50px;
+    letter-spacing: 3px;
+}
+.top-content .tab-container {
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+/* .tab-container .tabs{
+    width: 200px;
+    height: 55px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px 15px 0 0;
+    margin-right: 10px;
+
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: center;
+
+    cursor: pointer;
+}
+.tab-container .tabs:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.tabs.on{
+    background-color: rgb(255, 255, 255);
+}
+.tabs.on:hover{
+    background-color: rgb(255, 255, 255);
+} */
+.tab-container>div{
+    width: 200px;
+    height: 55px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px 15px 0 0;
+    margin-right: 10px;
+
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: center;
+
+    cursor: pointer;
+}
+.tab-container>div:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.tab-container>div.on{
+    background-color: rgb(255, 255, 255);
+}
+.tab-container>div.on:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.tab_wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tab {
+    display:none;
+}
+.tab.on {
+    display:block;
+}
+.tabs {
+    transition:all .3s;
+}
+
+/* 소개 탭 */
+#company{
+    width: 100%;
+}
+
+.com-wrap{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.com-top{
+    width: 60%;
+    display: flex;
+    margin-bottom: 100px;
+}
+.com-top .com-img{
+    width: 40%;
+    height: 680px;
+    background: url(https://jupiter.planett.co.kr/ko/src/img/com-top.webp) no-repeat center;
+    background-size: cover;
+    margin-left: 5%;
+}
+.com-top .com-txt{
+    width: 50%;
+    padding-left: 5%;
+}
+.com-txt h3{
+    font-size: 48px;
+    font-weight: 800;
+    margin: 20px 0 35px;
+    line-height: 55px;
+}
+.com-txt span{
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 500;
+}
+
+.com-mid{
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 100px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.com-mid h3{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 80px;
+
+}
+
+.com-mid-content{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+
+.com-mid-content .customer{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 120px;
+}
+
+.customer li{
+    width: 29%;
+    height: 470px;
+    background-color: #fff;
+    border: 1px solid #b1b1b1;
+    border-radius: 10px;
+    padding: 15px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+.customer li img{
+    margin: 15% 0 10% ;
+    width: 100%;
+    max-width: 60px;
+}
+.customer li h4{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.customer li span{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.com-bottom{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.com-bt-bgimg{
+    width: 100%;
+    height: 450px;
+    background: url(https://jupiter.planett.co.kr/ko/src/img/com-bottom.webp) no-repeat;
+    background-position: 0 40%;
+    background-size: cover;
+}
+
+.com-bt-txt{
+    width: 60%;
+    background-color: #fff;
+
+    margin-top: -150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+    padding: 0 15px;
+}
+
+.com-bt-txt h3{
+    font-size: 40px;
+    font-weight: 700;
+    margin: 50px 0 30px;
+}
+
+.com-bt-txt span{
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 35px;
+    margin-bottom: 50px;
+}
+
+.com-bottom img{
+    width: 100%;
+    max-width: 1500px;
+}
+
+
+/* 연혁 */
+
+#history {
+    width: 100%;
+}
+.his-wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 150px 0;
+}
+.timeline {
+    width: 70%;
+    position: relative;
+    margin: 0 auto;
+  }
+  
+  .timeline::after {
+    content: '';
+    position: absolute;
+    width: 1px;
+    background-color:#c7c7c7;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    margin-left: -3px;
+  }
+  
+  .container {
+    padding: 30px 70px;
+    position: relative;
+    background-color: inherit;
+    width: 50%;
+  }
+  
+  .container::after {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    right: 132px;
+    background-color: white;
+    border: 4px solid #01bbff;
+    top: 120px;
+    border-radius: 50%;
+    z-index: 1;
+  }
+  .container:nth-child(even)::after {
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    right: 132px;
+    background-color: white;
+    border: 4px solid #003cd4;
+    top: 120px;
+    border-radius: 50%;
+    z-index: 10;
+  }
+  
+  .left {
+    left: 0;
+  }
+  
+  .right {
+    left: 50%;
+  }
+  
+  .left::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    right: 30px;
+    border: medium solid white;
+    border-width: 10px 0 10px 10px;
+    border-color: transparent transparent transparent white;
+  }
+  
+  .right::before {
+    content: " ";
+    height: 0;
+    position: absolute;
+    top: 22px;
+    width: 0;
+    z-index: 1;
+    left: 30px;
+    border: medium solid white;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent white transparent transparent;
+  }
+  
+  .right::after {
+    left: -13px;
+    top: 120px;
+  }
+
+  
+  .content {
+    padding: 20px 30px 20px 130px;
+    position: relative;
+  }
+
+  .content h2{
+    font-size: 50px;
+    font-weight: 900;
+    margin-bottom: 18px;
+  }
+  .content p{
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 17px;
+  }
+  .content p span{
+    color: #888;
+  }
+
+
+
+
+
+
+
+
+
+
+}
+/* 
+
+
+
+
+
+
+
+*/
+@media screen and (min-width:700px) and (max-width: 1200px){
+
+    .tb-dn{
+        display: none;
+    }
+
+    section{
+        width: 100%;
+    }
+    .top-banner{
+        width: 100%;
+        height: 370px;
+        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url(https://jupiter.planett.co.kr/ko/src/img/com-title.webp) no-repeat center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+    .top-banner .top-content{
+        width: 80%;
+        height: 100%;
+    }
+    .top-content .banner-tit{
+        height: 58%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .banner-tit h2{
+        color: #fff; 
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 1px;
+    }
+    .top-content .tab-container {
+        height: 43%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .tab-container .tabs{
+        width: 150px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 15px 15px 0 0;
+        margin-right: 10px;
+    
+        font-size: 19px;
+        color: #000;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: center;
+    
+        cursor: pointer;
+    }
+    .tabs.on{
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .tab_wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab {
+        display:none;
+    }
+    .tab.on {
+        display:block;
+    }
+    .tabs {
+        transition:all .3s;
+    }
+    
+    /* 소개 탭 */
+    #company{
+        width: 100%;
+    }
+    
+    .com-wrap{
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .com-top{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .com-top .com-img{
+        width: 90%;
+        height: 280px;
+        background: url(https://jupiter.planett.co.kr/ko/src/img/com-top.webp) no-repeat center;
+        background-size: cover;
+    }
+    .com-top .com-txt{
+        width: 90%;
+        padding-left: 5%;
+    }
+    .com-txt h3{
+        font-size: 35px;
+        font-weight: 800;
+        margin: 35px 0 15px;
+        line-height: 55px;
+    }
+    .com-txt span{
+        font-size: 21px;
+        line-height: 35px;
+        font-weight: 500;
+    }
+    
+    .com-mid{
+        width: 100%;
+        background-color: #f4f4f4;
+        padding: 100px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .com-mid h3{
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 80px;
+    
+    }
+    
+    .com-mid-content{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .com-mid-content .customer{
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 120px;
+    }
+    
+    .customer li{
+        width: 27%;
+        height: 320px;
+        background-color: #fff;
+        border: 1px solid #b1b1b1;
+        border-radius: 10px;
+        padding: 10px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        text-align: center;
+    }
+    .customer li img{
+        margin: 15% 0 10% ;
+        width: 100%;
+        max-width: 40px;
+    }
+    .customer li h4{
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 20px;
+    }
+    
+    .customer li span{
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    
+    .com-bottom{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .com-bt-bgimg{
+        width: 100%;
+        height: 350px;
+        background: url(https://jupiter.planett.co.kr/ko/src/img/com-bottom.webp) no-repeat;
+        background-position: 0 50%;
+        background-size: cover;
+    }
+    
+    .com-bt-txt{
+        width: 85%;
+        background-color: #fff;
+    
+        margin-top: -150px;
+        padding: 0 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        text-align: center;
+    }
+    
+    .com-bt-txt h3{
+        font-size: 35px;
+        font-weight: 700;
+        margin: 50px 0 30px;
+    }
+    
+    .com-bt-txt span{
+        font-size: 21px;
+        font-weight: 500;
+        line-height: 35px;
+        margin-bottom: 50px;
+    }
+    
+    .com-bottom img{
+        width: 80%;
+        max-width: 1000px;
+        margin-bottom: 20px;
+    }
+    
+    
+    /* 연혁 */
+    
+    #history {
+        width: 100%;
+    }
+    .his-wrap{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+    }
+    .timeline {
+        width: 100%;
+        position: relative;
+      }
+      
+      .timeline::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        background-color:#c7c7c7;
+        top: 0;
+        bottom: 0;
+        left: 150px;
+      }
+      
+      .container {
+        padding: 30px 28px;
+        position: relative;
+        background-color: inherit;
+        width: 100%;
+      }
+      
+      .container::after {
+        content: '';
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        background-color: white;
+        border: 4px solid #01bbff;
+        top: 120px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+      .container:nth-child(even)::after {
+        content: '';
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        background-color: white;
+        border: 4px solid #003cd4;
+        top: 120px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+      
+      .left {
+        left: 112px;
+      }
+      
+      .right {
+        left: 112px;
+      }
+    
+      
+      .content {
+        padding: 20px 30px 20px 100px;
+        position: relative;
+      }
+    
+      .content h2{
+        font-size: 38px;
+        font-weight: 800;
+        margin-bottom: 18px;
+      }
+      .content p{
+        font-size: 20px;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 17px;
+      }
+      .content p span{
+        color: #888;
+      }
+    
+    
+
+
+
+
+
+
+
+
+
+
+}
+
+/* 
+
+
+
+
+
+
+*/
+@media screen and (min-width:300px) and (max-width: 700px){
+
+
+    .mb-dn{
+        display: none;
+    }
+
+    section{
+        width: 100%;
+    }
+    .top-banner{
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url(https://jupiter.planett.co.kr/ko/src/img/com-title.webp) no-repeat center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+    .top-banner .top-content{
+        width: 80%;
+        height: 100%;
+    }
+    .top-content .banner-tit{
+        height: 58%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .banner-tit h2{
+        color: #fff; 
+        font-size: 28px;
+        line-height: 50px;
+        letter-spacing: 1px;
+    }
+    .top-content .tab-container {
+        height: 43%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .tab-container .tabs{
+        width: 110px;
+        height: 36px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 10px 10px 0 0;
+        margin-right: 10px;
+    
+        font-size: 15px;
+        color: #000;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+    
+        cursor: pointer;
+    }
+    .tabs.on{
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .tab_wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab {
+        display:none;
+    }
+    .tab.on {
+        display:block;
+    }
+    .tabs {
+        transition:all .3s;
+    }
+    
+    /* 소개 탭 */
+    #company{
+        width: 100%;
+    }
+    
+    .com-wrap{
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .com-top{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    .com-top .com-img{
+        width: 87vw;
+        height: 87vw;
+        background: url(https://jupiter.planett.co.kr/ko/src/img/com-top.webp) no-repeat center;
+        background-size: cover;
+    }
+    .com-top .com-txt{
+        width: 95%;
+    }
+    .com-txt h3{
+        font-size: 25px;
+        font-weight: 800;
+        margin: 35px 0 15px;
+        line-height: 28px;
+    }
+    .com-txt span{
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+    
+    .com-mid{
+        width: 100%;
+        background-color: #f4f4f4;
+        padding: 70px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .com-mid h3{
+        font-size: 25px;
+        font-weight: 800;
+        margin-bottom: 30px;
+        text-align: center;
+        line-height: 28px;
+    
+    }
+    
+    .com-mid-content{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .com-mid-content .customer{
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    
+    .customer li{
+        width: 100%;
+        height: 190px;
+        background-color: #fff;
+        border: 1px solid #b1b1b1;
+        border-radius: 10px;
+        padding: 15px;
+        margin-bottom: 20px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        
+    }
+    .customer li img{
+        width: 20%;
+        max-width: 40px;
+        margin: 15px 20px 0 0;
+    }
+    .customer li h4{
+        width: 98%;
+        font-size: 22px;
+        font-weight: 700;
+        margin: -30px 0 20px;
+    }
+    
+    .customer li span{
+        width: 98%;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 25px;
+    }
+    
+    .com-bottom{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .com-bt-bgimg{
+        width: 100%;
+        height: 150px;
+        background: url(https://jupiter.planett.co.kr/ko/src/img/com-bottom.webp) no-repeat;
+        background-position: 0 80%;
+        background-size: cover;
+    }
+    
+    .com-bt-txt{
+        width: 84%;
+        background-color: #fff;
+        margin-top: -50px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        text-align: center;
+    }
+    
+    .com-bt-txt h3{
+        font-size: 25px;
+        font-weight: 800;
+        margin: 30px 0 30px;
+    }
+    
+    .com-bt-txt span{
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 25px;
+        margin-bottom: 30px;
+    }
+    
+    .com-bottom img{
+        width: 90%;
+        max-width: 1000px;
+        margin-bottom: 20px;
+    }
+    
+    
+    /* 연혁 */
+    
+    #history {
+        width: 100%;
+    }
+    .his-wrap{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        margin: 50px 0;
+    }
+    .timeline {
+        width: 100%;
+        position: relative;
+      }
+      
+      .timeline::after {
+        content: '';
+        position: absolute;
+        width: 1px;
+        background-color:#c7c7c7;
+        top: 0;
+        bottom: 0;
+        left: 30px;
+      }
+      
+      .container { 
+        padding: 10px 0;
+        position: relative;
+        background-color: inherit;
+        width: 100%;
+      }
+      
+      .container::after {
+        content: '';
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        background-color: white;
+        border: 4px solid #01bbff;
+        top: 40px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+      .container:nth-child(even)::after {
+        content: '';
+        position: absolute;
+        width: 21px;
+        height: 21px;
+        background-color: white;
+        border: 4px solid #003cd4;
+        top: 40px;
+        border-radius: 50%;
+        z-index: 1;
+      }
+      
+      .left {
+        left: 20px;
+      }
+      
+      .right {
+        left: 20px;
+      }
+    
+      
+      .content {
+        padding: 20px 30px 20px 50px;
+        position: relative;
+      }
+    
+      .content h2{
+        font-size: 27px;
+        font-weight: 900;
+        margin-bottom: 18px;
+      }
+      .content p{
+        font-size: 15px;
+        font-weight: 700;
+        color: #000;
+        margin-bottom: 17px;
+      }
+      .content p span{
+        color: #888;
+      }
+    
+
+
+
+
+}

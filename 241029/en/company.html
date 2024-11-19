@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PlanetT</title>
+   <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/company.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./src/img/favicon.ico" type="image/x-icon">
+    <meta name="format-detection" content="telephone=no">
+    <script type="text/javascript" src="./src/js/header.js"></script>
+
+    
+
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <h1><a href="./index.html"><img src="https://jupiter.planett.co.kr/en/src/img/PLANETT_logo.webp" alt="planett-logo"></a></h1>
+            <nav class="pc-nav">
+                <ul class="menu">
+                    <li><a href="./company.html">Company</a>
+                        <ul class="tab-menu">
+                            <li><a href="./company.html">About us</a></li>
+                            <li><a href="./company.html?event=history">History</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./brand.html">Brand · Product</a>
+                        <ul class="tab-menu">
+                            <li><a href="./brand.html">eSIM</a></li>
+                            <li><a href="./brand.html?event=simcard">SIM Card</a></li>
+                            <li><a href="./brand.html?event=router">Mobile router</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./B2B.html">B2B</a>
+                        <ul class="tab-menu">
+                            <li><a href="./B2B.html">eSIM B2B solutions</a></li>
+                            <li><a href="./B2B.html?event=business">Business partnership</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./support.html">Careers</a>
+                    </li>
+                    <li><a href="./contact.html">Contact</a>
+                        <ul class="tab-menu">
+                            <li><a href="./contact.html">Address</a></li>
+                            <li><a href="./contact.html?event=mall">Brand mall</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="lang">
+                <a href="../ko/company.html">KOR</a>
+                <a href="./company.html">ENG</a>
+                <div class="lang-img">
+                        <img src="https://jupiter.planett.co.kr/en/src/img/lang_img.webp" alt="lang">
+                </div>
+            </div>
+            <nav class="mb-nav">
+                <ul class="menu change" id="menu">
+                    <li><a href="#">Company</a>
+                        <img src="https://jupiter.planett.co.kr/en/src/img/subicon.webp" alt="" class="subicon menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./company.html">About us</a></li>
+                            <li><a href="./company.html?event=history">History</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Brand · Product</a>
+                        <img src="https://jupiter.planett.co.kr/en/src/img/subicon.webp" alt="" class="subicon menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./brand.html">eSIM</a></li>
+                            <li><a href="./brand.html?event=simcard">SIM Card</a></li>
+                            <li><a href="./brand.html?event=router">Mobile router</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">B2B</a>
+                        <img src="https://jupiter.planett.co.kr/en/src/img/subicon.webp" alt="" class="subicon menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./B2B.html">eSIM B2B solutions</a></li>
+                            <li><a href="./B2B.html?event=business">Business partnership</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./support.html">Careers</a></li>
+                    <li><a href="#">Contact</a>
+                        <img src="https://jupiter.planett.co.kr/en/src/img/subicon.webp" alt="" class="subicon menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./contact.html">Address</a></li>
+                            <li><a href="./contact.html?event=mall">Brand mall</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </nav>
+            <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">
+                <div class="mn-icon" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+        </header>
+
+        <section class="top-banner">
+            <div class="top-content">
+                <div class="banner-tit">
+                    <h2>Company</h2>
+                </div>
+                <div class="tab-container">
+                    <div class="tabs on" onclick="openTab('company')">About us</div>
+                    <div id="tabhistory" class="tabs" onclick="openTab('history')">History</div>
+                </div>
+            </div>
+        </section>
+        <section class="tab_wrap">
+            <div id="company" class="tab on">
+                <div class="com-wrap">
+                    <div class="com-top">
+                      <div class="com-img"  data-aos="fade-in"></div>
+                      <div class="com-txt" data-aos="fade-up" >
+                          <h3 data-aos="fade-up">Your gateway to seamless <br class="tb-dn">Global Connectivity</h3>
+                          <span>In 2004, Planet T launched Korea's first portal roaming service,
+                             addressing communication challenges for travelers abroad.
+                             <br>With a range of offerings, including SIM cards, eSIMs, 
+                             and pocket WiFi, Planet T ensures a convenient and reliable communication experience, no matter where you are in the world.
+                          </span>
+                          <br>
+                          <br class="tb-dn mb-dn">
+                          <span>
+                            We have been growing by providing our customers with the best solutions through 
+                            continuous technological development and the expansion of our global network.
+                          </span>
+                          <br>
+                          <br class="tb-dn mb-dn">
+                          <span>
+                            Additionally, supported by a strong financial foundation and transparent corporate governance - evidenced 
+                            by our excellent credit ratings (A or above) - we are committed to creating customer-centric value and achieving sustainable growth. 
+                            <br>By securing a competitive edge in the market, we position ourselves as a trusted partner among our stakeholders.
+
+                          </span>
+                      </div>
+                    </div>
+                </div>
+                <div class="com-mid">
+                  <h3 data-aos="fade-up">Planet T satisfies the needs <br class="pc-dn tb-dn">of various customers.</h3>
+                  <div class="com-mid-content">
+                      <ul class="customer" data-aos="flip-down">
+                          <li>
+                              <img src="https://jupiter.planett.co.kr/en/src/img/customer.webp" alt="cs">
+                              <h4>Individual Users</h4>
+                              <span>
+                                We provide SIM cards, eSIMs, and portable Wi-Fi to overseas travelers and business professionals, 
+                                ensuring seamless data communication and convenient connectivity.
+                              </span>
+                          </li>
+                          <li>
+                              <img src="https://jupiter.planett.co.kr/en/src/img/customer2.webp" alt="cs">
+                              <h4>Corporate Customers</h4>
+                              <span>
+                                Our B2B eSIM purchasing platform offers efficient business solutions for companies needing bulk service usage.
+                              </span>
+                          </li>
+                          <li>
+                              <img src="https://jupiter.planett.co.kr/en/src/img/customer3.webp" alt="cs">
+                              <h4>Telecom Operators <br>and Partners</h4>
+                              <span>
+                                We collaborate with a range of telecom operators and partners to deliver our services, continually evolving through these partnerships.
+                              </span>
+                          </li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="com-bottom">
+                    <div class="com-bt-bgimg" data-aos="fade-in"></div>
+                    <div class="com-bt-txt" data-aos="fade-up">
+                        <h3>Global network</h3>
+                        <span>Planet T is a global company with subsidiaries in Hong Kong, the United States, and other countries. 
+                            <br>Each subsidiary has a deep understanding of local market characteristics and customer needs,
+                            <br>enabling us to offer tailored services that provide a distinct competitive advantage in the global market.
+                        </span>
+                    </div>
+                    <img src="https://jupiter.planett.co.kr/en/src/img/com-mapimg.webp" alt="com-map" class="com-map" data-aos="fade-in">
+                </div>
+            </div>
+            <div id="history" class="tab">
+                <div class="his-wrap">
+                    <div class="timeline">
+                        <div class="container left" >
+                          <div class="content" >
+                            <h2>2004</h2>
+                            <p><span>04</span>&nbsp;&nbsp;Establishment of Planet T Corporation</p>
+                            <p><span>06</span>&nbsp;&nbsp;Roaming Star Brand Launch</p>
+                          </div>
+                        </div>
+                        <div class="container right">
+                          <div class="content">
+                            <h2>2011</h2>
+                            <p><span>08</span>&nbsp;&nbsp;Launching of the U-SIM Store brand</p>
+                          </div>
+                        </div>
+                        <div class="container left">
+                          <div class="content">
+                            <h2>2015</h2>
+                            <p><span>01</span>&nbsp;&nbsp;Launching a WiFi egg brand</p>
+                          </div>
+                        </div>
+                        <div class="container right">
+                          <div class="content">
+                            <h2>2023</h2>
+                            <p><span>03</span>&nbsp;&nbsp;Launching of the Easy Play brand</p>
+                          </div>
+                        </div>
+                        <div class="container left">
+                          <div class="content">
+                            <h2>2024</h2>
+                            <p><span>09</span>&nbsp;&nbsp;Launching eSIM B2B platform</p>
+                          </div>
+                        </div>
+                      </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer" id="footer"> 
+            <div class="f-logo">
+                <a href="./index.html">
+                    <img src="https://jupiter.planett.co.kr/en/src/img/PLANETT_footerlogo.webp" alt="logo">
+                </a>
+                <div class="family-site pc-dn">
+                    <select name="none"  id="familySiteSelect" onchange="openLink();">
+                        <option value="none">Family Site</option>
+                        <option value="https://www.usimstore.com/shop/">Usimstore</option>
+                        <option value="https://en.esimplay.com/">eSIMplay</option>
+                        <option value="https://smartstore.naver.com/wifiegg">wifiegg</option>
+                   </select>
+                </div>
+            </div>
+            <div class="f-addr mb-dn">
+                <div class="f-addr-txt">
+                    <p>Company Name : Planet T INC.&nbsp;&nbsp;|&nbsp;&nbsp;
+                        Address : 1001, 424, Yangcheon-ro, Gangseo-gu, Seoul, Republic of Korea
+                    </p>
+                    <p>CEO : Seo Gab Soo&nbsp;&nbsp;|&nbsp;&nbsp;Business No. : 104-81-86880 (Republic of Korea)
+                        &nbsp;&nbsp;|&nbsp;&nbsp;Mail order sales approval No. : 2020-서울강서-2750
+                    </p>
+                    <p>Tel : 82-2-737-8282&nbsp;&nbsp;|&nbsp;&nbsp;Fax : 82-2-775-0808&nbsp;&nbsp;|&nbsp;&nbsp;e-mail : help@usimstore.com
+                    </p>
+                    <p>
+                        Online Privacy Policy Manager : Seo Jun Hyuck
+                    </p>
+                </div>
+                <div class="f-copy">
+                    Copyright ⓒ 2024 PlanetT.All rights reserved.
+                </div>
+            </div>
+            <div class="f-addr pc-dn tb-dn">
+                <div class="f-addr-txt">
+                    Company Name : Planet T INC.<br>
+                    Address : 1001, 424, Yangcheon-ro, Gangseo-gu, Seoul<br>
+                    CEO : Seo Gab Soo&emsp;Business No. : 104-81-86880<br>
+                    Mail order sales approval No. : 2020-서울강서-2750<br>
+                    Tel : 82-2-737-8282&emsp;Fax : 82-2-775-0808<br>
+                    e-mail : help@usimstore.com<br>
+                    Online Privacy Policy Manager : Seo Jun Hyuck
+                </div>
+                <div class="f-copy">
+                    Copyright ⓒ 2024 PlanetT.All rights reserved.
+                </div>
+            </div>
+            <div class="family-site mb-dn tb-dn">
+                <select name="none" onchange="window.open(value,'_blank');">
+                    <option value="none">Family Site</option>
+                    <option value="https://www.usimstore.com/shop/">Usimstore</option>
+                    <option value="https://en.esimplay.com/">eSIMplay</option>
+                    <option value="https://smartstore.naver.com/wifiegg">WIFIegg</option>
+               </select>
+            </div>
+        </footer>
+        <div id="divGotoTop" style="display: none; position:fixed; right: 5%; bottom: 50px; z-index: 999;" class="mb-dn">
+            <a href="javascript:void(0);" id="btnGotoTop"><img src="https://jupiter.planett.co.kr/en/src/img/fmsite.webp" alt="" ></a>
+            </div>
+    </div>   
+
+
+        <!-- 모바일 푸터 드롭다운 -->
+        <script>
+            function openLink() {
+                var select = document.getElementById("familySiteSelect");
+                var url = select.value;
+                if (url !== "none") {
+                    window.location.href = url; // 현재 창에서 이동
+                }
+            }
+            </script>
+    <!-- 헤더 js -->
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+          var x = document.getElementById("menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+
+<script>
+    $(function() {
+var prevScrollTop = 0;
+
+document.addEventListener("scroll", function() {
+    var nowScrollTop = $(window).scrollTop(); // 현재 스크롤 위치를 nowScrollTop에 저장
+
+    if (nowScrollTop <= 0) {
+        return;
+    }
+
+    if (nowScrollTop > prevScrollTop) {
+        $('header').addClass('active'); // 스크롤 방향(Down) 내릴 때 -> 헤더에 active 클래스 추가
+    } else {
+        $('header').removeClass('active'); // 스크롤 방향(Up) 올릴 때 -> 헤더에 active 클래스 제거
+    }
+    prevScrollTop = nowScrollTop; // prevScrollTop에 현재 스크롤 값을 저장
+});
+});
+</script>
+            <script>
+                $(document).ready(function() {
+                    $('#menu > li').click(function(e) {
+                        e.stopPropagation(); // 클릭 이벤트가 상위 요소로 전파되지 않도록 합니다.
+                        var $this = $(this);
+                        $this.toggleClass('open'); // 현재 클릭한 항목에 'open' 클래스 토글
+                        
+                        // 현재 클릭한 항목 외의 모든 항목에서 'open' 클래스 제거
+                        $('#menu > li').not($this).removeClass('open');
+                    });
+                    
+                    // 클릭 외부 영역 클릭 시 서브 메뉴 닫기
+                    $(document).click(function(e) {
+                        if (!$(e.target).closest('#menu > li').length) {
+                            $('#menu > li').removeClass('open');
+                        }
+                    });
+                });
+                    </script>
+
+
+    <!-- 부제목 탭 js -->
+     <script>
+        function openTab(tabName) {
+        document.querySelectorAll('.tab, .tabs').forEach(function(el) {
+            el.classList.remove('on');
+        });
+        document.getElementById(tabName).classList.add('on');
+        document.querySelector('.tabs[onclick="openTab(\'' + tabName + '\')"]').classList.add('on');
+    };
+
+    </script>
+
+      <!-- gototop -->
+      <script>
+        $(function () {
+            // 맨위로 이동하기
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) { // 높이 300을 기준으로 
+                    $('#divGotoTop').fadeIn();
+                    //this.console.log("show");
+                } else {
+                    $('#divGotoTop').fadeOut();
+                    //this.console.log("hide");
+                }
+            });
+            // 맨위로 버튼클릭
+            $("#btnGotoTop").click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });      
+    </script>
+    <!-- 스크롤 애니메이션 -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 700,  // 애니메이션 지속 시간 (밀리초)
+        easing: 'ease-in-out',  // 애니메이션의 이징 함수
+        delay: 100,  // 애니메이션 지연 시간 (밀리초)
+        offset: 120,  // 스크롤 감지의 시작 위치 (픽셀)
+        });
+    </script>
+
+
+</body>
+</html>

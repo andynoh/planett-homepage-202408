@@ -1,0 +1,301 @@
+/* pc */
+@media screen and (min-width:1200px) {
+
+/* footer */
+
+footer{
+    width: 100%;
+    bottom: 0;
+    background-color: #222;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .f-logo{
+    width: 30%;
+    display: flex;
+    justify-content: flex-end;
+
+}
+footer .f-logo img{
+    width: 90%;
+    box-sizing: border-box;
+    max-width: 370px;
+    margin-right: 5vw;
+}
+
+.f-addr{
+    width: 40%;
+}
+.f-addr-txt{
+    width: 90%;
+    margin-bottom: 50px;
+}
+.f-addr-txt p{
+    color: #fff;
+    font-size: 1em;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.f-copy{
+    color: #fff;
+    font-size: 18px;
+}
+
+.family-site{
+    width: 20%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.family-site select{
+    width: 220px;
+    height: 50px;
+    background-color: #000;
+    border: #fff 2px solid;
+    color: #fff;
+    font-size: 17px;
+    padding: 0 15px;
+    appearance:none;
+    background:url('https://jupiter.planett.co.kr/ko/src/img/fmsite.webp') no-repeat right 15px center;
+    background-size: 24px;
+}
+
+option{
+    height: 50px !important;
+    font-size: 15px;
+    padding: 5px;
+    background-color: #000;
+}
+
+
+#divGotoTop a{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color:#013EB0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#divGotoTop:hover{
+    opacity: 0.9;
+}
+
+#divGotoTop img{
+    width: 40px;
+}
+
+    /* 모바일 겹치는 부분 */
+    .mb-txt,.mb-nav,.nav-icon,.pc-dn{
+        display: none !important;
+    }
+}
+
+
+/* 
+
+
+
+
+
+
+
+
+
+
+*/
+@media screen and (min-width:700px) and (max-width: 1200px){
+
+
+    /* footer */
+
+footer{
+    width: 100%;
+    bottom: 0;
+    background-color: #222;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer .f-logo{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .f-logo img{
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 370px;
+    margin-bottom: 20px;
+}
+
+
+.family-site{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+}
+
+.family-site select{
+    width: 220px;
+    height: 40px;
+    background-color: #000;
+    border: #fff 2px solid;
+    color: #fff;
+    font-size: 17px;
+    padding: 0 15px;
+    appearance:none;
+    background:url('https://jupiter.planett.co.kr/ko/src/img/fmsite.webp') no-repeat right 15px center;
+    background-size: 24px;
+}
+
+option{
+    height: 50px !important;
+    font-size: 15px;
+    padding: 5px;
+    background-color: #000;
+}
+
+.f-addr{
+    width: 55%;
+    margin-left: 30px;
+}
+.f-addr-txt{
+    width: 90%;
+    margin: 0 0 20px;
+}
+.f-addr-txt p{
+    color: #fff;
+    font-size: 15px;
+    margin: 10px 0;
+    font-weight: 400;
+}
+.f-copy{
+    color: #fff;
+    font-size: 13px;
+}
+
+
+#divGotoTop a{
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color:#013EB0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#divGotoTop img{
+    width: 30px;
+    box-sizing: border-box;
+}
+
+
+.tb-dn{
+    display: none;
+}
+
+}
+/* 
+
+
+
+
+
+
+
+
+
+
+*/
+
+
+
+/* 모바일 */
+@media screen and (min-width:300px) and (max-width: 700px){
+
+
+/* footer */
+
+
+footer{
+    width: 100%;
+    bottom: 0;
+    background-color: #222;
+    padding: 35px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer .f-logo{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+footer .f-logo img{
+    width: 100%;
+    box-sizing: border-box;
+    max-width: 370px;
+    margin-bottom: 15px;
+}
+
+
+.family-site{
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 20px;
+}
+
+.family-site select{
+    width: 220px;
+    height: 40px;
+    background-color: #000;
+    border: #fff 2px solid;
+    color: #fff;
+    font-size: 17px;
+    padding: 0 15px;
+    appearance:none;
+    background:url('https://jupiter.planett.co.kr/ko/src/img/fmsite.webp') no-repeat right 15px center;
+    background-size: 24px;
+}
+
+option{
+    height: 50px !important;
+    font-size: 15px;
+    padding: 5px;
+    background-color: #000;
+}
+
+.f-addr{
+    width: 80%;
+}
+.f-addr-txt{
+    width: 100%;
+    margin: 0 0 20px;
+    text-align: center;
+    line-height: 20px;
+    color: #fff !important;
+    font-size: 11px;
+    margin-bottom: 35px;
+    font-weight: 400;
+}
+.f-copy{
+    color: #fff;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+    .mb-dn{
+         display: none !important;
+     }
+}

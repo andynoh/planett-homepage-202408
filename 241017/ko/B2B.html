@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLANETT</title>
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/header.css">
+    <link rel="stylesheet" href="./src/css/footer.css">
+    <link rel="stylesheet" href="./src/css/b2b.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="icon" href="./src/img/favicon.ico" type="image/x-icon">
+    <meta name="format-detection" content="telephone=no">
+    <script src="./src/js/header.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js?render=6LfwMFMqAAAAAJ-UFpXShUBjji-vFesINLOCbX8d"></script>
+
+
+    
+
+</head>
+<body>
+    <div id="wrap">
+        <header id="header" class="header">
+            <h1><a href="./index.html"><img src="https://jupiter.planett.co.kr/ko/src/img/PLANETT_logo.webp" alt="planett-logo"></a></h1>
+            <nav class="pc-nav">
+                <ul class="menu">
+                    <li><a href="./company.html">회사소개</a>
+                        <ul class="tab-menu">
+                            <li><a href="./company.html">소개</a></li>
+                            <li><a href="./company.html?event=history">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./brand.html">브랜드 · 상품소개</a>
+                        <ul class="tab-menu">
+                            <li><a href="./brand.html">eSIM</a></li>
+                            <li><a href="./brand.html?event=simcard">SIM Card</a></li>
+                            <li><a href="./brand.html?event=router">Mobile router</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./B2B.html">B2B 문의</a>
+                        <ul class="tab-menu">
+                            <li><a href="./B2B.html">eSIM B2B 솔루션</a></li>
+                            <li><a href="./B2B.html?event=business">비즈니스 제휴</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./support.html">채용</a>
+                    </li>
+                    <li><a href="./contact.html">고객지원</a>
+                        <ul class="tab-menu">
+                            <li><a href="./contact.html">오시는 길</a></li>
+                            <li><a href="./contact.html?event=mall">브랜드 몰</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <div class="lang">
+                <a href="./B2B.html">KOR</a>
+                <a href="../en/B2B.html">ENG</a>
+                <div class="lang-img">
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/lang_img.webp" alt="lang">
+                </div>
+            </div>
+            <nav class="mb-nav">
+                <ul class="menu change" id="menu">
+                    <li><a href="#">회사소개</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.webp" alt="" class="subicon menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./company.html">소개</a></li>
+                            <li><a href="./company.html?event=history">연혁</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">브랜드 · 상품소개</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.webp" alt="" class="subicon menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./brand.html">eSIM</a></li>
+                            <li><a href="./brand.html?event=simcard">SIM Card</a></li>
+                            <li><a href="./brand.html?event=router">Mobile router</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">B2B 문의</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.webp" alt="" class="subicon menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./B2B.html">eSIM B2B 솔루션</a></li>
+                            <li><a href="./B2B.html?event=business">비즈니스 제휴</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./support.html">채용</a></li>
+                    <li><a href="#">고객지원</a>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/subicon.webp" alt="" class="subicon menu-arrow menu-arrow-down">
+                        <ul class="sub">
+                            <li><a href="./contact.html">오시는 길</a></li>
+                            <li><a href="./contact.html?event=mall">브랜드 몰</a></li>
+                        </ul>
+                    </li>
+                </ul>
+        </nav>
+            <a href="javascript:void(0);" class="nav-icon" onclick="myFunction()">
+                <div class="mn-icon" onclick="myFunction(this)">
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </a>
+        </header>
+
+        <section class="top-banner">
+            <div class="top-content">
+                <div class="banner-tit">
+                    <h2>B2B 문의</h2>
+                </div>
+                <div class="tab-container">
+                    <div class="tabs on" onclick="openTab('solution')">eSIM 도매 플랫폼</div>
+                    <div id="tabbusiness" class="tabs" onclick="openTab('business')">비즈니스 제휴</div>
+                </div>
+            </div>
+        </section>
+        <section class="tab_wrap">
+            <div id="solution" class="tab on">
+                <div class="sol-wrap">
+                    <div class="sol-top">
+                      <div class="sol-img"  data-aos="fade-in"></div>
+                      <div class="sol-txt" data-aos="fade-up" >
+                          <h3 data-aos="fade-up">API 기반 글로벌 eSIM 도매 플랫폼 <br class="tb-dn">eSIM Station</h3>
+                          <h4>Unlock the Future of Connectivity <br class="tb-dn">with Seamless Global eSIM Integration</h4>
+                          <span>플래닛티의 B2B eSIM Wholesales 플랫폼은 eSIM을 대량으로
+                            <br class="tb-dn mb-dn">구매하고 즉시 판매할 수 있도록 돕는 혁신적인 온라인 플랫폼입니다.
+                            <br class="tb-dn mb-dn">물리적인 SIM카드가 필요 없는 eSIM의 특성을 활용하여
+                            <br class="tb-dn mb-dn">비즈니스 운영을 더욱 간편하게 하고, 
+                            <br class="tb-dn mb-dn">물류비용 절감과 신속한 거래를 가능하게 합니다.
+                          </span>
+                          <br>
+                          <br>
+                          <br class="tb-dn mb-dn">
+                          <span>
+                              또한 빠르고 효율적인 비즈니스 운영을 지원하며,
+                              <br class="tb-dn mb-dn">글로벌 네트워크를 활용하여
+                              <br class="tb-dn mb-dn">다양한 국가에서 지역화된 서비스를 제공합니다.
+                          </span>
+                      </div>
+                    </div>
+                </div>
+                <div class="sol-mid1 sol-mid">
+                  <h3 data-aos="fade-up">연동 효과</h3>
+                  <div class="sol-mid-content">
+                      <ul class="effect">
+                          <li>
+                            <ul class="effect-sub">
+                                <li data-aos="fade-up">
+                                    <h4>비즈니스 확장 및 수익 증대</h4>
+                                    <span>
+                                        새로운 상품 카테고리인 eSIM을 통해
+                                        <br class="tb-dn mb-dn">추가적인 수익원을 창출할 수 있으며,
+                                        <br class="tb-dn mb-dn">다양한 마켓과 고객층을 공략할 수 있습니다.
+                                    </span>
+                                </li>
+                                <li data-aos="fade-up">
+                                    <h4>빠르고 쉬운 시스템 통합</h4>
+                                    <span>
+                                        eSIM Station의 RESTful API와 JSON 데이터
+                                        <br class="tb-dn mb-dn">형식을 활용해 간편하게 시스템에 연동할 수 있으며,
+                                        <br class="tb-dn mb-dn">빠른 시간 내에 운영을 시작할 수 있습니다.
+                                    </span>
+                                </li>
+                            </ul>
+                          </li>
+                          <li>
+                            <ul class="effect-sub">
+                                <li data-aos="fade-up">
+                                    <h4>재고 관리의 부담 해소</h4>
+                                    <span>
+                                        eSIM Station을 통해 별도의 재고 관리 없이 전 세계
+                                        <br class="tb-dn mb-dn">다양한 통신사의 eSIM을 손쉽게 판매할 수 있습니다.
+                                        <br class="tb-dn mb-dn">이는 재고 리스크를 줄이고 운영 효율성을 극대화합니다.
+                                    </span>
+                                </li>
+                                <li data-aos="fade-up">
+                                    <h4>글로벌 통신사 네트워크 접근성</h4>
+                                    <span>
+                                        전 세계 통신사와의 연결을 통해
+                                        <br class="tb-dn mb-dn">글로벌 커버리지를 제공하며, 고객에게 다양한 
+                                        <br class="tb-dn mb-dn">선택지를 제시할 수 있습니다.
+                                    </span>
+                                </li>
+                            </ul>
+                        </li>
+                      </ul>
+                  </div>
+                </div>
+                <div class="sol-mid2 sol-mid">
+                  <h3 data-aos="fade-up">주요 기능 및 특징</h3>
+                  <div class="sol-mid-icon mb-dn">
+                      <ul class="function1 function">
+                          <li>
+                              <img src="https://jupiter.planett.co.kr/ko/src/img/api.webp" alt="api">
+                              <h4>RESTfull API 지원</h4>
+                              <span>
+                                  간편한 통합과 확장성을 제공하는
+                                  <br class="mb-dn">표준화된 API를 통해
+                                  <br class="mb-dn">손쉽게 시스템에 접근 가능
+                              </span>
+                          </li>
+                          <li>
+                            <img src="https://jupiter.planett.co.kr/ko/src/img/json.webp" alt="json">
+                              <h4>JSON 데이터 형식</h4>
+                              <span>
+                                  직관적이고 효율적인 데이터 처리와
+                                  <br class="mb-dn">교환을 위해 JSON 포맷 사용
+                              </span>
+                          </li>
+                          <li>
+                            <img src="https://jupiter.planett.co.kr/ko/src/img/search.webp" alt="search">
+                              <h4>상품 조회</h4>
+                              <span>
+                                  최신 eSIM 상품 정보를
+                                  <br class="mb-dn">실시간으로 확인
+                              </span>
+                          </li>
+                        </ul>
+                        <ul class="function2 function">
+                            <li>
+                              <img src="https://jupiter.planett.co.kr/ko/src/img/manage.webp" alt="manage">
+                                <h4>주문 관리</h4>
+                                <span>
+                                    API를 통해 eSIM 주문을 <br class="pc-dn mb-dn">간편하게 처리하고,
+                                    <br class="mb-dn">주문 상태를 실시간으로 추적
+                                </span>
+                            </li>
+                            <li>
+                              <img src="https://jupiter.planett.co.kr/ko/src/img/order.webp" alt="order">
+                                <h4>실시간 주문 조회</h4>
+                                <span>
+                                    API를 통해 <br class="pc-dn mb-dn">언제든지 주문 내역을 확인하고,
+                                    <br class="mb-dn">필요한 정보를 빠르게 수집
+                                </span>
+                            </li>
+                        </ul>
+                  </div>
+                  <div class="icon-swiper swiper mySwiper pc-dn tb-dn" data-aos="fade-up">
+                      <div class="sol-mid-icon  swiper-container icon-slide">
+                        <ul class="function swiper-wrapper">
+                            <li class="swiper-slide">
+                                <img src="https://jupiter.planett.co.kr/ko/src/img/api.webp" alt="api">
+                                <h4>RESTfull API 지원</h4>
+                                <span>
+                                    간편한 통합과 확장성을 제공하는
+                                    <br class="mb-dn">표준화된 API를 통해
+                                    <br class="mb-dn">손쉽게 시스템에 접근 가능
+                                </span>
+                            </li>
+                            <li class="swiper-slide">
+                              <img src="https://jupiter.planett.co.kr/ko/src/img/json.webp" alt="json">
+                                <h4>JSON 데이터 형식</h4>
+                                <span>
+                                    직관적이고 효율적인 데이터 처리와
+                                    <br class="mb-dn">교환을 위해 JSON 포맷 사용
+                                </span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="https://jupiter.planett.co.kr/ko/src/img/search.webp" alt="search">
+                                <h4>상품 조회</h4>
+                                <span>
+                                    최신 eSIM 상품 정보를
+                                    <br class="mb-dn">실시간으로 확인
+                                </span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="https://jupiter.planett.co.kr/ko/src/img/manage.webp" alt="manage">
+                                <h4>주문 관리</h4>
+                                <span>
+                                    API를 통해 eSIM 주문을 <br class="pc-dn mb-dn">간편하게 처리하고,
+                                    <br class="mb-dn">주문 상태를 실시간으로 추적
+                                </span>
+                            </li>
+                            <li class="swiper-slide">
+                                <img src="https://jupiter.planett.co.kr/ko/src/img/order.webp" alt="order">
+                                <h4>실시간 주문 조회</h4>
+                                <span>
+                                    API를 통해 <br class="pc-dn mb-dn">언제든지 주문 내역을 확인하고,
+                                    <br class="mb-dn">필요한 정보를 빠르게 수집
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="swiper-button-prev pc-dn tb-dn"></div>
+                        <div class="swiper-button-next pc-dn tb-dn"></div>
+                        <div class="page-box">
+                            <div class="swiper-pagination1 pc-dn tb-dn"></div>
+                        </div>
+                      </div>
+                  </div>
+                </div>
+                <div class="sol-mid3 sol-mid">
+                    <h3 data-aos="fade-up">도입 절차</h3>
+                    <div class="step" data-aos="fade-in">
+                        <ul class="step-sub step-top">
+                            <li class="step-cont">
+                                <p>STEP 01.</p>
+                                <h4>계약서 작성</h4>
+                                <span>서비스 이용을 위한 계약 체결</span>
+                            </li>
+                            <li class="step-cont bottom">
+                                <p>STEP 02.</p>
+                                <h4>관리자 계정 및<br class="tb-dn">API Credential 생성</h4>
+                                <span>제휴사 관리자 계정 발급 및<br>API 인증 정보 제공</span>
+                            </li>
+                            <li class="step-cont">
+                                <p>STEP 03.</p>
+                                <h4>판매 상품 및 <br class="pc-dn mb-dn">공급가 설정</h4>
+                                <span>판매할 상품과 공급 가격 설정</span>
+                            </li>
+                            <li class="step-cont bottom">
+                                <p>STEP 04.</p>
+                                <h4>API 연동 개발</h4>
+                                <span>제휴사 시스템과<br>eSIM Station API의 연동 개발</span>
+                            </li>
+                            <li class="step-cont">
+                                <p>STEP 05.</p>
+                                <h4>시스템 운영</h4>
+                                <span>서비스 운영 및 관리</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="step-right tb-dn mb-dn">
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/step-right.webp" alt="step>">
+                    </div>
+                </div>
+                <div class="sol-bottom">
+                    <h3 data-aos="fade-up">B2B eSIM 솔루션을 도입해<br>
+                    더 많은 글로벌 비즈니스 <br class="pc-dn tb-dn">기회를 발견하세요.</h3>
+                    <div class="form">
+                        <h3>eSIM B2B 문의</h3>
+                        <span class="mb-dn">아래 내용을 작성하여 문의해 주시면 담당자가 빠르게 답변드리겠습니다.</span>
+                        <form class="form_area gform" id="gform3" name="fmain_form" method="post" action="https://jupiter.planett.co.kr/api/submit" onsubmit="onSubmit3(); return false;">
+                            <ul>
+                                <li class="form-top">
+                                    <div>
+                                        <label>문의 유형</label>                                       
+                                        <select name="dropdown" id="form-select3" required class="f-select f-input" onchange="updateDropdownText3()">
+                                            <option value="" disabled >문의유형 선택</option>
+                                            <option value="CScenter">일반 문의</option>
+                                            <option value="Partnership" >비즈니스 제휴</option>
+                                            <option value="B2B" selected >B2B 문의</option>
+                                            <option value="Recruitment">채용 문의</option>
+                                        </select>
+                                        <input type="hidden" name="dropdownText" id="dropdownText3" class="pc-dn tb-dn mb-dn">
+                                    </div>
+                                    <div>
+                                        <label>업체명</label>                
+                                        <input type="text" name="company" id="company3" class="f-input" maxlength="50">
+                                    </div>
+                                </li>
+                                <li class="form-bottom">
+                                    <div>
+                                        <label>이름</label>                
+                                        <input type="text" name="name" id="name3" required class="f-input" maxlength="20">
+                                    </div>
+                                    <div>
+                                        <label>이메일</label>                
+                                        <input pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" type="email" name="email" required class="f-input" id="email3">             
+                                    </div>
+                                </li>
+                                <li>
+                                    <label>문의 내용</label>
+                                    <textarea name="message" id="message3" class="f-input" style="width: auto;" required></textarea>
+                                </li>                                
+                            </ul>
+                            <input type="hidden" id="recaptchaToken3" name="recaptchaToken">
+                            <div class="responseMessage" style="margin-top: 10px;"></div>
+                            <input type="submit" value="문의하기" class="send">
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+
+
+
+            <div id="business" class="tab">
+                <div class="busi-wrap">
+                    <div class="busi-top">
+                        <h3 data-aos="fade-up">제휴 안내</h3>
+                        <span data-aos="fade-up">플래닛티는 도소매, 여행산업, 통신사, 마케팅 등 다양한 분야에서
+                            <br class="mb-dn">혁신적이고 상호 이익을 추구하는 비즈니스 제휴를 진행하고 있습니다.
+                            <br class="mb-dn">글로벌 네트워크와 전문성을 바탕으로, <br class="pc-dn mb-dn">파트너와 함께 성장할 기회를 모색합니다.
+                        </span>
+                        <img src="https://jupiter.planett.co.kr/ko/src/img/businessgroup.webp" alt="group" data-aos="fade-in">
+                    </div>
+                    <div class="busi-mid swiper mySwiper">
+                        <h3 data-aos="fade-up">제휴 분야</h3>
+                        <div class="slide-container swiper-container">
+                            <div class="swiper-button-prev"></div>
+                            <ul class="part-slide swiper-wrapper">
+                                <li class="swiper-slide">
+                                    <div class="part-tit">
+                                        <h4>도매 파트너십</h4>
+                                        <img src="https://jupiter.planett.co.kr/ko/src/img/part1.webp" alt="1">
+                                    </div>
+                                    <div class="part-txt">
+                                        플래닛티는 다양한 도매 파트너와의 협력을 통해
+                                        글로벌 시장에서의 입지를 강화하고 있습니다.
+                                        글로벌 로밍 서비스 제공업체, 유통파트너, 여행산업 회사 및
+                                        리셀러와의 협업을 통해 더욱 폭넓은 고객층에게 서비스를 제공합니다.
+                                        <br>
+                                        특히, API 기반의 글로벌 eSIM 도매 플랫폼인 eSIM Station을 출시하여,
+                                        비즈니스 파트너들이 더욱 효율적으로 비즈니스를 운영하고
+                                        물류 비용을 절감하며, 신속한 거래를 가능하게 지원하고 있습니다.
+                                    </div>
+                                    <ul class="part-list">
+                                        <li>글로벌 로밍 서비스 제공업체</li>
+                                        <li>유통 파트너</li>
+                                        <li>여행산업 회사</li>
+                                        <li>리셀러</li>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="part-tit">
+                                        <h4>소매 파트너십</h4>
+                                        <img src="https://jupiter.planett.co.kr/ko/src/img/part2.webp" alt="2">
+                                    </div>
+                                    <div class="part-txt">
+                                        온라인 쇼핑몰, 오프라인 매장 및 해외여행객과 기업체를 대상으로 하는
+                                        판매 채널을 확대하고 있습니다.
+                                        <br>
+                                        플래닛티와의 소매 파트너십은 합리적인 가격과 좋은 퀄리티의 상품을
+                                        공급하여 시장에서의 경쟁력을 높이는 기회를 제공합니다.
+                                    </div>
+                                    <ul class="part-list">
+                                        <li>온라인 쇼핑몰</li>
+                                        <li>오프라인 매장</li>
+                                        <li>해외여행객 대상 판매</li>
+                                        <li>기업체 대상 판매</li>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="part-tit">
+                                        <h4>여행 산업 제휴</h4>
+                                        <img src="https://jupiter.planett.co.kr/ko/src/img/part3.webp" alt="3">
+                                    </div>
+                                    <div class="part-txt">
+                                        호텔, 티켓, 투어 등의 여행상품과 결합하여 판매 · 제휴를 통해
+                                        여행 중 편리하고 원활한 데이터 사용을 지원합니다.
+                                    </div>
+                                    <ul class="part-list">
+                                        <li>여행 플랫폼 : <br>
+                                        해외 로밍 서비스, eSIM 판매 등 여행 관련 <br class="pc-dn tb-dn">서비스 제공</li>
+                                        <li>여행사 및 OTA(Online Travel Agency)</li>
+                                        <li>항공사 및 크루즈 라인</li>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="part-tit">
+                                        <h4>통신사 파트너십</h4>
+                                        <img src="https://jupiter.planett.co.kr/ko/src/img/part4.webp" alt="4">
+                                    </div>
+                                    <div class="part-txt">
+                                        플래닛티는 MNO (Mobile Network Operator) 및
+                                        MVNO (Mobile Virtual Network Operator)와의 긴밀한 협력을 통해
+                                        안정적이고 폭넓은 통신 서비스를 제공합니다.
+                                        이를 통해 고객들에게 최상의 통신 경험을 제공합니다.
+                                        <br>
+                                        또한 플래닛티는 LG U+ 인바운드 상품의 총판을 보유하고 있으며
+                                        파트너 상품의 매출을 확대하고 다양한 유통 채널을 통해
+                                        성공적인 판매가 이루어질 수 있도록 지원합니다.
+                                    </div>
+                                    <ul class="part-list">
+                                        <li>MNO (Mobile Network Operator)</li>
+                                        <li>MVNO (Mobile Virtual Network Operator)</li>
+                                    </ul>
+                                </li>
+                                <li class="swiper-slide">
+                                    <div class="part-tit">
+                                        <h4>마케팅 제휴</h4>
+                                        <img src="https://jupiter.planett.co.kr/ko/src/img/part5.webp" alt="5">
+                                    </div>
+                                    <div class="part-txt">
+                                        인플루언서, 크리에이터, 콘텐츠 제작자 및 미디어와의 제휴를 통해
+                                        플래닛티의 브랜드 가치를 극대화 합니다.
+                                        다양한 마케팅 채널을 통해 플래닛티의 혁신적인 서비스와
+                                        제품을 더욱 많은 소비자에게 알리고자 합니다.
+                                    </div>
+                                    <ul class="part-list">
+                                        <li>인플루언서 / 크리에이터</li>
+                                        <li>콘텐츠 제작자</li>
+                                        <li>미디어</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                            <div class="swiper-button-next"></div>
+                        </div>
+                    </div>
+                    <div class="busi-bottom">
+                        <h3 data-aos="fade-up">비즈니스 제휴로<br>더 많은 매출 기회를 창출해 보세요.</h3>
+                        <div class="form">
+                            <h3>비즈니스 제휴 문의하기</h3>
+                            <span class="mb-dn">아래 내용을 작성하여 문의해 주시면 담당자가 빠르게 답변 드리겠습니다.</span>
+    
+                            <form class="form_area gform" id="gform4" name="fmain_form" method="post" action="https://jupiter.planett.co.kr/api/submit" onsubmit="onSubmit4(); return false;">
+                                <ul>
+                                    <li class="form-top">
+                                        <div>
+                                            <label>문의 유형</label>                                       
+                                            <select name="dropdown" id="form-select4" required class="f-select f-input" onchange="updateDropdownText4()">
+                                                <option value="" disabled >문의유형 선택</option>
+                                                <option value="CScenter">일반 문의</option>
+                                                <option value="Partnership" selected>비즈니스 제휴</option>
+                                                <option value="B2B" >B2B 문의</option>
+                                                <option value="Recruitment">채용 문의</option>
+                                            </select>
+                                            <input type="hidden" name="dropdownText" id="dropdownText4" class="pc-dn tb-dn mb-dn">
+                                        </div>
+                                        <div>
+                                            <label>업체명</label>                
+                                            <input type="text" name="company" id="company4" class="f-input" maxlength="50">
+                                        </div>
+                                    </li>
+                                    <li class="form-bottom">
+                                        <div>
+                                            <label>이름</label>                
+                                            <input type="text" name="name" id="name4" required class="f-input" maxlength="20">
+                                        </div>
+                                        <div>
+                                            <label>이메일</label>                
+                                            <input pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" type="email" name="email" required class="f-input" id="email4">             
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <label>문의 내용</label>
+                                        <textarea name="message" id="message4" class="f-input" style="width: auto;" required></textarea>
+                                    </li>                                
+                                </ul>
+                                <input type="hidden" id="recaptchaToken4" name="recaptchaToken">
+                                <div class="responseMessage" style="margin-top: 10px;"></div>
+                                <input type="submit" value="문의하기" class="send">
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <footer class="footer" id="footer"> 
+            <div class="f-logo">
+                <a href="../ko/index.html">
+                    <img src="https://jupiter.planett.co.kr/ko/src/img/PLANETT_footerlogo.webp" alt="logo">
+                </a>
+                <div class="family-site pc-dn">
+                    <select name="none"  id="familySiteSelect" onchange="openLink();">
+                        <option value="none">Family Site</option>
+                        <option value="https://www.usimstore.com/shop/">유심스토어</option>
+                        <option value="https://esimplay.com/">이심플레이</option>
+                        <option value="https://smartstore.naver.com/wifiegg">와이파이에그</option>
+                   </select>
+                </div>
+            </div>
+            <div class="f-addr mb-dn">
+                <div class="f-addr-txt">
+                    <p>상호명 : (주)플래닛티&nbsp;&nbsp;|&nbsp;&nbsp;
+                        주소 : 서울특별시 강서구 양천로 424, 데시앙플렉스 1001호 (등촌동)
+                    </p>
+                    <p>대표자 : 서갑수&nbsp;&nbsp;|&nbsp;&nbsp;사업자등록번호 : 104-81-86880
+                        &nbsp;&nbsp;|&nbsp;&nbsp;통신판매업신고번호 : 2020-서울강서-2750
+                    </p>
+                    <p>전화 : 02-737-8282&nbsp;&nbsp;|&nbsp;&nbsp;팩스 : 02-775-0808&nbsp;&nbsp;|&nbsp;&nbsp;이메일 : help@usimstore.com
+                    </p>
+                    <p>
+                        개인정보보호책임자 : 서준혁
+                    </p>
+                </div>
+            </div>
+            <div class="f-addr pc-dn tb-dn">
+                <div class="f-addr-txt">
+                    상호명 : (주)플래닛티<br>
+                    주소 : 서울특별시 강서구 양천로 424, 데시앙플렉스 1001호 (등촌동)<br>
+                    대표자 : 서갑수&emsp;사업자등록번호 : 104-81-86880<br>
+                    통신판매업신고번호 : 2020-서울강서-2750<br>
+                    전화 : 02-737-8282&emsp;팩스 : 02-775-0808<br>
+                    이메일 : help@usimstore.com<br>
+                    개인정보보호책임자 : 서준혁
+                </div>
+                <div class="f-copy">
+                    Copyright ⓒ 2024 PlanetT.All rights reserved.
+                </div>
+            </div>
+            <div class="family-site mb-dn tb-dn">
+                <select name="none" onchange="window.open(value,'_blank');">
+                    <option value="none">Family Site</option>
+                    <option value="https://www.usimstore.com/shop/">유심스토어</option>
+                    <option value="https://esimplay.com/">이심플레이</option>
+                    <option value="https://smartstore.naver.com/wifiegg">와이파이에그</option>
+               </select>
+            </div>
+        </footer>
+        <div id="divGotoTop" style="display: none; position:fixed; right: 5%; bottom: 50px; z-index: 999;" class="mb-dn">
+            <a href="javascript:void(0);" id="btnGotoTop"><img src="https://jupiter.planett.co.kr/ko/src/img/fmsite.webp" alt=""></a>
+            </div>
+    </div>   
+
+
+
+    
+    <!-- 모바일 푸터 드롭다운 -->
+    <script>
+        function openLink() {
+            var select = document.getElementById("familySiteSelect");
+            var url = select.value;
+            if (url !== "none") {
+                window.location.href = url; // 현재 창에서 이동
+            }
+        }
+        </script>
+    <!-- 헤더 js -->
+    <script src="https://code.jquery.com/jquery-1.11.2.min.js"></script>
+    <script>
+        function myFunction(x) {
+          x.classList.toggle("change");
+          var x = document.getElementById("menu");
+          if (x.style.display === "block") {
+            x.style.display = "none";
+          } else {
+            x.style.display = "block";
+          }
+        }
+    </script>
+    <script>
+        $(function() {
+    var prevScrollTop = 0;
+
+    document.addEventListener("scroll", function() {
+        var nowScrollTop = $(window).scrollTop(); // 현재 스크롤 위치를 nowScrollTop에 저장
+
+        if (nowScrollTop <= 0) {
+            return;
+        }
+
+        if (nowScrollTop > prevScrollTop) {
+            $('header').addClass('active'); // 스크롤 방향(Down) 내릴 때 -> 헤더에 active 클래스 추가
+        } else {
+            $('header').removeClass('active'); // 스크롤 방향(Up) 올릴 때 -> 헤더에 active 클래스 제거
+        }
+        prevScrollTop = nowScrollTop; // prevScrollTop에 현재 스크롤 값을 저장
+    });
+});
+    </script>
+            <script>
+                $(document).ready(function() {
+                    $('#menu > li').click(function(e) {
+                        e.stopPropagation(); // 클릭 이벤트가 상위 요소로 전파되지 않도록 합니다.
+                        var $this = $(this);
+                        $this.toggleClass('open'); // 현재 클릭한 항목에 'open' 클래스 토글
+                        
+                        // 현재 클릭한 항목 외의 모든 항목에서 'open' 클래스 제거
+                        $('#menu > li').not($this).removeClass('open');
+                    });
+                    
+                    // 클릭 외부 영역 클릭 시 서브 메뉴 닫기
+                    $(document).click(function(e) {
+                        if (!$(e.target).closest('#menu > li').length) {
+                            $('#menu > li').removeClass('open');
+                        }
+                    });
+                });
+                    </script>
+
+    <!-- 부제목 탭 js -->
+     <script>
+        function openTab(tabName) {
+        document.querySelectorAll('.tab, .tabs').forEach(function(el) {
+            el.classList.remove('on');
+        });
+        document.getElementById(tabName).classList.add('on');
+        document.querySelector('.tabs[onclick="openTab(\'' + tabName + '\')"]').classList.add('on');
+    }
+     </script>
+      <!-- gototop -->
+      <script>
+        $(function () {
+            // 맨위로 이동하기
+            $(window).scroll(function () {
+                if ($(this).scrollTop() > 50) { // 높이 300을 기준으로 
+                    $('#divGotoTop').fadeIn();
+                    //this.console.log("show");
+                } else {
+                    $('#divGotoTop').fadeOut();
+                    //this.console.log("hide");
+                }
+            });
+            // 맨위로 버튼클릭
+            $("#btnGotoTop").click(function () {
+                $('html, body').animate({
+                    scrollTop: 0
+                }, 400);
+                return false;
+            });
+        });      
+    </script>
+    <!-- 스크롤 애니메이션 -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        AOS.init({
+        duration: 700,  // 애니메이션 지속 시간 (밀리초)
+        easing: 'ease-in-out',  // 애니메이션의 이징 함수
+        delay: 100,  // 애니메이션 지연 시간 (밀리초)
+        offset: 120,  // 스크롤 감지의 시작 위치 (픽셀)
+        });
+    </script>
+    <!-- 제휴 분야 슬라이드 -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper1 = new Swiper(".slide-container", {
+          autoplay: {
+                    delay: 1500, 
+                        // 슬라이드가 자동으로 전환되기까지의 시간 간격
+                    desableOnInteraction: false, 
+                        // arrow나 pagination이용 후 자동 재생을 비활성화 할지의 여부
+                      },
+          speed: 1500,
+            // 슬라이드가 자동으로 전환되는 속도를 설정
+          grabCursor: true,
+          breakpoints: {
+            300:{
+                slidesPerView: 1,
+            },
+            1200: {
+                slidesPerView: 2,
+            },
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          loop : true
+        });
+      </script>
+    <!-- 모바일 주요기능 슬라이드 -->
+    <script>
+        var swiper2 = new Swiper(".icon-slide", {
+          autoplay: {
+                    delay: 1500, 
+                        // 슬라이드가 자동으로 전환되기까지의 시간 간격
+                      },
+          speed: 2000,
+            // 슬라이드가 자동으로 전환되는 속도를 설정
+          slidesPerView: "1",
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+                    el: '.swiper-pagination1',
+                    type: "fraction",
+                    },
+         loop :true
+        });
+      </script>
+    <!-- 문의하기 -->
+    <script>
+        function onSubmit3() {
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfwMFMqAAAAAJ-UFpXShUBjji-vFesINLOCbX8d', {action: 'submit_inquiry'}).then(function(token) {
+                document.getElementById('recaptchaToken3').value = token;
+
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://jupiter.planett.co.kr/api/submit', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4) {
+                        const responseMessage = document.querySelector('#gform3 .responseMessage'); // 수정된 부분
+                        const data = JSON.parse(xhr.responseText);
+                        responseMessage.style.color = data.success ? 'green' : 'red';
+                        responseMessage.innerText = data.message;
+
+                        if (data.success) {
+                            document.getElementById('gform3').reset();
+                        }
+                    }
+                };
+
+                var formData = new FormData(document.getElementById('gform3'));
+                var urlEncodedData = new URLSearchParams(formData).toString();
+                xhr.send(urlEncodedData);
+            });
+        });
+    }
+    function updateDropdownText3() {
+    var selectElement = document.getElementById('form-select3');
+    var selectedText = selectElement.options[selectElement.selectedIndex].text;
+    document.getElementById('dropdownText3').value = selectedText;  // 선택한 옵션의 텍스트 값을 숨겨진 필드에 저장
+}
+
+
+
+    function onSubmit4() {
+        grecaptcha.ready(function() {
+            grecaptcha.execute('6LfwMFMqAAAAAJ-UFpXShUBjji-vFesINLOCbX8d', {action: 'submit_inquiry'}).then(function(token) {
+                document.getElementById('recaptchaToken4').value = token;
+
+                var xhr = new XMLHttpRequest();
+                xhr.open('POST', 'https://jupiter.planett.co.kr/api/submit', true);
+                xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
+
+                xhr.onreadystatechange = function() {
+                    if (xhr.readyState === 4) {
+                        const responseMessage = document.querySelector('#gform4 .responseMessage'); // 수정된 부분
+                        const data = JSON.parse(xhr.responseText);
+                        responseMessage.style.color = data.success ? 'green' : 'red';
+                        responseMessage.innerText = data.message;
+
+                        if (data.success) {
+                            document.getElementById('gform4').reset();
+                        }
+                    }
+                };
+
+                var formData = new FormData(document.getElementById('gform4'));
+                var urlEncodedData = new URLSearchParams(formData).toString();
+                xhr.send(urlEncodedData);
+            });
+        });
+    }
+    function updateDropdownText4() {
+    var selectElement = document.getElementById('form-select4');
+    var selectedText = selectElement.options[selectElement.selectedIndex].text;
+    document.getElementById('dropdownText4').value = selectedText;  // 선택한 옵션의 텍스트 값을 숨겨진 필드에 저장
+}
+
+</script>
+</body>
+</html>

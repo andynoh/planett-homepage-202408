@@ -1,0 +1,2210 @@
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard-dynamic-subset.css');/* regular-400, medium-500, semibold-600, bold-700 */ 
+
+@media screen and (min-width:1200px) {
+
+.pc-dn{
+    display: none;
+}
+
+section{
+    width: 100%;
+}
+.top-banner{
+    width: 100%;
+    height: 500px;
+    background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.9)), url(https://jupiter.planett.co.kr/en/src/img/b2b-title.webp) no-repeat;
+    background-position: 50% 65%;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+}
+.top-banner .top-content{
+    width: 60%;
+    height: 100%;
+}
+.top-content .banner-tit{
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+.banner-tit h2{
+    color: #fff; 
+    font-size: 60px;
+    line-height: 50px;
+    letter-spacing: 3px;
+}
+.top-content .tab-container {
+    height: 50%;
+    display: flex;
+    align-items: flex-end;
+}
+.tab-container .tabs{
+    width: 240px;
+    height: 55px;
+    background-color: rgba(255, 255, 255, 0.6);
+    border-radius: 15px 15px 0 0;
+    margin-right: 10px;
+
+    font-size: 20px;
+    color: #000;
+    font-weight: 700;
+    line-height: 55px;
+    text-align: center;
+
+    cursor: pointer;
+}
+.tab-container .tabs:hover{
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
+.tabs.on{
+    background-color: rgb(255, 255, 255);
+}
+.tabs.on:hover{
+    background-color: rgb(255, 255, 255);
+}
+
+.tab_wrap{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.tab {
+    display:none;
+}
+.tab.on {
+    display:block;
+}
+.tabs {
+    transition:all .3s;
+}
+
+/* 플랫폼 탭 */
+#solution{
+    width: 100%;
+}
+
+.sol-wrap{
+    width: 100%;
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sol-top{
+    width: 60%;
+    display: flex;
+    margin-bottom: 100px;
+}
+.sol-top .sol-img{
+    width: 40%;
+    height: 680px;
+    background: url(https://jupiter.planett.co.kr/en/src/img/b2b-top.webp) no-repeat center;
+    background-size: cover;
+    margin-left: 5%;
+}
+.sol-top .sol-txt{
+    width: 50%;
+    padding-left: 5%;
+}
+.sol-txt h3{
+    font-size: 48px;
+    font-weight: 800;
+    margin: 20px 0 20px;
+    line-height: 55px;
+}
+.sol-txt h4{
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 40px;
+}
+.sol-txt span{
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 500;
+}
+
+.sol-mid1, .sol-mid3{
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 100px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sol-mid h3, .sol-bottom h3{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 50px;
+
+}
+
+.sol-mid-content{
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 100px;
+}
+
+.sol-mid-content .effect{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.effect>li{
+    width: 100%;
+}
+
+.effect-sub{
+    width: 100%;
+    display: flex;
+}
+
+.effect-sub li{
+    width: 44%;
+    background-color: #fff;
+    border: 1px solid #b1b1b1;
+    border-radius: 10px;
+    padding: 60px 40px 60px 40px;
+
+    display: flex;
+    flex-direction: column;
+    margin: 1%;
+
+}
+.effect-sub li h4{
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 30px;
+}
+
+.effect-sub li span{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 35px;
+}
+
+.sol-mid2{
+    width: 100%;
+    padding: 100px 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sol-mid2 h3{
+    margin-bottom: 80px;
+}
+
+.sol-mid-icon{
+    width: 65%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 100px;
+}
+
+.function{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.function li{
+    text-align: center;
+    padding: 0 10px;
+}
+
+.function li img{
+    max-width: 100px;
+    margin-bottom: 10px;
+}
+
+.function li h4{
+    font-size: 25px;
+    margin-bottom: 15px;
+}
+.function li span{
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 23px;
+}
+.function1{
+    margin-bottom: 60px;
+}
+.function1 li{
+    width: 33%;
+}
+.function2 li{
+    width: 33%;
+}
+
+
+.sol-mid3 h3{
+    margin-bottom: 120px;
+}
+
+.step{
+    width: 100%;
+    height: 550px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.step-sub{
+    width: 70%;
+    display: flex;
+    justify-content: space-around;
+}
+.step-top::after{
+    width: 100%;
+    content: '';
+    position: absolute;
+    height: 1px;
+    border-top: 1.5px dashed #a8a8a8;
+    top: auto;
+    left: 0;
+
+    margin-top: 180px;
+}
+.step-cont{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+
+    padding-left: 15px;
+}
+
+.step-cont::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background:url(https://jupiter.planett.co.kr/en/src/img/step-dot.png) no-repeat center;
+    background-size: cover;
+    z-index: 10;
+    margin: 170px 0 0  4%;
+  }
+ .step-cont:nth-child(even)::after {
+    content: '';
+    position: absolute;
+    width: 25px;
+    height: 25px;
+    background:url(https://jupiter.planett.co.kr/en/src/img/step-dot.png) no-repeat center;
+    background-size: cover;
+    z-index: 10;
+    margin: -80px 0 0 4.5%;
+  }
+  
+.bottom{
+    margin-top: 250px;
+}
+
+.step-sub li{
+    width: 25%;
+}
+.step-sub li p{
+    font-size: 1rem;
+    font-weight: 800;
+    color: #0048ff;
+
+    margin-bottom: 17px;
+}
+.step-sub li h4{
+    font-size: 1.5rem;
+    font-weight: 800;
+    
+    margin-bottom: 10px;
+}
+.step-sub li span{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+
+.step-right{
+    position: absolute;
+    z-index: 10;
+    right: 10%;
+    margin-top: 338px;
+
+}
+.step-right img{
+    width: 40px;
+    height: 40px;
+}
+
+.sol-bottom{
+    width: 100%;
+    background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url(https://jupiter.planett.co.kr/en/src/img/b2b-form.webp) no-repeat;
+    background-size: cover;
+    padding: 100px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.sol-bottom h3{
+    text-align: center;
+    color: #fff;
+    line-height: 65px;
+    margin-bottom: 50px;
+
+}
+
+
+
+.form{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    padding: 0 80px 0 80px;
+
+    margin-bottom: 150px;
+}
+
+.form h3{
+    text-align: start;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 60px 0 0;
+    transition:all .4s;
+    color: #000;
+}
+.form span{
+    text-align: start;
+    font-size: 20px;
+    font-weight: 500;
+    color: #777;
+
+    margin-bottom: 40px;
+}
+
+
+.form_area{
+    width: 100%;
+    font-family:'pretendard';
+    display: flex;
+    flex-direction: column;
+}
+.form_area ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form_area ul li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.form_area ul li div{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.form_area ul li div:first-child{
+    padding-right: 5%;
+}
+
+.form_area ul li div .f-input{
+    width: 80%;
+    border: 1.3px solid #b3b3b3 !important;
+    border-radius: 5px;
+    max-width: 450px;
+    height: 50px;
+    font-size:16px;
+    color:#333;
+    background-color:transparent;
+    transition:all .4s;
+    font-family:'pretendard';
+    padding-left: 20px;
+}
+
+.f-select{
+    width: 80% !important;
+    appearance: none;
+    background: url(https://jupiter.planett.co.kr/en/src/img/form-select.png) no-repeat right 15px center;
+    background-size: 20px;
+    max-width: 470px !important;
+    font-family: 'pretendard';
+    
+}
+
+.f-select option{
+    height: 50px !important;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+
+}
+
+
+.form_area ul li div label{
+    width: 20%;
+    font-size: 18px;
+    line-height: 50px;
+    color:#000000;
+    font-weight: 600;
+}
+.form_area ul li label{
+    width: 100%;
+    font-size: 18px;
+    line-height: 50px;
+    color:#000000;
+    font-weight: 600;
+}
+.form_area ul li:last-child{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_area ul li:last-child textarea.f-input{
+    width: 98% !important;
+    max-width: 1500px;
+    height: 350px;
+    padding: 15px 0 0 20px;
+    resize: none;
+    transition:all .4s;
+    font-family:'pretendard';
+    font-size:16px;
+    border: 1.3px solid #b3b3b3 !important;
+    border-radius: 5px;
+}
+
+
+
+.form_area .send{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 80px;
+    margin: 40px 0 70px;
+    border:none;
+    border-radius:0;
+    font-size:23px;
+    font-weight:600;
+    color:#ffffff;
+    background:#000000;
+    font-family:'pretendard';
+}
+.form_area .send:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+/* 제휴 탭 */
+
+#business{
+    width: 100%;
+}
+
+.busi-wrap{
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 100px;
+}
+
+.busi-top, .busi-bottom{
+    width: 100%;
+
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+
+h3{
+    font-size: 48px;
+    font-weight: 700;
+    margin-bottom: 50px;
+
+}
+
+.busi-top span{
+    font-size: 24px;
+    line-height: 38px;
+    font-weight: 500;
+
+    margin-bottom: 50px;
+}
+
+.busi-top img{
+    width: 90%;
+    max-width: 1200px;
+
+    margin-bottom: 120px;
+}
+
+
+.busi-mid{
+    width: 100%  !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 100px 0 0 !important;
+}
+
+
+.slide-container{
+    width: 60% !important;
+    overflow: hidden;
+
+    display: flex !important;
+}
+
+
+.part-slide{
+    width: 100% !important;
+    margin-bottom: 150px;
+
+    display: flex;
+
+}
+.part-slide>li{
+    width: 600px !important;
+    height: 700px;
+
+    background-color: #fff;
+    border: 1px #b1b1b1 solid;
+    border-radius: 20px;
+
+    padding: 50px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    margin: 0 31px;
+}
+
+.part-tit{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    
+}
+.part-tit h4{
+    font-size: 30px;
+    font-weight: 800;
+
+    margin-right: 10px;}
+
+.part-tit img{
+    width: 65px;
+}
+
+.part-txt{
+    width: 100%;
+    height: 430px;
+    text-align: start;
+
+    font-size: 25px;
+    line-height: 45px;
+    font-weight: 500;
+
+    border-bottom: 1px solid #b1b1b1;
+}
+
+.part-list{
+    width: 100%;
+    padding: 30px 0 0 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.part-list li{
+    list-style: disc;
+
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 43px;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    top: 50%;
+    width: 20px !important;
+    height: 20px !important;  
+    color: #b4b4b4 !important;
+}
+
+.swiper-button-prev{
+    left: 10% !important;
+}
+.swiper-button-next{
+    right: 10% !important;
+}
+
+
+.busi-bottom{
+    width: 100%;
+    background: linear-gradient(#004151b2,#004151e4), url(https://jupiter.planett.co.kr/en/src/img/busi-form.webp) no-repeat;
+    background-size: cover;
+    padding: 100px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.busi-bottom h3{
+    text-align: center;
+    color: #fff;
+    line-height: 65px;
+    margin-bottom: 50px;
+
+}
+
+
+.form{
+    text-align: left;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+
+    padding: 0 80px 0 80px;
+
+    margin-bottom: 150px;
+}
+
+.form h3{
+    text-align: start;
+    font-size: 35px;
+    font-weight: 700;
+    margin: 60px 0 0;
+    transition:all .4s;
+    color: #000;
+}
+.form span{
+    text-align: start;
+    font-size: 20px;
+    font-weight: 500;
+    color: #777;
+
+    margin-bottom: 40px;
+}
+
+
+.form_area{
+    width: 100%;
+    font-family:'pretendard';
+    display: flex;
+    flex-direction: column;
+}
+.form_area ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.form_area ul li{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.form_area ul li div{
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+.form_area ul li div:first-child{
+    padding-right: 5%;
+}
+
+.form_area ul li div .f-input{
+    width: 80%;
+    border: 1.3px solid #b3b3b3 !important;
+    border-radius: 5px;
+    max-width: 450px;
+    height: 50px;
+    font-size:16px;
+    color:#333;
+    background-color:transparent;
+    transition:all .4s;
+    font-family:'pretendard';
+    padding-left: 20px;
+}
+
+.f-select{
+    width: 80% !important;
+    appearance: none;
+    background: url(https://jupiter.planett.co.kr/en/src/img/form-select.png) no-repeat right 15px center;
+    background-size: 20px;
+    max-width: 470px !important;
+    font-family: 'pretendard';
+    
+}
+
+.f-select option{
+    height: 50px !important;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+
+}
+
+
+.form_area ul li div label{
+    width: 20%;
+    font-size: 18px;
+    line-height: 50px;
+    color:#000000;
+    font-weight: 600;
+}
+.form_area ul li label{
+    width: 100%;
+    font-size: 18px;
+    line-height: 50px;
+    color:#000000;
+    font-weight: 600;
+}
+.form_area ul li:last-child{
+    display: flex;
+    flex-direction: column;
+}
+
+.form_area ul li:last-child textarea.f-input{
+    width: 98% !important;
+    max-width: 1500px;
+    height: 350px;
+    padding: 15px 0 0 20px;
+    resize: none;
+    transition:all .4s;
+    font-family:'pretendard';
+    font-size:16px;
+    border: 1.3px solid #b3b3b3 !important;
+    border-radius: 5px;
+}
+
+
+
+.form_area .send{
+    -webkit-appearance: none;
+    width: 100%;
+    height: 80px;
+    margin: 40px 0 70px;
+    border:none;
+    border-radius:0;
+    font-size:23px;
+    font-weight:600;
+    color:#ffffff;
+    background:#000000;
+    font-family:'pretendard';
+}
+.form_area .send:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+
+
+
+
+}
+/* 
+
+
+
+
+
+
+
+*/
+@media screen and (min-width:700px) and (max-width: 1200px){
+
+    .tb-dn{
+        display: none !important;
+    }
+
+    section{
+        width: 100%;
+    }
+    .top-banner{
+        width: 100%;
+        height: 370px;
+        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url(https://jupiter.planett.co.kr/en/src/img/com-title.webp) no-repeat center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+    .top-banner .top-content{
+        width: 80%;
+        height: 100%;
+    }
+    .top-content .banner-tit{
+        height: 58%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .banner-tit h2{
+        color: #fff; 
+        font-size: 40px;
+        line-height: 50px;
+        letter-spacing: 1px;
+    }
+    .top-content .tab-container {
+        height: 43%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .tab-container .tabs{
+        width: 220px;
+        height: 50px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 15px 15px 0 0;
+        margin-right: 10px;
+    
+        font-size: 19px;
+        color: #000;
+        font-weight: 700;
+        line-height: 50px;
+        text-align: center;
+    
+        cursor: pointer;
+    }
+    .tabs.on{
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .tab_wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab {
+        display:none;
+    }
+    .tab.on {
+        display:block;
+    }
+    .tabs {
+        transition:all .3s;
+    }
+    
+    /* 소개 탭 */
+    #solution{
+        width: 100%;
+    }
+    
+    .sol-wrap{
+        width: 100%;
+        margin-top: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sol-top{
+        width: 93%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    .sol-top .sol-img{
+        width: 90%;
+        height: 280px;
+        background: url(https://jupiter.planett.co.kr/en/src/img/b2b-top.webp) no-repeat center;
+        background-size: cover;
+    }
+    .sol-top .sol-txt{
+        width: 90%;
+        /* text-align: center; */
+    }
+    .sol-txt h3{
+        font-size: 32px;
+        font-weight: 800;
+        margin: 35px 0 25px;
+        line-height: 40px;
+    }
+    .sol-txt h4{
+        font-size: 17px;
+        font-weight: 700;
+        margin-bottom: 25px;
+    }
+
+    .sol-txt span{
+        font-size: 21px;
+        line-height: 35px;
+        font-weight: 500;
+
+    }
+    
+    .sol-mid{
+        width: 100%;
+        background-color: #f4f4f4;
+        padding: 100px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sol-mid h3{
+        font-size: 35px;
+        font-weight: 700;
+        margin-bottom: 50px;
+    
+    }
+    
+    .sol-mid-content{
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .sol-mid-content .effect{
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+        margin-bottom: 100px;
+    }
+    
+    .effect{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .effect-sub{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .effect-sub>li{
+        width: 41%;
+        background-color: #fff;
+        border: 1px solid #b1b1b1;
+        border-radius: 10px;
+        padding: 45px 20px 42px;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+        text-align: left;
+        margin-bottom: 3%;
+    }
+
+    .effect-sub>li h4{
+        width: 100%;
+        font-size: 22px;
+        font-weight: 700;
+        margin-bottom: 10px;
+    }
+    
+    .effect-sub>li span{
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 28px;
+    }
+    
+    .sol-mid2{
+        width: 100%;
+        padding: 100px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: #fff;
+    }
+    
+    .sol-mid2 h3{
+        margin-bottom: 50px;
+    }
+    
+    .sol-mid-icon{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 100px;
+    }
+    
+    .function{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .function li{
+        text-align: center;
+        padding: 0 10px;
+    }
+    
+    .function li img{
+        max-width: 65px;
+        margin-bottom: 10px;
+    }
+    
+    .function li h4{
+        font-size: 20px;
+        margin-bottom: 15px;
+        font-weight: 800;
+    }
+    .function li span{
+        font-size: 17px;
+        font-weight: 400;
+        line-height: 23px;
+    }
+    .function1{
+        margin-bottom: 60px;
+    }
+    .function1 li{
+        width: 33%;
+    }
+    .function2 li{
+        width: 33%;
+    }
+    
+    .sol-mid3 h3{
+        margin-bottom: 80px;
+    }
+    
+    .step{
+        width: 100%;
+        height: 700px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .step-sub{
+        width: 95%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .step-top::after{
+        width: 100%;
+        content: '';
+        position: absolute;
+        height: 1px;
+        border-top: 1.5px dashed #a8a8a8;
+        top: auto;
+        left: 0;
+    
+        margin-top: 270px;
+    }
+    .step-cont{
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+    
+        padding-left: 10px;
+    }
+    
+    .step-cont::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background:url(https://jupiter.planett.co.kr/en/src/img/step-dot.png) no-repeat center;
+        background-size: cover;
+        z-index: 10;
+        margin: 258px 0 0  4%;
+      }
+     .step-cont:nth-child(even)::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background:url(https://jupiter.planett.co.kr/en/src/img/step-dot.png) no-repeat center;
+        background-size: cover;
+        z-index: 10;
+        margin: -92px 0 0 4.5%;
+      }
+      
+    .bottom{
+        margin-top: 350px;
+    }
+    
+    .step-sub li{
+        width: 30%;
+    }
+    .step-sub li p{
+        font-size: 15px;
+        font-weight: 800;
+        color: #0048ff;
+    
+        margin-bottom: 17px;
+    }
+    .step-sub li h4{
+        font-size: 20px;
+        font-weight: 800;
+        
+        margin-bottom: 10px;
+    }
+    .step-sub li span{
+        font-size: 17px;
+        font-weight: 500;
+    }
+    
+
+    .step-right img{
+        width: 30px;
+        height: 30px;
+    }
+    
+    .sol-bottom{
+        width: 100%;
+        background: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)), url(https://jupiter.planett.co.kr/en/src/img/b2b-form.webp) no-repeat;
+        background-size: cover;
+        padding: 120px 0 0;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sol-bottom h3{
+        font-size: 35px;
+        text-align: center;
+        color: #fff;
+        line-height: 45px;
+        margin-bottom: 70px;
+    
+    }
+
+    .form span{
+        text-align: start;
+        font-size: 20px;
+        font-weight: 500;
+        color: #777;
+    
+        margin-bottom: 70px;
+    }
+    
+    
+
+    .form{
+        text-align: left;
+        width: 50%;
+        display: flex;
+        flex-direction: column;
+        background-color: #fff;
+    
+        padding: 0 80px 0 80px;
+    
+        margin-bottom: 150px;
+    }
+    
+    .form h3{
+        text-align: start;
+        font-size: 35px;
+        font-weight: 700;
+        margin: 60px 0 10px;
+        transition:all .4s;
+        color: #000;
+    }
+    .form span{
+        text-align: start;
+        font-size: 20px;
+        font-weight: 500;
+        color: #777;
+    
+        margin-bottom: 25px;
+    }
+    
+    
+    .form_area{
+        width: 100%;
+        font-family:'pretendard';
+        display: flex;
+        flex-direction: column;
+    }
+    .form_area ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form_area ul li{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form_area ul li div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .form_area ul li div:first-child{
+        padding-right: 5%;
+    }
+    
+    .form_area ul li div .f-input{
+        width: 70%;
+        border: 1.3px solid #b3b3b3 !important;
+        border-radius: 5px;
+        max-width: 450px;
+        height: 50px;
+        font-size:16px;
+        color:#333;
+        background-color:transparent;
+        transition:all .4s;
+        font-family:'pretendard';
+        padding-left: 20px;
+    }
+    
+    .f-select{
+        width: 75% !important;
+        appearance: none;
+        background: url(https://jupiter.planett.co.kr/en/src/img/form-select.png) no-repeat right 15px center;
+        background-size: 20px;
+        max-width: 470px !important;
+        font-family: 'pretendard';
+        
+    }
+    
+    .f-select option{
+        height: 50px !important;
+        font-size: 16px;
+        background-color: #fff;
+        color: #333;
+    
+    }
+    
+    
+    .form_area ul li div label{
+        width: 30%;
+        font-size: 18px;
+        line-height: 50px;
+        color:#000000;
+        font-weight: 600;
+    }
+    .form_area ul li label{
+        width: 100%;
+        font-size: 18px;
+        line-height: 50px;
+        color:#000000;
+        font-weight: 600;
+    }
+    .form_area ul li:last-child{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form_area ul li:last-child textarea.f-input{
+        width: 95% !important;
+        max-width: 1500px;
+        height: 200px;
+        padding: 15px 0 0 20px;
+        resize: none;
+        transition:all .4s;
+        font-family:'pretendard';
+        font-size:16px;
+        border: 1.3px solid #b3b3b3 !important;
+        border-radius: 5px;
+    }
+    
+    
+    
+    .form_area .send{
+        -webkit-appearance: none;
+        width: 100%;
+        height: 70px;
+        margin: 40px 0 60px;
+        border:none;
+        border-radius:0;
+        font-size:23px;
+        font-weight:600;
+        color:#ffffff;
+        background:#000000;
+        font-family:'pretendard';
+    }
+    
+    
+
+/* 제휴 탭 */
+
+#business{
+    width: 100%;
+}
+
+.busi-wrap{
+    width: 100% !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    
+    margin-top: 100px;
+}
+
+.busi-top, .busi-bottom{
+    width: 90%;
+
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+
+h3{
+    font-size: 35px;
+    font-weight: 800;
+    margin-bottom: 55px;
+
+}
+
+.busi-top span{
+    font-size: 22px;
+    line-height: 35px;
+    font-weight: 500;
+
+    margin-bottom: 50px;
+}
+
+.busi-top img{
+    width: 95%;
+    max-width: 1000px;
+
+    margin-bottom: 120px;
+}
+
+
+.busi-mid{
+    width: 100%  !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 70px 0 0 !important;
+}
+
+
+.slide-container{
+    width: 650px !important;
+    overflow: hidden;
+
+    display: flex !important;
+}
+
+
+.part-slide{
+    width: 100% !important;
+    margin-bottom: 130px;
+
+    display: flex;
+
+}
+.part-slide>li{
+    width: 530px !important;
+    height: 700px;
+
+    background-color: #fff;
+    border: 1px #b1b1b1 solid;
+    border-radius: 20px;
+
+    padding: 30px 50px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    margin: 0 9.5px;
+}
+
+.part-tit{
+    width: 100%;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    
+}
+.part-tit h4{
+    font-size: 30px;
+    font-weight: 800;
+
+    margin-right: 10px;}
+
+.part-tit img{
+    width: 65px;
+}
+
+.part-txt{
+    width: 100%;
+    height: 430px;
+    text-align: start;
+
+    font-size: 22px;
+    line-height: 40px;
+    font-weight: 500;
+
+    border-bottom: 1px solid #b1b1b1;
+}
+
+.part-list{
+    width: 100%;
+    padding: 30px 0 0 30px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.part-list li{
+    list-style: disc;
+
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 43px;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    top: 50%;
+    width: 20px !important;
+    height: 20px !important;  
+    color: #b4b4b4 !important;
+}
+
+.swiper-button-prev{
+    left: 3% !important;
+}
+.swiper-button-next{
+    right: 3% !important;
+}
+
+
+.busi-bottom{
+    width: 100%;
+    background: linear-gradient(#004151b2,#004151e4), url(https://jupiter.planett.co.kr/en/src/img/busi-form.webp) no-repeat;
+    background-size: cover;
+    padding: 100px 0 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.busi-bottom>h3{
+    font-size: 35px;
+    text-align: center;
+    color: #fff;
+    line-height: 45px;
+    margin-bottom: 70px;
+    font-weight: 700;
+
+}
+
+
+
+}
+
+/* 
+
+
+
+
+
+
+*/
+@media screen and (min-width:300px) and (max-width: 700px){
+
+
+    .mb-dn{
+        display: none;
+    }
+
+    section{
+        width: 100%;
+    }
+    .top-banner{
+        width: 100%;
+        height: 200px;
+        background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.8)), url(https://jupiter.planett.co.kr/en/src/img/com-title.webp) no-repeat center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+    }
+    .top-banner .top-content{
+        width: 90%;
+        height: 100%;
+    }
+    .top-content .banner-tit{
+        height: 58%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .banner-tit h2{
+        color: #fff; 
+        font-size: 28px;
+        line-height: 50px;
+        letter-spacing: 1px;
+        margin-left: 30px;
+    }
+    .top-content .tab-container {
+        height: 43%;
+        display: flex;
+        align-items: flex-end;
+    }
+    .tab-container .tabs{
+        width: 180px;
+        height: 36px;
+        background-color: rgba(255, 255, 255, 0.6);
+        border-radius: 10px 10px 0 0;
+        margin-right: 10px;
+    
+        font-size: 15px;
+        color: #000;
+        font-weight: 700;
+        line-height: 36px;
+        text-align: center;
+    
+        cursor: pointer;
+    }
+    .tabs.on{
+        background-color: rgb(255, 255, 255);
+    }
+    
+    .tab_wrap{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .tab {
+        display:none;
+    }
+    .tab.on {
+        display:block;
+    }
+    .tabs {
+        transition:all .3s;
+    }
+    
+    /* 소개 탭 */
+    #solution{
+        width: 100%;
+    }
+    
+    .sol-wrap{
+        width: 100%;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sol-top{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 70px;
+    }
+    .sol-top .sol-img{
+        width: 87vw;
+        height: 87vw;
+        background: url(https://jupiter.planett.co.kr/en/src/img/b2b-top.webp) no-repeat center;
+        background-size: cover;
+    }
+    .sol-top .sol-txt{
+        width: 95%;
+    }
+    .sol-txt h3{
+        font-size: 22px;
+        font-weight: 800;
+        margin: 35px 0 10px;
+        line-height: 28px;
+    }
+    .sol-txt h4{
+        font-size: 17px;
+        margin-bottom: 20px;
+    }
+    .sol-txt span{
+        font-size: 17px;
+        line-height: 25px;
+        font-weight: 400;
+    }
+    
+    .sol-mid{
+        width: 100%;
+        background-color: #f4f4f4;
+        padding: 60px 0 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .sol-mid h3{
+        font-size: 25px;
+        font-weight: 800;
+        margin-bottom: 40px;
+        text-align: center;
+        line-height: 28px;
+    
+    }
+    
+    .sol-mid-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 50px;
+    }
+    
+    .sol-mid-content .effect{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .effect-sub{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .effect-sub>li{
+        width: 100%;
+        background-color: #fff;
+        border: 1px solid #b1b1b1;
+        border-radius: 10px;
+    
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        padding: 35px 15px 30px ;
+        margin-bottom: 25px;
+        
+    }
+    .effect-sub>li h4{
+        font-size: 20px;
+        font-weight: 800;
+        margin-bottom: 15px;
+    }
+    
+    .effect-sub>li span{
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 23px;
+    }
+
+    
+    .sol-mid2{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        background-color: #fff;
+    }
+    
+    .sol-mid2 h3{
+        margin-bottom: 60px;
+    }
+    
+    .icon-swiper{
+        width: 100%;
+    }
+    
+
+    .function{
+        width: 100%;
+    }
+    
+    .function li{
+        width: 75% !important;
+        height: 280px;
+        text-align: center;
+
+        margin: 0 12.5%;
+    }
+    
+    .function li img{
+        max-width: 100px;
+        margin-bottom: 20px;
+    }
+    
+    .function li h4{
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+    .function li span{
+        font-size: 18px;
+        font-weight: 500;
+        line-height: 23px;
+    }
+
+    .swiper-button-next:after,.swiper-button-prev:after{
+        font-size: 25px !important;
+    }
+
+    .swiper-button-next, .swiper-button-prev{
+        top: 45% !important;
+        color: #b4b4b4 !important;
+
+    }
+    
+    .swiper-button-prev{
+        left: 2% !important;
+    }
+    .swiper-button-next{
+        right: 2% !important;
+    }
+
+
+    .page-box{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        margin-bottom: 60px;
+    }
+
+
+    .swiper-pagination1 {
+        position: relative !important;
+        width: 70px !important;
+        font-size: 15px;
+        font-weight: 400;
+        padding-top: 6px;
+        text-align: center;
+        color: #fff !important;
+        height: 24px;
+        background-color: #c1c1c1;
+        border-radius: 35px;
+    }
+
+   
+
+    .sol-mid3 h3{
+        margin-bottom: 50px;
+    }
+    
+    .step{
+        width: 100%;
+        height: 900px;
+        display: flex;
+        justify-content: center;
+    }
+    .step-sub{
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .step::after{
+        width: 1px;
+        height: 95%;
+        content: '';
+        position: absolute;
+        border-right: 1px dashed #a8a8a8 ;
+
+        margin-top: -15px;
+
+        left: 10%;
+    
+    }
+    .step-cont{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    
+        padding-left: 10px;
+    }
+    
+    .step-cont::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 25px;
+        background:url(https://jupiter.planett.co.kr/en/src/img/step-dot.png) no-repeat center;
+        background-size: cover;
+        z-index: 10;
+        left: 7%;
+
+        margin-top: 40px;
+      }
+
+    
+    .step-sub li{
+        width: 70%;
+        margin-bottom: 50px;
+    }
+    .step-sub li p{
+        font-size: 15px;
+        font-weight: 800;
+        color: #0048ff;
+    
+        margin-bottom: 17px;
+    }
+    .step-sub li h4{
+        font-size: 19px;
+        font-weight: 800;
+        
+        margin-bottom: 10px;
+    }
+    .step-sub li span{
+        font-size: 15px;
+        font-weight: 500;
+    }
+    
+
+    
+    .sol-bottom{
+        width: 100%;
+    
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.8)), url(https://jupiter.planett.co.kr/en/src/img/b2b-form.webp) no-repeat center;
+        background-size: cover;
+    }
+
+    .sol-bottom h3{
+        font-size: 25px;
+        text-align: center;
+        color: #fff;
+        line-height: 32px;
+        margin: 70px 0 40px;
+    
+    }
+    
+    
+    
+    .form{
+        text-align: left;
+        width: 87%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #fff;    
+        margin-bottom: 80px;
+    }
+    
+    .form h3{
+        text-align: start;
+        font-size: 25px;
+        font-weight: 700;
+        margin: 40px 0 30px;
+        transition:all .4s;
+        color: #000;
+    }
+
+    
+    .form_area{
+        width: 90%;
+        font-family:'pretendard';
+        display: flex;
+        flex-direction: column;
+    }
+    .form_area ul{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form_area ul li{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    .form_area ul li div{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 15px;
+    }
+    .form_area ul li div:first-child{
+        padding-right: 5%;
+    }
+    
+    .form_area ul li div .f-input{
+        width: 70%;
+        border: 1.3px solid #b3b3b3 !important;
+        border-radius: 5px;
+        max-width: 450px;
+        height: 50px;
+        font-size:16px;
+        color:#333;
+        background-color:transparent;
+        transition:all .4s;
+        font-family:'pretendard';
+        padding-left: 20px;
+    }
+    
+    .f-select{
+        width: 75% !important;
+        appearance: none;
+        background: url(https://jupiter.planett.co.kr/en/src/img/form-select.png) no-repeat right 15px center;
+        background-size: 20px;
+        max-width: 470px !important;
+        font-family: 'pretendard';
+        
+    }
+    
+    .f-select option{
+        height: 50px !important;
+        font-size: 16px;
+        background-color: #fff;
+        color: #333;
+    
+    }
+    
+    
+    .form_area ul li div label{
+        width: 30%;
+        font-size: 16px;
+        line-height: 50px;
+        color:#000000;
+        font-weight: 600;
+    }
+    .form_area ul li label{
+        width: 100%;
+        font-size: 16px;
+        line-height: 50px;
+        color:#000000;
+        font-weight: 600;
+    }
+    .form_area ul li:last-child{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .form_area ul li:last-child textarea.f-input{
+        width: 93% !important;
+        max-width: 1500px;
+        height: 200px;
+        padding: 15px 0 0 20px;
+        resize: none;
+        transition:all .4s;
+        font-family:'pretendard';
+        font-size:16px;
+        border: 1.3px solid #b3b3b3 !important;
+        border-radius: 5px;
+    }
+    
+    
+    .form_area .send{
+        -webkit-appearance: none;
+        width: 100%;
+        height: 60px;
+        margin: 20px 0 50px;
+        border:none;
+        border-radius:0;
+        font-size:20px;
+        font-weight:600;
+        color:#ffffff;
+        background:#000000;
+        font-family:'pretendard';
+    }
+    
+    
+    /* 제휴 탭 */
+
+#business{
+    width: 100%;
+}
+
+.busi-wrap{
+    width: 100% !important;
+    margin-top: 50px;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+}
+.busi-top, .busi-bottom{
+    width: 90%;
+
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+
+}
+
+
+h3{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 30px;
+
+}
+
+.busi-top span{
+    font-size: 17px;
+    line-height: 25px;
+    font-weight: 400;
+
+    margin-bottom: 30px;
+}
+
+.busi-top img{
+    width: 100%;
+    max-width: 700px;
+
+    margin-bottom: 70px;
+}
+
+
+.busi-mid{
+    width: 100%  !important;
+    display: flex !important;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f4f4f4;
+    padding: 60px 0 0 !important;
+}
+
+.busi-mid h3{
+    font-size: 25px;
+    font-weight: 800;
+    margin-bottom: 40px;
+    text-align: center;
+    line-height: 28px;
+
+}
+
+
+.slide-container{
+    width: 330px !important;
+    overflow: hidden;
+
+    display: flex !important;
+}
+
+
+.part-slide{
+    width: 100% !important;
+    margin-bottom: 70px;
+
+    display: flex;
+
+}
+.part-slide>li{
+    width: 275px !important;
+    height: 550px;
+
+    background-color: #fff;
+    border: 1px #b1b1b1 solid;
+    border-radius: 20px;
+
+    padding: 15px 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+
+    margin: 0 7px;
+}
+
+.part-tit{
+    width: 100%;
+    height: 85px;
+
+    display: flex;
+    align-items: center;
+    
+}
+.part-tit h4{
+    font-size: 22px;
+    font-weight: 800;
+
+    margin-right: 10px;}
+
+.part-tit img{
+    width: 45px;
+}
+
+.part-txt{
+    width: 100%;
+    height: 320px;
+    text-align: start;
+
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+
+    border-bottom: 1px solid #b1b1b1;
+}
+
+.part-list{
+    width: 100%;
+    padding: 15px 0 0 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    
+}
+
+.part-list li{
+    list-style: disc;
+
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 23px;
+    padding-right: 10px;
+}
+
+.swiper-button-next, .swiper-button-prev{
+    top: 50% !important;
+    width: 20px !important;
+    height: 20px !important;  
+    color: #b4b4b4 !important;
+}
+
+.swiper-button-prev{
+    left: 2% !important;
+}
+.swiper-button-next{
+    right: 2% !important;
+}
+
+
+.busi-bottom{
+    width: 100%;
+    background: linear-gradient(#004151b2,#004151e4), url(https://jupiter.planett.co.kr/en/src/img/busi-form.webp) no-repeat;
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.busi-bottom>h3{
+    font-size: 25px;
+    text-align: center;
+    color: #fff;
+    line-height: 32px;
+    margin: 70px 20px 40px;
+
+}
+
+
+
+
+
+
+
+
+    
+
+}
+

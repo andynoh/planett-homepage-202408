@@ -1,0 +1,679 @@
+@media screen and (min-width:1200px) {
+
+
+/* 본문 시작 */
+.section {
+    width: 100%;
+}
+
+
+/* 메인 배너 sec1 */
+#title {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    /* margin-bottom: 130px; */
+    
+}
+
+#title .main{
+    width: 95%;
+    /* background: linear-gradient(rgba(0, 0, 0, 0.244),rgba(0, 15, 57, 0.6)),url(https://jupiter.planett.co.kr/ko/src/img/main-video.mp4) repeat top; */
+    /* background-size: 120%; */
+    height: 90%;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    overflow: hidden;
+}
+
+
+#title .main video{
+
+    left: auto;
+    width: 95%;
+    height: 90vh;
+    border-radius: 40px;
+    object-fit: cover;
+    object-position: bottom;
+    z-index: -10;
+    position: absolute;
+}
+.main:before {
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 90vh;
+    background: linear-gradient(90deg,rgba(4, 28, 127, 0.5),rgba(123, 212, 228, 0));
+    border-radius: 40px;
+    z-index: 1;
+}
+.main::after {
+    content: '';
+    position: absolute;
+    width: 95%;
+    height: 90vh;
+    background: linear-gradient(360deg,rgba(0, 0, 0, 0.568),rgba(255, 255, 255, 0));
+    border-radius: 40px;
+    z-index: 2;
+}
+
+
+
+/* 메인 배너 텍스트 */
+#title .main .main-text{
+    margin: 0 0 0 8%;
+    color: #fff;
+    z-index: 10;
+}
+#title .main .main-text h2.pc-txt{
+    font-size: 80px;
+    letter-spacing: -2px;
+    line-height: 90px;
+    margin-bottom: 30px;
+}
+#title .main .main-text p{
+    font-size: 25px;
+    line-height: 40px;
+    font-weight: 300;
+} 
+
+/* 스크롤 아이콘 */
+#scroll{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 999;
+    cursor: pointer;
+    margin: 40px 0;
+}
+
+#scroll button{
+    width: 36px;
+    height: 54px;
+    border: #fff solid 2px;
+    border-radius: 20px;
+    background-color: #00000000;
+    cursor: pointer;
+}
+
+#scroll .circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #fff;
+    margin: 10px -24px 0;
+    animation:ani 1.2s infinite alternate; 
+    cursor: pointer;
+    z-index: 10;
+}
+
+@keyframes ani{
+    0%{transform:translate(0,0);}
+    100%{transform:translate(0,18px);}
+ }  
+
+
+
+/* sec2 */
+#pdt {
+    margin-top: 50px;
+    width: 100%;
+    background: url(https://jupiter.planett.co.kr/ko/src/img/sec2bg.webp) no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 170px;
+}
+
+.sec2title{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 55px;
+}
+
+.sec2title > h2{
+    font-size: 55px;
+    letter-spacing: -0px;
+    font-weight: 800;
+    margin-top: 170px;
+}
+
+.sec2title > span{
+    font-size: 25px;
+    font-weight: 500;
+    margin-top: 30px;
+    line-height: 35px;
+}
+
+.sec2contents{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec2contents ul{
+    width: 100%;
+    height: 380px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.sec2contents ul li{
+    width: 30%;
+    /* background: url(https://jupiter.planett.co.kr/ko/src/img/contentpic.webp) no-repeat;
+    background-size: 130%;
+    background-position: left center; */
+    border-radius: 30px;
+    padding: 80px 0 0 55px;
+    margin: 0 12px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.sec2contents ul li.esim-con{
+    background: url(https://jupiter.planett.co.kr/ko/src/img/esim-con.webp) no-repeat;
+    background-size: cover;
+    background-position: 30% center;
+}
+.sec2contents ul li.simcard-con{
+    background: url(https://jupiter.planett.co.kr/ko/src/img/simcard-con.webp) no-repeat;
+    background-size: cover;
+    background-position: 30% center;
+}
+.sec2contents ul li.router-con{
+    background: url(https://jupiter.planett.co.kr/ko/src/img/router-con.webp) no-repeat;
+    background-size: cover;
+    background-position: 30% center;
+}
+.sec2contents ul li.esimsta-con{
+    background: url(https://jupiter.planett.co.kr/ko/src/img/esimsta-con.webp) no-repeat;
+    background-size: cover;
+    background-position: 30% center;
+}
+
+.sec2contents ul li h3{
+    color: #fff;
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.sec2contents ul li span{
+    color: #fff;
+    font-size: 23px;
+    margin-bottom: 80px;
+    letter-spacing: 0;
+}
+
+.sec2contents ul li button{
+    width: 180px;
+    height: 55px;
+    padding-left: 12px;
+    background-color: #fff;
+    border-radius: 100px;
+    border: #fff solid 2px;
+    font-size: 17px;
+    font-weight: 800;
+    font-family: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, "Helvetica Neue", "Segoe UI", "Apple SD Gothic Neo", "Noto Sans KR", "Malgun Gothic", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", sans-serif;
+    cursor: pointer;
+}
+.sec2contents ul li button:hover{
+    background-color: #ffffff00;
+    border-radius: 100rgba(255, 255, 255, 0);
+    color: #fff;
+    font-size: 17px;
+    font-weight: 800;
+}
+
+/* sec3 count*/
+
+#count {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(rgb(33, 47, 193),rgb(8, 2, 42));
+    padding-bottom: 5vw;
+}
+
+.sec3title{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sec3title > h2{
+    font-size: 55px;
+    letter-spacing: -0px;
+    font-weight: 600;
+    margin-top: 120px;
+    color: #fff;
+}
+
+.sec3title > span{
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 30px;
+    line-height: 35px;
+    color: #fff;
+}
+.cnt-img{
+    position: absolute;
+    margin-top: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.cnt-img img{
+    width: 32vw;
+    opacity: 0.9;
+    animation: rotate_image 60s linear infinite;
+    transform-origin: 50% 50%;
+}
+
+@keyframes rotate_image{
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.sec3contents {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.sec3contents .count-list{
+    width: 80%;
+    height: 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+.sec3contents .count-list:nth-child(2){
+    width: 100%;
+    height: 10vw;
+    display: flex;
+    justify-content: space-around;
+}
+
+.sec3contents .count-list li{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.sec3contents .count-list li .counting, .count_num{
+    color: #5DECFF;
+    font-size: 2.5vw;
+    font-weight: 800;
+}
+
+.sec3contents .count-list li p{
+    color: #5DECFF;
+    font-size: 2vw;
+    font-weight: 800;
+}
+
+.sec3contents .count-list li .c-tit{
+    color: #fff;
+    font-size: 0.9vw;
+    font-weight: 500;
+    margin-top: 5px;
+}
+
+
+/* sec4 review */
+
+#review {
+    width: 100%;
+    height: 1200px;
+    background-color: #000000;
+}
+
+.sec4title{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 75px;
+}
+
+.sec4title .stars{
+    margin-top: 120px;
+    width: 220px;
+    display: flex;
+    justify-content: space-around;
+}
+.sec4title .stars img{
+    width: 45px;
+}
+
+.sec4title > h2{
+    font-size: 55px;
+    letter-spacing: -0px;
+    font-weight: 600;
+    margin-top: 55px;
+    color: #fff;
+}
+
+.sec4title > span{
+    font-size: 25px;
+    font-weight: 400;
+    margin-top: 30px;
+    color: #fff;
+}
+
+.sec4contects{
+    width: 100%;
+}
+
+.review-slide{
+}
+
+.swiper-wrapper {
+	transition-timing-function: linear;
+}
+
+.review-slide .review-list{
+    display: flex;
+}
+
+.review-slide .review-list .rev-box{
+    width: 400px !important;
+    height: 500px;
+    background-color: #f4f4f4;
+    margin: 0 25px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.review-list .rev-box .rev-img{
+    width: 100%;
+    height: 290px;
+    overflow: hidden;
+    margin-bottom: 15px;
+}
+
+.review-list .rev-box .rev-img img{
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+    
+}
+
+.review-list .rev-box .rev-txt{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.rev-txt span{
+    word-wrap: break-word;
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 35px;
+}
+
+
+/* sec5 contact */
+
+#main-contact{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec5-top{
+    width: 100%;
+    margin-top: 140px;
+    display: flex;
+    justify-content: center;
+}
+
+.sec5title{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec5title > h2{
+    font-size: 65px;
+    letter-spacing: -0px;
+    font-weight: 700;
+    color: #000000;
+    margin-top: 40px;
+}
+
+.sec5title > span{
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+    margin-top: 50px;
+    color: #000000;
+}
+
+.sec5-top-l{
+    margin-right: 150px;
+}
+
+.sec5-top-l .b2b-btn{
+    width: 390px;
+    height: 90px;
+    margin-top: 25px;
+    background-color: #000;
+    border: none;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.sec5-top-l .b2b-btn:hover{
+    opacity: 0.8;
+}
+
+.sec5-top-l .sec5-addr{
+    margin-top: 90px;
+    display: flex;
+}
+
+.sec5-addr .addr-tit{
+    margin-right: 15px;
+}
+
+.addr-tit p{
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 35px;
+}
+.addr-txt{
+    display: flex;
+    flex-direction: column;
+}
+.addr-txt span{
+    font-size: 20px;
+    line-height: 35px;
+
+}
+
+.sec5-top-r{
+    width: 550px;
+    border: #000 solid 1px;
+}
+.sec5-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec5-form h3{
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 50px;
+    transition:all .4s;
+}
+
+.form_area{
+    width: 100%;
+    max-width: 450px;
+    font-family:'pretendard';
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form_area ul{
+    width: 100%;
+}
+.form_area ul li{
+    display: flex;
+    justify-content: space-between !important;
+}
+.form_area ul li+li{
+    margin-top:15px;
+}
+.form_area ul li .f-input{
+    width: 100%;
+    border: 1.3px solid #b3b3b3 !important;
+    border-radius: 5px;
+    max-width: 320px;
+    height: 45px;
+    font-size:16px;
+    color:#333;
+    background-color:transparent;
+    transition:all .4s;
+    font-family:'pretendard';
+    padding-left: 20px;
+}
+
+
+.f-select{
+    appearance: none;
+    background: url(https://jupiter.planett.co.kr/ko/src/img/form-select.webp) no-repeat right 15px center;
+    background-size: 20px;
+    max-width: 340px !important;
+    
+}
+
+.f-select option{
+    height: 40px !important;
+    font-size: 16px;
+    background-color: #fff;
+    color: #333;
+
+}
+
+.form_area ul li textarea.f-input {
+    width: 100% !important;
+    max-width: 320px;
+    height: 150px;
+    padding: 15px 0 0 20px;
+    resize: none;
+    transition:all .4s;
+    font-family:'pretendard';
+    font-size:16px;
+
+}
+.form_area ul li label{
+    font-size: 21px;
+    line-height: 40px;
+    color:#000000;
+    font-weight: 600;
+}
+
+.form_area .send{
+    -webkit-appearance: none;
+    width: 170px;
+    height: 50px;
+    margin: 35px 0;
+    border:none;
+    border-radius:0;
+    font-size:18px;
+    font-weight:600;
+    color:#ffffff;
+    background:#000000;
+    font-family:'pretendard';
+}
+.form_area .send:hover{
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.sec5-map {
+    margin: 70px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.sec5-map img{
+    box-sizing: border-box;
+    width: 90%;
+    max-width: 1200px;
+}
+.map-btn{
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.map-btn a{
+    width: 420px;
+    height: 100px;
+    background-color: #fff;
+    border: 1px #a0a0a0 solid;
+    border-radius: 20px;
+    margin: 0 15px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.map-btn a:hover{  
+    background-color: #f4f4f4;
+}
+
+.map-btn a img{
+    width: 50px;
+    border-radius: 10px;
+}
+
+.map-btn a p{
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #333 !important;
+}
+
+}
+ 
+#btnGotoTop{
+
+    rotate: 180deg;
+}
